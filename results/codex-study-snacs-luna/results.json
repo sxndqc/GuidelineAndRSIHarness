@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "backend_unavailable",
   "results": [
     {
       "condition": "frozen",
@@ -240,6 +240,316 @@
         "joint_accuracy": 0.400990099009901,
         "role_macro_f1": 0.43577869150061666,
         "function_macro_f1": 0.4772502383914691,
+        "sentence_exact": 0.2894736842105263,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "moderation",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 39,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "d1ef6550744b9e03d867b69d223e64ada78297641cb03909f5b45a22a88e4bff",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5099009900990099,
+        "function_accuracy": 0.5841584158415841,
+        "joint_accuracy": 0.40594059405940597,
+        "role_macro_f1": 0.4036911439641923,
+        "function_macro_f1": 0.4846548013765512,
+        "sentence_exact": 0.2719298245614035,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "moderation",
+      "seed": 11,
+      "budget": 64,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 152,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "64d3949f2fd0d1157457510826de7bf32752110ca47841372450125fc95eb19e",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5594059405940595,
+        "function_accuracy": 0.5841584158415841,
+        "joint_accuracy": 0.45544554455445546,
+        "role_macro_f1": 0.4674591023804715,
+        "function_macro_f1": 0.5430594741660398,
+        "sentence_exact": 0.34210526315789475,
+        "valid_output_rate": 0.9912280701754386
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "bd68a2456780ab3f130385ba5b8621b97f331967f2a397d7311b856b671896ef",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5396039603960396,
+        "function_accuracy": 0.5792079207920792,
+        "joint_accuracy": 0.43564356435643564,
+        "role_macro_f1": 0.4329151987721181,
+        "function_macro_f1": 0.4964351841731779,
+        "sentence_exact": 0.3333333333333333,
+        "valid_output_rate": 0.9649122807017544
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "031bb018082947c3164fb82bef0912c0b37b13c3dfc05af0dc028877462285c6",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5396039603960396,
+        "function_accuracy": 0.6485148514851485,
+        "joint_accuracy": 0.46534653465346537,
+        "role_macro_f1": 0.463409100307496,
+        "function_macro_f1": 0.5545672785237213,
+        "sentence_exact": 0.30701754385964913,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 23,
+      "budget": 64,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 147,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "d684d2bdb37c90362918c383cfdf84ec94f05118566bf142338be3dbd06e33ae",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5594059405940595,
+        "function_accuracy": 0.6188118811881188,
+        "joint_accuracy": 0.44554455445544555,
+        "role_macro_f1": 0.4443486772931158,
+        "function_macro_f1": 0.4938039425897697,
+        "sentence_exact": 0.32456140350877194,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "0c78143531be9b5a828da91aeb9bc360d5b1a65cd440a49843ec075ca8a97314",
+      "prediction_sha256": "2cd2e92999b06f78d862012a813a31beb156fcd40c99886ed95d179dcb4a2534",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.49504950495049505,
+        "function_accuracy": 0.5742574257425742,
+        "joint_accuracy": 0.4158415841584158,
+        "role_macro_f1": 0.3691500111228081,
+        "function_macro_f1": 0.43710135847956844,
+        "sentence_exact": 0.2894736842105263,
+        "valid_output_rate": 0.956140350877193
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "51a1601cd78b5ab403b012db088623b9a53a23793b9d74419d0bdf723975554f",
+      "prediction_sha256": "60f63b9bc416f82cb3187f9550529d14e2e59c7fa343e3999de88947c714cf2e",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5742574257425742,
+        "function_accuracy": 0.6584158415841584,
+        "joint_accuracy": 0.49504950495049505,
+        "role_macro_f1": 0.4826460917510735,
+        "function_macro_f1": 0.540305915977583,
+        "sentence_exact": 0.35964912280701755,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes",
+      "seed": 23,
+      "budget": 64,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 147,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "4217955b5b8531ed985169d430bd85679d7463c351436efdeef7a763704cbef2",
+      "prediction_sha256": "da2db4f91ec9ae46096c14639915ee3dfd7da41f0120d80618ab4bbac34a29ac",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5247524752475248,
+        "function_accuracy": 0.594059405940594,
+        "joint_accuracy": 0.47029702970297027,
+        "role_macro_f1": 0.4219520727321923,
+        "function_macro_f1": 0.4966634706092377,
+        "sentence_exact": 0.34210526315789475,
+        "valid_output_rate": 0.9298245614035088
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 106,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 8
+    },
+    {
+      "condition": "moderation",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "9148ea0a6bd8f97a7932eaf2fa447658a84c467eca9522c126c063e5312f2294",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.49504950495049505,
+        "function_accuracy": 0.5643564356435643,
+        "joint_accuracy": 0.41089108910891087,
+        "role_macro_f1": 0.36114967209585813,
+        "function_macro_f1": 0.40745979199760707,
+        "sentence_exact": 0.2807017543859649,
+        "valid_output_rate": 0.9736842105263158
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "moderation",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "ca956072604103eab13a9163d70d6327b654e39007b3db27e95615d4d64c03d4",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5247524752475248,
+        "function_accuracy": 0.5891089108910891,
+        "joint_accuracy": 0.42574257425742573,
+        "role_macro_f1": 0.3895293527612675,
+        "function_macro_f1": 0.449367410046529,
         "sentence_exact": 0.2894736842105263,
         "valid_output_rate": 1.0
       },

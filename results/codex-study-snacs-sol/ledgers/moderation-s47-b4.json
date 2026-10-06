@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-229480-0005",
+    "new": true,
+    "decisions": 3,
+    "total_unique": 1
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-150192-0005",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 2
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-231203-0010",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 3
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-017235-0007",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 4
+  }
+]

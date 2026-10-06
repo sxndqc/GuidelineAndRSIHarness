@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "gold_reveal",
+    "id": "pa5f79ae88bdc2158b",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 1
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "pac705fc73a67b2344",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 2
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "pa0e266889468e7462",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 3
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "pa747c5ed7a881131c",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 4
+  }
+]
