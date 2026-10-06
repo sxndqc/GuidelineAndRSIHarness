@@ -1,0 +1,6 @@
+{
+  "status": "pending_audit",
+  "reason": "Full version-aligned SNACS manual and embedded-example audit are required before model runs; labels alone are not a guideline.",
+  "files": [],
+  "embedded_labeled_examples": null
+}

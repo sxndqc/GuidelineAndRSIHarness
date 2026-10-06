@@ -1,0 +1,29 @@
+{
+  "prediction_hashes_unchanged_after_review_fixes": true,
+  "paired_runs": 60,
+  "gold_self_score": {
+    "sentences": 259,
+    "targets": 485,
+    "documents": 146,
+    "role_accuracy": 1.0,
+    "function_accuracy": 1.0,
+    "joint_accuracy": 1.0,
+    "role_macro_f1": 1.0,
+    "function_macro_f1": 1.0,
+    "sentence_exact": 1.0,
+    "valid_output_rate": 1.0
+  },
+  "empty_prediction_score": {
+    "sentences": 259,
+    "targets": 485,
+    "documents": 146,
+    "role_accuracy": 0.0,
+    "function_accuracy": 0.0,
+    "joint_accuracy": 0.0,
+    "role_macro_f1": 0.0,
+    "function_macro_f1": 0.0,
+    "sentence_exact": 0.0,
+    "valid_output_rate": 0.0
+  },
+  "model_experiments_executed": false
+}

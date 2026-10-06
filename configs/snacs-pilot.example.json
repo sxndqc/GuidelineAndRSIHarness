@@ -1,0 +1,15 @@
+{
+  "model": "SET_EXACT_PROVIDER_MODEL_VERSION",
+  "data_root": "data/prepared/snacs",
+  "output": "runs/snacs-pilot",
+  "materials_manifest": "configs/snacs-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_limit": 50,
+  "conditions": ["frozen", "notes", "notes_program"],
+  "budgets": [0, 4, 16],
+  "seeds": [11, 23],
+  "adapt_calls": 24,
+  "predict_calls": 12,
+  "max_completion_tokens": 2000,
+  "key_env": "ANNOTATION_API_KEY"
+}

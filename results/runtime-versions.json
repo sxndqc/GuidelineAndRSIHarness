@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "locked_environment_reproduces_prediction_hashes": true,
+  "runs_verified": 60
+}

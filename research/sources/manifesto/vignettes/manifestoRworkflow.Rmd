@@ -1,0 +1,774 @@
+---
+title: "Working with the manifestoR package"
+author: "Jirka Lewandowski <jirka.lewandowski@wzb.eu>"
+date: "21/03/2016 (updated `r format(Sys.time(), '%d/%m/%Y')`)"
+output:
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    latex_engine: xelatex
+  html_document:
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+header-includes:
+  - \usepackage{listings}
+  - \let\verbatim\undefined
+  - \let\verbatimend\undefined
+  - \lstnewenvironment{verbatim}{\lstset{breaklines,basicstyle=\ttfamily,columns=fixed,fontadjust=true,basewidth=0.5em}}{}
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{The workflow with the manifestoR package}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r, echo = FALSE}
+# simple print layout helper to avoid text overflow
+simple_pretty_print <- function(c) {
+  c %>%
+    { stringr::str_c(stringr::str_c("[", seq_along(.), "] ", stringr::str_c('"', ., '"'))) } %>%
+    stringr::str_wrap(width = 80) %>%
+    stringr::str_c(collapse = "\n")
+}
+```
+
+\vspace{3.0em}
+<br />
+<br />
+**Hint**: See https://manifesto-project.wzb.eu for additional **tutorials**, **documentation**, **data**, and **election programmes**.
+
+\newpage
+
+# Downloading documents from the Manifesto Corpus
+
+When publishing work using the Manifesto Corpus, please make sure to cite it correctly and to give the identification number of the corpus version used for your analysis.
+
+You can print citation and version information with the function `mp_cite()`.
+
+## Loading the package
+
+First of all, load the `manifestoR` package with the usual R syntax:
+
+```{r eval=FALSE}
+library(manifestoR)
+```
+
+## Connecting to the Manifesto Project Database API
+
+To access the data in the Manifesto Corpus, an account for the Manifesto Project
+webpage with an API key is required.
+If you do not yet have an account, you can create one at 
+[https://manifesto-project.wzb.eu/signup]().
+If you have an account, you can create and download the API key on your profile page.
+
+For every R session using manifestoR and connecting to the Manifesto Corpus database,
+you need to set the API key in your work environment.
+This can be done by passing either a key or the name of a file containing the
+key to manifestoR's `mp_setapikey()` function (see documentation `?mp_setapikey`
+for details).
+Thus, your R script using manifestoR usually will start like this:
+
+```{r eval=FALSE}
+library(manifestoR)
+mp_setapikey("manifesto_apikey.txt")
+```
+```{r eval=TRUE, include=FALSE}
+library(devtools)
+document("../")
+load_all("../")
+mp_setapikey(key.file = "../tests/manifesto_apikey.txt")
+```
+
+This R code presumes that you have stored and downloaded the API key in a file
+name `manifesto_apikey.txt` in your current R working directory.
+
+Note that it is a security risk to store the API key file or a script containing
+the key in public repositories.
+
+## Downloading the Manifesto Project Dataset
+
+You can download the Manifesto Project Dataset (MPDS) with the function `mp_maindataset()`.
+By default the most recent update is returned, but you can specify older versions
+to get for reproducibility (type `mp_coreversions()` for a list of version and `?mp_maindataset`
+for usage information).
+For analysing the dataset using scaling functions, refer
+to the section [Using manifestoR's scaling functions](#using-manifestors-scaling-functions) below.
+
+## Downloading documents
+
+(Bulk-)Downloading documents works via the function `mp_corpus(...)`.
+It can be called with a logical expression specifying the subset of the Manifesto
+Corpus that you want to download:
+
+```{r}
+my_corpus <- mp_corpus(countryname == "Austria" & edate > as.Date("2000-01-01"))
+my_corpus
+```
+
+`mp_corpus` returns a `ManifestoCorpus` object, a subclass of `Corpus` as defined
+in the natural language processing package `tm` (Feinerer & Hornik 2015).
+Following `tm`s logic, a `ManifestoCorpus` consists of `ManifestoDocuments`.
+Documents in corpus can be indexed via their `manifesto_id` (consisting of
+the CMP party code, an underscore, and either the election year, if unambigous,
+or the election year and month) or via their position in the corpus.
+For both, corpus and documents, `tm` provides accessor functions to the corpus
+and documents content and metadata:
+
+```{r}
+head(content(my_corpus[["42110_200211"]]))
+head(content(my_corpus[[1]]))
+meta(my_corpus[["42110_200211"]])
+```
+
+For more information on the available metadata per document, refer to the section
+[Using the document metadata](#using-the-document-metadata) below.
+For more information on how to use the text mining functions provided by `tm`
+for the data from the Manifesto Corpus, refer to the section
+[Processing and analysing the corpus documents](#processing-and-analysing-the-corpus-documents) below.
+
+If you want to get your results as a `tibble`/`data.frame` object instead of a
+`ManifestoCorpus` object, you can simply set the `as_tibble` parameter of `mp_corpus`
+to TRUE or use the convenience shorthand function `mp_corpus_df` that does the same.
+By default it also contains the the main document-level metadata ("manifesto_id",
+"party", "date", "language", "annotations", "translation_en") but you can also opt
+for "none" or "all" metadata by specifying the `tibble_metadata` parameter accordingly.
+
+```{r, warning=FALSE}
+my_corpus_df <- mp_corpus(countryname == "Austria" & edate > as.Date("2000-01-01"),
+                          as_tibble = TRUE)
+# or alternatively with the shorthand function:
+# my_corpus_df <- mp_corpus_df(countryname == "Austria" & edate > as.Date("2000-01-01"))
+# and to include all document-level metadata
+# my_corpus_df <- mp_corpus_df(countryname == "Austria" & edate > as.Date("2000-01-01"),
+#                              tibble_metadata = "all")
+my_corpus_df
+```
+
+The variable names in the logical expression used for querying the corpus
+database (`countryname` and `edate` in the example above) can be any column names from the
+Manifesto Project's Main Dataset (please keep in mind that this mechanism always uses the
+most recent version of the Dataset) or your current R environment. The Main Dataset
+itself is available in manifestoR via the function `mp_maindataset()`:
+
+```{r, warning = FALSE}
+mpds <- mp_maindataset()
+print(head(names(mpds)))
+
+mp_corpus(rile > 60)
+# ... which is the same as
+# mp_corpus(mpds %>% filter(rile > 60))
+```
+
+Alternatively, you can download election programmes on an individual basis
+by listing combinations of party ids and election dates in a `data.frame`
+and passing it to `mp_corpus(...)`:
+
+```{r}
+wanted <- data.frame(party = c(41220, 41320),
+                     date = c(201709, 201709))
+mp_corpus(wanted)
+```
+
+The party ids (41220 and 41320 in the example) are the ids as in the Manifesto Project's
+main dataset.
+They can be found in the current dataset documentation at
+[https://manifesto-project.wzb.eu/datasets]() or in the main dataset.
+
+Note that we received only 1 document, while querying for two.
+This is because the party with the id 41220 
+(`r mpds %>% filter(party == 41220) %>% pull(partyabbrev) %>% .[1]`) 
+did not run for elections in September 2017.
+
+Also, not for every party and election observation of the Manifesto Project Dataset manifesto documents are
+available in the Manifesto Project Corpus and for some only the machine-readable texts are available but not
+the digitally annotated codes. In case of such missing documents you get an information message containing
+the number of missing documents and the reasons for the missingness. For details you can also check our
+[corpus information webpage](https://manifesto-project.wzb.eu/information/documents/corpus).
+
+You can check the document availability of your query beforehand with the function
+`mp_availability(...)`:
+```{r}
+mp_availability(countryname == "Belgium")
+```
+
+And you can even use the result of this ability request for further specification of your corpus query
+as it is basically a data.frame that contains party-date combinations with the information on the availability of
+machine-readable text (`manifestos`), machine-readable codings (`annotations`), machine-readable english translations
+(`translation_en`), PDF originals (`originals`), and `language`:
+
+```{r}
+avail <- mp_availability(countryname == "Belgium")
+wanted_be <- avail %>% dplyr::filter(language == "dutch" & annotations == TRUE)
+mp_corpus(wanted_be)
+```
+
+Since corpus version 2024-1 there are also english translations available for a large number of documents in the
+corpus. You can can simply request them by setting the `translation`-parameter of the `mp_corpus` function to "en".
+This returns the english translation instead of the original language text. For documents that are originally in
+english, it returns the original english text. In case no translation is available for a requested document a
+not-found warning happens.
+
+```{r warning = FALSE}
+my_corpus_en = mp_corpus(wanted, translation = "en")
+my_corpus_en
+```
+```{r, eval = FALSE}
+head(content(my_corpus_en[[1]]))
+```
+```{r, echo = FALSE}
+head(content(my_corpus_en[[1]])) %>% simple_pretty_print %>% cat
+```
+
+In case you need parallely both the original language text and the english translations you can
+make use of our convenience function `mp_corpus_df_bilingual` which returns a tibble/data.frame
+with the "text" column containing the original language text and a column "text_en" containing
+the english translation.
+
+```{r, warning = FALSE}
+mp_corpus_df_bilingual(wanted, translation = "en")
+```
+
+You can get all available documents with english translations by querying first the metadata and
+then using the `translation_en` metadata value. To learn more about querying metadata check the section:
+ [Using the document metadata](#using-the-document-metadata).
+
+```{r warning = FALSE}
+wanted_en = mp_metadata(TRUE) %>%
+  dplyr::filter(translation_en == TRUE)
+# ... or if you also want to include the original english documents
+wanted_en = mp_metadata(TRUE) %>%
+  dplyr::filter(translation_en == TRUE | language == "english")
+
+wanted_en %>%
+  dplyr::select(party, date, manifesto_id, language, annotations, translation_en)
+# ... and to query their english text
+# corpus <- mp_corpus(wanted_en, translation = "en")
+# ... their english text directly as tibble/data.frame
+# corpusdf <- mp_corpus_df(wanted_en, translation = "en")
+```
+
+Downloaded documents are automatically cached locally. To learn about
+the caching mechanism read the section
+[Efficiency and reproducibility: caching and versioning](#efficiency-and-reproducibility-caching-and-versioning)
+below.
+
+## Viewing original documents
+
+Apart from the machine-readable, annotated documents, the Manifesto Corpus also
+contains original layouted election programmes in PDF format. If available, they
+can be viewed via the function `mp_view_originals(...)`, which takes exactly the
+format of arguments as `mp_corpus(...)` ([see above](#downloading-documents)), e.g.:
+
+```{r eval = FALSE}
+mp_view_originals(party == 41320 & date == 200909)
+```
+
+The original documents are shown in you system's web browser. All URLs opened
+by this function refer only to the Manifesto Project's Website. If you want to
+open more than 5 PDF documents at once, you have to specify the maximum number
+of URLs allows to be opened manually via the parameter `maxn`. Since opening
+URLs in an external browser costs computing resources on your local machine,
+make sure to use only values for `maxn` that do not slow down or make your computer
+unresponsive.
+
+```{r eval = FALSE}
+mp_view_originals(party > 41000 & party < 41999, maxn = 20)
+```
+
+## Accessing the category scheme and category descriptions
+
+The main dataset and the corpus are using the alphanumerical category codes of the 
+manifesto project category scheme. To get a data.frame of these codes together with 
+their domains, variable names, titles, descriptions, labels etc. you can use the 
+function `mp_codebook()` (or `mp_describe_code(...)` to show/use the information for 
+the code(s) you are interested in).
+
+```{r}
+mp_codebook()
+mp_describe_code("504")
+```
+
+Finally, you can also use `mp_view_codebook(...)` to start an interactive website for
+browsing the category information.
+
+
+# Processing and analysing the corpus documents
+
+As in `tm`, the textual content of a document is returned by the function `content`:
+
+```{r}
+txt <- content(my_corpus[["42110_200610"]])
+class(txt)
+head(txt, n = 4)
+```
+
+## Working with the CMP codings
+
+The central way for accessing the CMP codings is the accessor method `codes(...)`.
+It can be called on `ManifestoDocument`s and `ManifestoCorpus`s and returns a vector
+of the CMP codings attached to the quasi-sentences of the document/corpus in a row:
+
+```{r}
+doc <- my_corpus[["42110_200610"]]
+head(codes(doc), n = 15)
+head(codes(my_corpus), n = 15)
+```
+
+Thus you can for example use R's functionality to count the codes or select quasi-
+sentences (units of texts) based on their code:
+```{r}
+table(codes(doc))
+
+doc_subcodes <- subset(doc, codes(doc) %in% c(202, 503, 607))
+length(doc_subcodes)
+length(doc_subcodes)/length(doc)
+```
+
+More detailed information on the CMP coding scheme can be found in 
+[Accessing the category scheme and category descriptions](#accessing-the-category-scheme-and-category-descriptions) or 
+in the online documentation of the Manifesto Project coding handbooks at 
+[https://manifesto-project.wzb.eu/information/documents/handbooks]().
+
+## Working with additional layers of codings
+
+Besides the main layer of CMP codings, you can create, store and access additional
+layers of codings in `ManifestoDocument`s by passing a name of the coding layer 
+as additional argument to the function `codes()`:
+
+```{r}
+## assigning a dummy code of alternating As and Bs
+codes(doc, "my_code") <- rep_len(c("A", "B"), length.out = length(doc))
+head(codes(doc, "my_code"))
+```
+
+You can view the names of the coding layers stored in a `ManifestoDocument` with
+the function `code_layers()`:
+```{r}
+code_layers(doc)
+```
+
+Note that certain documents downloaded from the Manifesto Corpus Database already
+have a second layer of codes named `eu_code`. These are codes that have been assigned
+to quasi-sentences by CMP coders additionally to the main CMP code to indicate
+policy statements that should or should not be implemented on the level of the
+European union. The documents that were coded in this way are marked in the
+corpus' metadata with the flag `has_eu_code`
+(see below [Using the document metadata](#using-the-document-metadata)).
+Note that, since these codes also have been used for computing the `per` and `rile`
+variables in the Manifesto Project Main Dataset, they are also used in `manifestoR`s
+`count_codes` and `rile` functions (see below [Scaling texts](#scaling-texts)) if the respective metadata flag is present.
+
+## Text mining tools
+
+Since the Manifesto Corpus uses the infrastructure of the `tm` package
+(Feinerer & Hornik 2015), all of `tm`s filtering and transformation functionality
+can be applied directly to the downloaded `ManifestoCorpus`.
+
+```{r}
+library(tm)
+```
+
+For example, standard natural language processors are available to clean the corpus:
+
+```{r}
+head(content(my_corpus[["42110_200809"]]))
+corpus_cleaned <- tm_map(my_corpus, removePunctuation)
+corpus_nostop <- tm_map(corpus_cleaned, removeWords, stopwords("german"))
+head(content(corpus_nostop[["42110_200809"]]))
+```
+
+So is analysis in form of term document matrices:
+```{r}
+tdm <- TermDocumentMatrix(corpus_nostop)
+inspect(tdm[c("menschen", "wahl", "familie"),])
+findAssocs(tdm, "stadt", 0.97) ## find correlated terms, see ?tm::findAssocs
+```
+
+For more information about the functionality provided by the `tm`,
+please refer to its [documentation](https://CRAN.R-project.org/package=tm/vignettes/tm.pdf).
+
+## Selecting relevant parts of text
+
+For applications in which not the entire text of a document is of interest, but
+rather a subset of the quasi-sentences matching certain criteria,
+`manifestoR` provides a function `subset(...)` working just like R's internal
+`subset` function.
+
+It can, for example, be used to filter quasi-sentences based on codes or the text:
+
+```{r}
+# subsetting based on codes (as example above)
+doc_subcodes <- subset(doc, codes(doc) %in% c(202, 503, 607))
+length(doc_subcodes)
+
+# subsetting based on text
+doc_subtext <- subset(doc, grepl("Demokratie", content(doc)))
+```
+
+```{r, eval = FALSE}
+head(content(doc_subtext), n = 3)
+```
+```{r, echo = FALSE}
+head(content(doc_subtext), n = 3) %>% simple_pretty_print %>% cat
+```
+
+```{r}
+head(codes(doc_subtext), n = 10)
+```
+
+Via `tm_map` the filtering operations can also be applied to an entire corpus:
+```{r}
+corp_sub <- tm_map(my_corpus, function(doc) {
+  subset(doc, codes(doc) %in% c(202, 503, 607))
+})
+```
+```{r, eval = FALSE}
+head(content(corp_sub[[3]]))
+```
+```{r, echo = FALSE}
+head(content(corp_sub[[3]])) %>% simple_pretty_print %>% cat
+```
+```{r}
+head(codes(corp_sub))
+```
+
+For convenience, it is also possible to filter quasi-sentences with specific
+codes directly when downloading a corpus. For this, the additional argument
+`codefilter` with a list of CMP codes of interest is passed to `mp_corpus`:
+```{r, warning=FALSE}
+corp_sub <- mp_corpus(countryname == "Australia", codefilter = c(103, 104))
+```
+```{r, eval = FALSE}
+head(content(corp_sub[[1]]))
+```
+```{r, echo = FALSE}
+head(content(corp_sub[[1]])) %>% simple_pretty_print %>% cat
+```
+```{r}
+head(codes(corp_sub))
+```
+
+## Using the document metadata
+
+Each document in the Manifesto Corpus has meta information about itself attached.
+They can be accessed via the function `meta`:
+```{r}
+meta(doc)
+```
+
+It is possible to access and also modify specific metadata entries:
+```{r}
+meta(doc, "party")
+meta(doc, "manual_edits") <- TRUE
+meta(doc)
+```
+
+Document metadata can also be bulk-downloaded with the function `mp_metadata`,
+taking the same set of parameters as `mp_corpus`:
+```{r warning=FALSE}
+metas <- mp_metadata(countryname == "Spain")
+head(metas)
+```
+
+The field ...
+
+* ... `party` contains the party id from the Manifesto Project Dataset.
+* ... `date` contains the month of the election in the same format as in the
+Manifesto Project Dataset (`YYYYMM`)
+* ... `language` specifies the language of the document as a word.
+* ... `has_eu_code` is TRUE for documents in which the additional coding layer `eu_code` is present. These codes have been assigned to quasi-sentences by CMP coders additionally to the main CMP code to indicate policy statements that should or should not be implemented on the level of the European union.
+* ... `is_primary_doc` is FALSE only in cases where for a single party and
+election date multiple manifestos are available and this is the document not used
+for coding by the Manifesto Project.
+* ... `may_contradict_core_dataset` is TRUE for documents where the CMP codings
+in the corpus documents might be inconsistent with the coding aggregates in the
+Manifesto Project's Main Dataset. This applies to manifestos which have been either
+recoded after they entered the dataset or cases where the dataset entries are
+derived from hand-written coding sheets used prior to the digitalization of the
+Manifesto Project's data workflow, but the documents were digitalized and added
+to the Manifesto Corpus afterwards.
+* ... `annotations` is TRUE whenever there are CMP codings available for the document.
+* ... `handbook` an integer that indicates the version of the coding instructions that was used for the coding (e.g. 4 or 5) (since 2016-6).
+* ... `title` the title of the manifesto (in original language) (since 2017-1).
+* ... `translation_en` is TRUE whenever an english translation is available for the document (since 2024-1).
+
+The other metadata entries have primarily technical functions for communication
+between the `manifestoR` package and the online database (for more information have
+a look at the online documentation of the [Manifesto Corpus](https://manifesto-project.wzb.eu/information/documents/corpus)).
+
+
+# Efficiency and reproducibility: caching and versioning
+
+To save time and network traffic, `manifestoR` caches all downloaded data and
+documents in your computer's working memory and connects to the online database
+only when data is required that has not been downloaded before.
+
+```{r eval=TRUE, include=FALSE}
+mp_emptycache()
+```
+
+```{r message=TRUE, warning=FALSE}
+corpus <- mp_corpus(wanted)
+subcorpus <- mp_corpus(wanted[3:7,])
+```
+
+Note that in the second query no message informing about the connection to the
+Manifesto Project's Database is printed, since no data is actually downloaded.
+
+This mechanism also ensures **reproducibility** of your scripts, analyses
+and results: executing your code again will yield the same results, even if
+the Manifesto Project's Database is updated in the meantime.
+Since the cache is only stored in the working memory, however, in order to ensure
+reproducibility across R sessions, it is advisable to
+**save the cache to the hard drive** at the end of analyses and load it in the
+beginning:
+
+```{r eval=FALSE}
+mp_save_cache(file = "manifesto_cache.RData")
+
+## ... start new R session ... then:
+
+library(manifestoR)
+mp_setapikey("manifesto_apikey.txt")
+mp_load_cache(file = "manifesto_cache.RData")
+```
+
+This way `manifestoR` always works with the same snapshot of the Manifesto Project
+Database and Corpus, saves a lot of unnecessary online traffic and also enables
+you to continue with your analyses offline.
+
+Each snapshot of the Manifesto Corpus is identified via a version number, which is
+stored in the cache together with the data and can be accessed via
+```{r}
+mp_which_corpus_version()
+```
+
+When collaborating on a project with other researchers, it is advisable to use
+the same corpus version for reproducibility of the results.
+`manifestoR` can be set to use a specific version with the functions
+```{r, eval = FALSE}
+mp_use_corpus_version("2015-3")
+```
+
+Note that `mp_use_corpus_version` instantly updates already locally cached data
+to the desired new corpus version and that such updating is not yet implemented
+for translated manifestos.
+
+In order to guarantee reproducibility of **published work**, please also mention
+the corpus version id used for the reported analyses in the publication.
+
+For updating locally cached data to the most recent version of the
+Manifesto Project Corpus, `manifestoR` provides two functions:
+
+```{r}
+mp_check_for_corpus_update()
+mp_update_cache()
+mp_check_for_corpus_update()
+```
+
+For **full reproducibility** of your final scripts you currently have to take into
+account that using the approach of directly specifying a logical expression
+for `mp_corpus*`/`mp_metadata` (e.g. `mp_corpus(party == 41320 & date >= 201709)`)
+makes use of the most recent version of the dataset (via `mp_maindataset()`) and thus
+to preserve the version of the dataset used for querying corpus documents and metadata
+you should query and filter the dataset directly and then provide the result to the
+`mp_corpus`/`mp_metadata` function:
+
+```{r}
+mpds <- mp_maindataset(version = "MPDS2020a")
+wanted <- mpds %>% filter(party == 41320 & date >= 201709)
+wanted
+mp_corpus(wanted)
+# ... can alternatively also be passed directly to the mp_corpus function
+# mp_corpus(mpds %>% filter(party == 41320 & date >= 201709))
+```
+
+For more detailed information on the caching mechanism and on how to use and load
+specific snapshots of the Manifesto Corpus, refer to the R documentations of the
+functions mentioned here as well `mp_use_corpus_version`, `mp_corpusversions`,
+`mp_which_corpus_version`.
+
+
+# Exporting documents
+
+If required `ManifestoCorpus` as well as `ManifestoDocument` objects can be
+converted to R's internal `data.frame` format and processed further:
+```{r}
+doc_df <- as_tibble(as.data.frame(doc))
+head(doc_df)
+```
+
+The function also provides a parameter to include all available metadata in
+the export:
+```{r}
+doc_df_with_meta <- as.data.frame(doc, with.meta = TRUE)
+print(names(doc_df_with_meta))
+```
+
+For more information on the available metadata per document, refer to the section
+[Using the document metadata](#using-the-document-metadata) above.
+
+Note again that also all functionality provided by `tm`, such as `writeCorpus`
+is available on a `ManifestoCorpus`.
+
+# Scaling texts
+
+Scaling of political content refers to the estimation of its location in a policy
+space (Grimmer & Stewart 2013). `manifestoR` provides several functions to scale coded documents by
+known routines such as the RILE measure (see sections
+[Using manifestoR's scaling functions](#using-manifestors-scaling-functions)),
+as well as infrastructure to create new scales (see section [Writing custom scaling functions](#writing-custom-scaling-functions)) and statistical analysis routines for the
+distributions of scaling functions (see section [Bootstrapping scaling function distributions and standard errors](#bootstrapping-scaling-function-distributions-and-standard-errors)).
+
+## Using manifestoR's scaling functions
+
+Implementationwise, a scaling function in `manifestoR` takes a data.frame of cases
+and outputs a position value for each case. The Manifesto Project Dataset (MPDS)
+can be downloaded in `manifestoR` using the function `mp_maindataset()` (see section
+[Downloading the Manifesto Project Dataset](#downloading-the-manifesto-project-dataset) above). Then you can e.g. compute the RILE scores of cases from the main dataset by calling:
+
+```{r}
+mpds <- mp_maindataset()
+rile(subset(mpds, countryname == "Albania"))
+```
+
+What variables are used from the input data depends on the scaling function. All
+currently implemented functions use only the percentages of coded categories,
+in the form of variables starting with "per" as in the Manifesto Project Dataset.
+The following functions are currently available:
+
+* RILE according to Laver & Budge (1992): `rile`
+* logit rile according to Lowe et al. (2011): `logit_rile`
+* Vanilla scaling according to Gabel & Huber (2000): `vanilla`
+* Franzmann & Kaiser (2009): `franzmann_kaiser`
+* Issue attention diversity according to Greene (2015): `issue_attention_diversity`
+* Programmatic clarity measure according to Giebeler et al. (2015): `mp_clarity`
+* Nicheness measures according to Bischof (2015) or Meyer and Miller (2013): `mp_nicheness`
+* ... (more scaling functions are planned and contributions are welcome, see
+[Contributing to manifestoR](#contributing-to-manifestor)).
+
+To apply scaling functions directly to coded documents or corpora
+you can use the function `mp_scale`. It takes a `ManifestoCorpus`
+or `ManifestoDocument` and returns the scaled positions for each document:
+
+```{r message=FALSE}
+corpus <- mp_corpus(countryname == "Romania")
+mp_scale(corpus, scalingfun = logit_rile)
+```
+
+## Writing custom scaling functions
+
+Writing custom scaling functions for texts in `manifestoR` is easy, since it
+requires nothing more than writing a function that takes a `data.frame` of cases
+as input and returns a vector of values. `mp_scale` provides the mechanism
+that converts a coded text to a `data.frame` with "per" variables such that your function
+can handle it:
+
+```{r}
+custom_scale <- function(data) { 
+  data$per402 - data$per401
+}
+mp_scale(corpus, scalingfun = custom_scale)
+```
+
+In addition, `manifestoR` provides several function templates you can use for
+creating scales, e.g. a weighted sum of per variables
+(`scale_weighted`), the logit ratio of category counts (`scale_logit`)
+or ratio scaling as suggested by Kim and Fording (1998) and by Laver & Garry (2000)
+(`scale_ratio_1`). For example, the ratio equivalent to the simple function
+above can be implemented as:
+```{r}
+custom_scale <- function(data) {
+    scale_ratio_1(data, pos = c("per402"), neg = c("per401"))
+}
+mp_scale(corpus, scalingfun = custom_scale)
+```
+
+For details on these template functions, their parameters and how to use them,
+see the R documentation `?scale`.
+
+## Bootstrapping scaling function distributions and standard errors
+
+In order to better evaluate the significance of analysis results based on
+scaled coded texts, Benoit, Mikhaylov, and Laver (2009) proposed to approximate
+the standard errors of the scale variable by bootstrapping its distribution.
+This procedure is available via the function `mp_bootstrap`:
+
+```{r}
+data <- subset(mpds, countryname == "Sweden" & date > 200501)
+mp_bootstrap(data, fun = rile)
+```
+
+Note that the argument `fun` can be any scaling function and the returned `data.frame`
+contains the scaled position as well as the bootstrapped standard deviations.
+Also, with the additional parameters `statistics`, you can compute arbitrary statistics
+from the bootstrapped distribution, such as variance or quantiles:
+```{r}
+custom_scale <- function(data) { 
+  data$per402 - data$per401
+}
+mp_bootstrap(data,
+             fun = custom_scale,
+             statistics = list(var, 0.025, 0.975))
+```
+
+
+# Additional Information
+
+For a more detailed reference and complete list of the functions provided
+by `manifestoR`, see the R package reference manual on CRAN:
+[https://CRAN.R-project.org/package=manifestoR/manifestoR.pdf](https://CRAN.R-project.org/package=manifestoR/manifestoR.pdf)
+
+## Contacting the Manifesto Project team
+
+You can get in touch with the Manifesto Project team by e-mailing to
+[manifesto-communication@wzb.eu](mailto:manifesto-communication@wzb.eu).
+We are happy to receive your feedback and answer questions about the Manifesto
+Corpus, including errors or obscurities in the corpus documents. In this case
+please make sure to include the party id, election date and the corpus version
+you were working with (accessible via `mp_which_corpus_version`).
+For general questions about the Project and dataset, please check the
+[Frequently Asked Questions](https://manifesto-project.wzb.eu/questions) section
+on our website first.
+
+## Contributing to manifestoR
+
+We welcome bug reports, feature requests or (planned) source code contributions for the
+`manifestoR` package. For all of these, best refer to our repository on github:
+[https://github.com/ManifestoProject/manifestoR](https://github.com/ManifestoProject/manifestoR).
+For more information, please refer to the Section "Developing" in the README file
+of the github repository.
+
+\newpage
+
+# References
+
+Benoit, K., Laver, M., & Mikhaylov, S. (2009). Treating Words as Data with Error: Uncertainty in Text Statements of Policy Positions. American Journal of Political Science, 53(2), 495-513. https://doi.org/10.1111/j.1540-5907.2009.00383.x  
+
+Bischof, D. (2015). Towards a Renewal of the Niche Party Concept Parties, Market Shares and Condensed Offers. Party Politics.
+
+Feinerer, I., & Hornik, K. (2015). Tm: Text Mining Package. https://CRAN.R-project.org/package=tm/index.html
+
+Franzmann, S., & Kaiser, A. (2006): Locating Political Parties in Policy Space. A Reanalysis of Party Manifesto Data, Party Politics, 12:2, 163-188
+
+Gabel, M. J., & Huber, J. D. (2000). Putting Parties in Their Place: Inferring Party Left-Right Ideological Positions from Party Manifestos Data. American Journal of Political Science, 44(1), 94-103.
+
+Giebler, H., Lacewell, O.P., Regel, S., and Werner, A. (2015). Niedergang oder Wandel? Parteitypen und die Krise der repraesentativen Demokratie. In Steckt die Demokratie in der Krise?, ed. Wolfgang Merkel, 181-219. Wiesbaden: Springer VS
+
+Greene, Z. (2015). Competing on the Issues How Experience in Government and Economic Conditions Influence the Scope of Parties' Policy Messages. Party Politics.
+
+Grimmer, J., & Stewart, B.. 2013. Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis 21(3): 267–97.
+
+Kim, H., & Fording, R. C. (1998). Voter ideology in western democracies, 1946-1989. European Journal of Political Research, 33(1), 73-97.
+
+Laver, M. & Budge, I., eds. (1992). Party Policy and Government Coalitions, Houndmills, Basingstoke, Hampshire: The MacMillan Press 1992
+
+Laver, M., & Garry, J. (2000). Estimating Policy Positions from Political Texts. American Journal of Political Science, 44(3), 619-634.
+
+Lehmann, P., Franzmann, S., Al-Gaddooa, D., Burst, T., Ivanusch, C., Lewandowski, J., Regel, S., Riethmüller, F., Zehnter, L. (2025): Manifesto Corpus. Version: 2025-1. Berlin: WZB Berlin Social Science Center/Göttingen: Institute for Democracy Research (IfDem).
+
+Lowe, W., Benoit, K., Mikhaylov, S., & Laver, M. (2011). Scaling Policy Preferences from Coded Political Texts. Legislative Studies Quarterly, 36(1), 123-155.
+
+Meyer, T.M., & Miller, B. (2013). The Niche Party Concept and Its Measurement. Party Politics 21(2): 259-271.
+
+Lehmann, P., Franzmann, S., Al-Gaddooa, D., Burst, T., Ivanusch, C., Regel, S., Riethmüller, F., Volkens, A., Weßels, B., Zehnter, L. (2025): The Manifesto Data Collection. Manifesto Project (MRG/CMP/MARPOR). Version 2025a. Berlin: Wissenschaftszentrum Berlin für Sozialforschung (WZB) / Göttingen: Institut für Demokratieforschung (IfDem). https://doi.org/10.25522/manifesto.mpds.2025a 

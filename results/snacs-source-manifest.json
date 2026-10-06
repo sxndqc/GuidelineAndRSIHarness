@@ -1,0 +1,42 @@
+{
+  "repository": "nert-nlp/streusle",
+  "commit": "8ba61fe4f216e7967500a862554a4fff79d25f5d",
+  "files": [
+    {
+      "file": "train.json",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/train/streusle.ud_train.json",
+      "sha256": "36aef0205a6e2e154b681d7520858693a264d3c40ba7d97c089345bbd1149a22",
+      "bytes": 16845570
+    },
+    {
+      "file": "dev.json",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/dev/streusle.ud_dev.json",
+      "sha256": "56cc1783962ce8c9f06b7649ffdccb48cea14ee7e4a8be2e35214ffc71303e9a",
+      "bytes": 2050638
+    },
+    {
+      "file": "test.json",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/test/streusle.ud_test.json",
+      "sha256": "f8144e6227db2e845cda4aa832f8d5644cb40b9e743d1dbe05663dd687d2c70c",
+      "bytes": 2051895
+    },
+    {
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/LICENSE.txt",
+      "sha256": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7",
+      "bytes": 20014
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/README.md",
+      "sha256": "d3c46099ad4f199862decf853e6ae0d7cb135176722a03cfe671e28b415473dd",
+      "bytes": 21366
+    },
+    {
+      "file": "supersenses.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/supersenses.py",
+      "sha256": "6f43c624286901c2db13b6185ca051f168cbd34aebbcbb424da1e39bb73bca0b",
+      "bytes": 4553
+    }
+  ]
+}

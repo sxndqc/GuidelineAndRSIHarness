@@ -1,0 +1,2460 @@
+{
+  "reviews-001325-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-001325-0003": {
+    "swes:5": [
+      "p.Locus",
+      "p.Path"
+    ]
+  },
+  "reviews-001325-0004": {
+    "swes:2": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-002317-0002": {
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-005760-0003": {
+    "swes:1": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:6": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:7": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-005760-0004": {
+    "swes:2": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:5": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:10": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-011806-0001": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-011806-0002": {
+    "swes:3": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:13": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-012047-0002": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-012047-0003": {
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:14": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-014764-0001": {
+    "swes:3": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-014764-0003": {
+    "swes:3": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:7": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-022273-0002": {
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-024306-0003": {
+    "swes:7": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-025516-0002": {
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-025516-0003": {
+    "swes:5": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-025894-0002": {
+    "swes:14": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-025894-0003": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:11": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:18": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-025894-0005": {
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-028996-0002": {
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:10": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-028996-0003": {
+    "swes:11": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-030395-0002": {
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-030430-0002": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:10": [
+      "p.Agent",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-034320-0003": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:18": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-034858-0001": {
+    "swes:3": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-034995-0002": {
+    "swes:9": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:13": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:17": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-035993-0001": {
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-035993-0002": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-037179-0002": {
+    "swes:6": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Path"
+    ],
+    "swes:34": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-038523-0002": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:5": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-039173-0001": {
+    "swes:10": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:29": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-042085-0002": {
+    "swes:5": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-042085-0003": {
+    "swes:4": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-042530-0002": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:11": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-042530-0003": {
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-042530-0004": {
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-045972-0002": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-046500-0001": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-047891-0001": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-047891-0002": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-048201-0004": {
+    "swes:6": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-048644-0001": {
+    "swes:6": [
+      "p.Agent",
+      "p.Agent"
+    ],
+    "swes:7": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-048644-0002": {
+    "swes:1": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:6": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-048644-0003": {
+    "swes:6": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-054269-0002": {
+    "swes:9": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:12": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:21": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:22": [
+      "p.Approximator",
+      "p.Approximator"
+    ],
+    "smwes:3": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-058009-0001": {
+    "swes:4": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-059655-0001": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-059655-0003": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-059685-0001": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-060396-0001": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-060396-0002": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-080814-0002": {
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-081116-0001": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-083563-0001": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-085009-0002": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:9": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-085009-0003": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-086914-0002": {
+    "swes:3": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-087368-0001": {
+    "swes:2": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-087368-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:18": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-087368-0003": {
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-088954-0001": {
+    "swes:14": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:15": [
+      "p.Agent",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-089136-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-097548-0001": {
+    "swes:20": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:22": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:27": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:28": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-101864-0002": {
+    "swes:5": [
+      "p.Approximator",
+      "p.Approximator"
+    ]
+  },
+  "reviews-103519-0002": {
+    "swes:18": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:33": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-103519-0003": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-104703-0003": {
+    "swes:9": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-107608-0001": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-107608-0002": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:11": [
+      "p.Agent",
+      "p.Agent"
+    ],
+    "swes:14": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-107608-0003": {
+    "swes:17": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:19": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:22": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:23": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:25": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-118668-0003": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-118668-0004": {
+    "swes:4": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:16": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-118668-0006": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-118679-0001": {
+    "swes:8": [
+      "p.Explanation",
+      "p.Explanation"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-118679-0002": {
+    "swes:9": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-120724-0001": {
+    "swes:8": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-122514-0001": {
+    "swes:3": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-122514-0002": {
+    "swes:6": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:16": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-122564-0001": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-122564-0003": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-122564-0004": {
+    "swes:3": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-126086-0001": {
+    "swes:14": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-128808-0002": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-128808-0003": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-128808-0004": {
+    "swes:4": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-130216-0001": {
+    "swes:7": [
+      "p.Time",
+      "p.Interval"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:16": [
+      "p.Time",
+      "p.Interval"
+    ]
+  },
+  "reviews-130216-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:17": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:19": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-130647-0003": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:6": [
+      "p.Path",
+      "p.Path"
+    ],
+    "swes:9": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:12": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-131965-0002": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:8": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:17": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:27": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:39": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:42": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-138110-0001": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-138249-0001": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-138249-0002": {
+    "swes:7": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:10": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:12": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:15": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:22": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:23": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-145645-0002": {
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:15": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:19": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-145645-0003": {
+    "swes:15": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-146820-0002": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-153921-0002": {
+    "swes:5": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-153921-0004": {
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-158285-0001": {
+    "swes:2": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:18": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-163250-0002": {
+    "swes:11": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-163250-0003": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-165032-0001": {
+    "swes:6": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-165032-0002": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:16": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:25": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-169610-0002": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:10": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:14": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-169610-0003": {
+    "swes:1": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-171255-0002": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:18": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-171877-0002": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-171877-0003": {
+    "swes:4": [
+      "p.Explanation",
+      "p.Explanation"
+    ]
+  },
+  "reviews-178726-0003": {
+    "swes:3": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:13": [
+      "p.Agent",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-178726-0004": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-178726-0007": {
+    "swes:2": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-184290-0002": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-186235-0001": {
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:13": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-186235-0002": {
+    "swes:13": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:15": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:16": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-188382-0001": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-188382-0002": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:10": [
+      "p.Explanation",
+      "p.Explanation"
+    ],
+    "swes:20": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-192399-0001": {
+    "swes:2": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-192399-0003": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-193257-0002": {
+    "swes:7": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-193257-0003": {
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-199045-0002": {
+    "swes:4": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-200566-0002": {
+    "swes:2": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:12": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:14": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-200668-0001": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-200668-0002": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-206303-0002": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-206303-0004": {
+    "swes:4": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:20": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-206303-0005": {
+    "swes:5": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-207348-0001": {
+    "swes:2": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-210153-0002": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-210875-0001": {
+    "swes:4": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-210875-0002": {
+    "swes:10": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:17": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-210875-0003": {
+    "swes:9": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:22": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-211933-0001": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-211933-0002": {
+    "swes:12": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:22": [
+      "p.Direction",
+      "p.Direction"
+    ],
+    "swes:23": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-211933-0003": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-212369-0002": {
+    "swes:4": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-214912-0001": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-214912-0003": {
+    "swes:3": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-214912-0004": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-216281-0001": {
+    "smwes:1": [
+      "p.Manner",
+      "p.Locus"
+    ]
+  },
+  "reviews-216281-0002": {
+    "swes:3": [
+      "p.Approximator",
+      "p.Approximator"
+    ],
+    "smwes:1": [
+      "p.Explanation",
+      "p.Explanation"
+    ]
+  },
+  "reviews-216281-0003": {
+    "swes:3": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-216281-0004": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-216281-0005": {
+    "swes:10": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-217747-0002": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-217747-0003": {
+    "swes:4": [
+      "p.Approximator",
+      "p.Approximator"
+    ]
+  },
+  "reviews-217747-0004": {
+    "swes:1": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:8": [
+      "p.Agent",
+      "p.Agent"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-223040-0001": {
+    "swes:6": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-224117-0001": {
+    "swes:5": [
+      "p.Approximator",
+      "p.Approximator"
+    ],
+    "swes:6": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-225861-0001": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-225861-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:8": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:11": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-225861-0003": {
+    "swes:8": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-225861-0004": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:16": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-227515-0003": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:16": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-227515-0004": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0003": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0004": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0005": {
+    "swes:4": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-229100-0007": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-229442-0002": {
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229442-0003": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:15": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:22": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-232278-0001": {
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-235190-0002": {
+    "swes:14": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-241108-0001": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-245928-0002": {
+    "swes:7": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-245928-0003": {
+    "swes:5": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-250878-0001": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-251755-0002": {
+    "swes:14": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-251755-0004": {
+    "swes:14": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:15": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-252791-0001": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-252791-0002": {
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-252791-0003": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-254908-0001": {
+    "swes:5": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-254908-0003": {
+    "swes:1": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:21": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-256677-0004": {
+    "swes:8": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-256677-0005": {
+    "swes:5": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-257735-0001": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-257735-0002": {
+    "swes:12": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:30": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-263909-0002": {
+    "swes:3": [
+      "p.Approximator",
+      "p.Approximator"
+    ],
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:15": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-263909-0004": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-264993-0001": {
+    "swes:3": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-264993-0002": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-268952-0002": {
+    "swes:6": [
+      "p.Explanation",
+      "p.Explanation"
+    ]
+  },
+  "reviews-268952-0004": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Source",
+      "p.Source"
+    ],
+    "smwes:2": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-270889-0003": {
+    "swes:8": [
+      "p.EndTime",
+      "p.EndTime"
+    ]
+  },
+  "reviews-275595-0002": {
+    "swes:17": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:18": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-275595-0003": {
+    "swes:14": [
+      "p.Approximator",
+      "p.Approximator"
+    ],
+    "swes:15": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-277703-0001": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-283903-0002": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:4": [
+      "p.Agent",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-286172-0003": {
+    "swes:3": [
+      "p.Direction",
+      "p.Direction"
+    ]
+  },
+  "reviews-287360-0003": {
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-289763-0001": {
+    "swes:3": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-290238-0001": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-290238-0002": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-290238-0003": {
+    "swes:11": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-290238-0004": {
+    "swes:8": [
+      "p.Path",
+      "p.Path"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-294978-0002": {
+    "swes:13": [
+      "p.Approximator",
+      "p.Approximator"
+    ]
+  },
+  "reviews-294978-0003": {
+    "swes:3": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-295935-0001": {
+    "swes:4": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:7": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-296357-0001": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-299169-0002": {
+    "swes:10": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-299169-0003": {
+    "swes:15": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-299524-0001": {
+    "swes:17": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-302465-0004": {
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-302465-0005": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-307170-0001": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:7": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-307170-0002": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-307170-0003": {
+    "swes:3": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:8": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-309258-0002": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-313126-0001": {
+    "swes:8": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-313126-0002": {
+    "swes:11": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-314024-0002": {
+    "swes:11": [
+      "p.Goal",
+      "p.Locus"
+    ],
+    "swes:12": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-314880-0001": {
+    "swes:5": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:9": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-314880-0002": {
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-314880-0003": {
+    "swes:7": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:9": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:11": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:12": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:22": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-314938-0001": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-325330-0002": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-325741-0002": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-325741-0003": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-325741-0004": {
+    "swes:4": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-329807-0001": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-329807-0002": {
+    "swes:7": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-329807-0003": {
+    "swes:8": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-332068-0001": {
+    "swes:10": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:12": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-332068-0002": {
+    "swes:1": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-334928-0001": {
+    "swes:2": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-334928-0002": {
+    "swes:2": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-335490-0002": {
+    "swes:3": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-335490-0005": {
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-336285-0002": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-336285-0003": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-341750-0004": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-341750-0005": {
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-343813-0003": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-346074-0001": {
+    "swes:5": [
+      "p.Whole",
+      "p.Whole"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-346563-0005": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-346563-0006": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-351950-0002": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-353891-0003": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:5": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-353891-0004": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-354474-0002": {
+    "swes:3": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:14": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-354474-0003": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-357217-0004": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Approximator",
+      "p.Approximator"
+    ]
+  },
+  "reviews-357217-0005": {
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-363428-0002": {
+    "swes:3": [
+      "p.Whole",
+      "p.Whole"
+    ]
+  },
+  "reviews-363428-0004": {
+    "swes:5": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:9": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-363482-0002": {
+    "swes:8": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-369608-0002": {
+    "swes:3": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-369608-0003": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-374344-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-374344-0004": {
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-384229-0002": {
+    "swes:3": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-384229-0003": {
+    "swes:14": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-389298-0002": {
+    "swes:12": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:13": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-389298-0003": {
+    "swes:14": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-389298-0004": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-392826-0002": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-392826-0003": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-392826-0004": {
+    "swes:3": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-396046-0001": {
+    "swes:4": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  }
+}

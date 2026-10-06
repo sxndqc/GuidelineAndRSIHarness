@@ -1,0 +1,16 @@
+{
+  "registered_date": "2026-10-06",
+  "status": "fixed_before_test_predictions",
+  "task": "STREUSLE given-target SNACS joint role/function classification",
+  "source_commit": "8ba61fe4f216e7967500a862554a4fff79d25f5d",
+  "methods": ["majority", "lexical_majority", "tfidf_nearest"],
+  "budgets_labeled_sentences": [4, 16, 64, 128],
+  "seeds": [11, 23, 47, 83, 101],
+  "primary_metric": "joint_role_function_accuracy",
+  "secondary_metrics": ["role_accuracy", "function_accuracy", "role_macro_f1", "function_macro_f1", "sentence_exact"],
+  "test_split": "official test, all retained targets",
+  "tuning": "No baseline hyperparameter/model/seed selection using test scores",
+  "uncertainty": "Report adaptation-run SD separately from document-cluster bootstrap intervals; budget points are paired repeated observations",
+  "scope": "Non-LLM controls and implementation validation; not evidence that an AI agent learns from guidelines",
+  "agent_experiments": "NOT RUN: model access and full guideline audit are prerequisites"
+}

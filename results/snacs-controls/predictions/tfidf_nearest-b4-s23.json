@@ -1,0 +1,2460 @@
+{
+  "reviews-001325-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-001325-0003": {
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-001325-0004": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-002317-0002": {
+    "swes:7": [
+      "p.OrgMember",
+      "p.Possessor"
+    ]
+  },
+  "reviews-005760-0003": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-005760-0004": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:10": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-011806-0001": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-011806-0002": {
+    "swes:3": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:13": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-012047-0002": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-012047-0003": {
+    "swes:11": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:15": [
+      "p.OrgMember",
+      "p.Possessor"
+    ]
+  },
+  "reviews-014764-0001": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-014764-0003": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:7": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.OrgMember",
+      "p.Possessor"
+    ]
+  },
+  "reviews-022273-0002": {
+    "swes:8": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-024306-0003": {
+    "swes:7": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-025516-0002": {
+    "smwes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-025516-0003": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-025894-0002": {
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-025894-0003": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:11": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:18": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-025894-0005": {
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-028996-0002": {
+    "swes:8": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-028996-0003": {
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-030395-0002": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-030430-0002": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:10": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-034320-0003": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:18": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-034858-0001": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:7": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:8": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-034995-0002": {
+    "swes:9": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:13": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:17": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-035993-0001": {
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:18": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-035993-0002": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-037179-0002": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:34": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-038523-0002": {
+    "swes:2": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-039173-0001": {
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:29": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-042085-0002": {
+    "swes:5": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-042085-0003": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-042530-0002": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-042530-0003": {
+    "smwes:2": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-042530-0004": {
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-045972-0002": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-046500-0001": {
+    "swes:7": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-047891-0001": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-047891-0002": {
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-048201-0004": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "smwes:1": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-048644-0001": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-048644-0002": {
+    "swes:1": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-048644-0003": {
+    "swes:6": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-054269-0002": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:21": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:22": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-058009-0001": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-059655-0001": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-059655-0003": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-059685-0001": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-060396-0001": {
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:18": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-060396-0002": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-080814-0002": {
+    "smwes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-081116-0001": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-083563-0001": {
+    "swes:6": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:11": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-085009-0002": {
+    "swes:4": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-085009-0003": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-086914-0002": {
+    "swes:3": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-087368-0001": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-087368-0002": {
+    "swes:1": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:18": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-087368-0003": {
+    "smwes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-088954-0001": {
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:15": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-089136-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-097548-0001": {
+    "swes:20": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:22": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:27": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:28": [
+      "p.Agent",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-101864-0002": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-103519-0002": {
+    "swes:18": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:33": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-103519-0003": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-104703-0003": {
+    "swes:9": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-107608-0001": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-107608-0002": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-107608-0003": {
+    "swes:17": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:19": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:22": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:23": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:25": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-118668-0003": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-118668-0004": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-118668-0006": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-118679-0001": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-118679-0002": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-120724-0001": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-122514-0001": {
+    "swes:3": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-122514-0002": {
+    "swes:6": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:10": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:16": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-122564-0001": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-122564-0003": {
+    "swes:9": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-122564-0004": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-126086-0001": {
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-128808-0002": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-128808-0003": {
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-128808-0004": {
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-130216-0001": {
+    "swes:7": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:12": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:16": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-130216-0002": {
+    "swes:1": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:17": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:19": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-130647-0003": {
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:12": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-131965-0002": {
+    "swes:2": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:17": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:19": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:27": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:39": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:42": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-138110-0001": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-138249-0001": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-138249-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:18": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:22": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:23": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-145645-0002": {
+    "swes:12": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:19": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-145645-0003": {
+    "swes:15": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-146820-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-153921-0002": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-153921-0004": {
+    "smwes:2": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-158285-0001": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:16": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:18": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-163250-0002": {
+    "swes:11": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-163250-0003": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-165032-0001": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:9": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-165032-0002": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:14": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:16": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:25": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-169610-0002": {
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:10": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-169610-0003": {
+    "swes:1": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-171255-0002": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:5": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:18": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:19": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-171877-0002": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-171877-0003": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-178726-0003": {
+    "swes:3": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:13": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-178726-0004": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-178726-0007": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-184290-0002": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-186235-0001": {
+    "swes:10": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-186235-0002": {
+    "swes:13": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-188382-0001": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-188382-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:20": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-192399-0001": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-192399-0003": {
+    "swes:2": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-193257-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-193257-0003": {
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-199045-0002": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-200566-0002": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:12": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:14": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-200668-0001": {
+    "swes:2": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-200668-0002": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-206303-0002": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-206303-0004": {
+    "swes:4": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:20": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-206303-0005": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-207348-0001": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-210153-0002": {
+    "swes:6": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-210875-0001": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-210875-0002": {
+    "swes:10": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:15": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:17": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-210875-0003": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:22": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-211933-0001": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-211933-0002": {
+    "swes:12": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:13": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:22": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:23": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-211933-0003": {
+    "swes:6": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:18": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-212369-0002": {
+    "swes:4": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-214912-0001": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-214912-0003": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-214912-0004": {
+    "swes:1": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:10": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-216281-0001": {
+    "smwes:1": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-216281-0002": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-216281-0003": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-216281-0004": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-216281-0005": {
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-217747-0002": {
+    "swes:6": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-217747-0003": {
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-217747-0004": {
+    "swes:1": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-223040-0001": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:8": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-224117-0001": {
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:6": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:11": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-225861-0001": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-225861-0002": {
+    "swes:1": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:11": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:14": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-225861-0003": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-225861-0004": {
+    "swes:2": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:11": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:16": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-227515-0003": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:2": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-227515-0004": {
+    "swes:4": [
+      "p.Force",
+      "p.Force"
+    ],
+    "smwes:2": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-229100-0003": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-229100-0004": {
+    "smwes:1": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-229100-0005": {
+    "swes:4": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-229100-0007": {
+    "swes:2": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-229442-0002": {
+    "swes:11": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-229442-0003": {
+    "swes:7": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:15": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:22": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-232278-0001": {
+    "swes:10": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-235190-0002": {
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-241108-0001": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-245928-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-245928-0003": {
+    "swes:5": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-250878-0001": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-251755-0002": {
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-251755-0004": {
+    "swes:14": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-252791-0001": {
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-252791-0002": {
+    "swes:8": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-252791-0003": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-254908-0001": {
+    "swes:5": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-254908-0003": {
+    "swes:1": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:21": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-256677-0004": {
+    "swes:8": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-256677-0005": {
+    "swes:5": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-257735-0001": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-257735-0002": {
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:30": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-263909-0002": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:15": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-263909-0004": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-264993-0001": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-264993-0002": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:16": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-268952-0002": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-268952-0004": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:19": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-270889-0003": {
+    "swes:8": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-275595-0002": {
+    "swes:17": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:18": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-275595-0003": {
+    "swes:14": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-277703-0001": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-283903-0002": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-286172-0003": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-287360-0003": {
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-289763-0001": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-290238-0001": {
+    "smwes:1": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-290238-0002": {
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-290238-0003": {
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-290238-0004": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-294978-0002": {
+    "swes:13": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-294978-0003": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-295935-0001": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:7": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-296357-0001": {
+    "swes:2": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:14": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-299169-0002": {
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-299169-0003": {
+    "swes:15": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-299524-0001": {
+    "swes:17": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-302465-0004": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-302465-0005": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-307170-0001": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:7": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-307170-0002": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-307170-0003": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-309258-0002": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-313126-0001": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-313126-0002": {
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-314024-0002": {
+    "swes:11": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:12": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-314880-0001": {
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:9": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "smwes:1": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-314880-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-314880-0003": {
+    "swes:7": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:9": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:11": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:12": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:22": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-314938-0001": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-325330-0002": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:18": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-325741-0002": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-325741-0003": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-325741-0004": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-329807-0001": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-329807-0002": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-329807-0003": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-332068-0001": {
+    "swes:10": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:12": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-332068-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-334928-0001": {
+    "swes:2": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:10": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-334928-0002": {
+    "swes:2": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-335490-0002": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-335490-0005": {
+    "swes:8": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-336285-0002": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:7": [
+      "p.Agent",
+      "p.Gestalt"
+    ],
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-336285-0003": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-341750-0004": {
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "smwes:1": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-341750-0005": {
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-343813-0003": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "smwes:1": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-346074-0001": {
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-346563-0005": {
+    "swes:1": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-346563-0006": {
+    "swes:1": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-351950-0002": {
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-353891-0003": {
+    "swes:1": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:5": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-353891-0004": {
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-354474-0002": {
+    "swes:3": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-354474-0003": {
+    "swes:9": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-357217-0004": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:12": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-357217-0005": {
+    "swes:11": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-363428-0002": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-363428-0004": {
+    "swes:5": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-363482-0002": {
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-369608-0002": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-369608-0003": {
+    "swes:9": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "smwes:1": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-374344-0002": {
+    "swes:7": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-374344-0004": {
+    "swes:10": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-384229-0002": {
+    "swes:3": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:8": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-384229-0003": {
+    "swes:14": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-389298-0002": {
+    "swes:12": [
+      "p.Force",
+      "p.Force"
+    ],
+    "swes:13": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-389298-0003": {
+    "swes:14": [
+      "p.Force",
+      "p.Force"
+    ]
+  },
+  "reviews-389298-0004": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-392826-0002": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-392826-0003": {
+    "swes:1": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-392826-0004": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-396046-0001": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:11": [
+      "p.Time",
+      "p.Time"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/DESCRIPTION",
+    "file": "DESCRIPTION",
+    "sha256": "5b85948bf44876e0555ab0e8c31b74e7526a9cdd79f3d562eba22e0f7bfe38c8",
+    "retrieved_utc": "2026-10-06T07:13:26.500770+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/vignettes/manifestoRworkflow.Rmd",
+    "file": "vignettes/manifestoRworkflow.Rmd",
+    "sha256": "0c6e3cf6f643239e432b073a25e3e3e31b17b8de4877bcebe518e46bb69fa379",
+    "retrieved_utc": "2026-10-06T07:13:26.789965+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/R/codebook.R",
+    "file": "R/codebook.R",
+    "sha256": "a04f374fa34e929a9a6d17b38c58c7d9c0ea67b3b3c83f7da39ce353526ffeb0",
+    "retrieved_utc": "2026-10-06T07:13:26.770083+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/R/db_api.R",
+    "file": "R/db_api.R",
+    "sha256": "b14802356305e4204f2d4dbc66acb232d0e95d1ae1acbafdb4a4e905180be06f",
+    "retrieved_utc": "2026-10-06T07:13:26.774747+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/R/corpus.R",
+    "file": "R/corpus.R",
+    "sha256": "6fcb1ac1127108027a040e5096f71c32355c28a8876952a549654a49b7dbfb6f",
+    "retrieved_utc": "2026-10-06T07:13:26.493332+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/cran/manifestoR/master/R/codes.R",
+    "file": "R/codes.R",
+    "sha256": "88cc5ffe33b7cc01c723ccad5a91c1b41f4ba8ca023e3bca3965c1ba15989ddb",
+    "retrieved_utc": "2026-10-06T07:13:26.794422+00:00"
+  }
+]

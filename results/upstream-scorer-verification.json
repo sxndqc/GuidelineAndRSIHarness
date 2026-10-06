@@ -1,0 +1,347 @@
+{
+  "status": "passed",
+  "upstream_commit": "8ba61fe4f216e7967500a862554a4fff79d25f5d",
+  "unchanged_official_scorer": true,
+  "checks": [
+    "All.Role.Acc",
+    "All.Fxn.Acc",
+    "All.Role,Fxn.Acc",
+    "All.*.N"
+  ],
+  "runs_checked": 60,
+  "runs": [
+    {
+      "run": "majority-b4-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b4-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.16494845360824742
+    },
+    {
+      "run": "tfidf_nearest-b4-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.03711340206185567
+    },
+    {
+      "run": "majority-b16-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.05979381443298969
+    },
+    {
+      "run": "lexical_majority-b16-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.15670103092783505
+    },
+    {
+      "run": "tfidf_nearest-b16-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.13195876288659794
+    },
+    {
+      "run": "majority-b64-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b64-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.2865979381443299
+    },
+    {
+      "run": "tfidf_nearest-b64-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.18350515463917524
+    },
+    {
+      "run": "majority-b128-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b128-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.32989690721649484
+    },
+    {
+      "run": "tfidf_nearest-b128-s11",
+      "targets": 485,
+      "official_joint_accuracy": 0.2309278350515464
+    },
+    {
+      "run": "majority-b4-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.03917525773195876
+    },
+    {
+      "run": "lexical_majority-b4-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.06597938144329897
+    },
+    {
+      "run": "tfidf_nearest-b4-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.05360824742268041
+    },
+    {
+      "run": "majority-b16-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.03917525773195876
+    },
+    {
+      "run": "lexical_majority-b16-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.11958762886597939
+    },
+    {
+      "run": "tfidf_nearest-b16-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.08247422680412371
+    },
+    {
+      "run": "majority-b64-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b64-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.27835051546391754
+    },
+    {
+      "run": "tfidf_nearest-b64-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.1979381443298969
+    },
+    {
+      "run": "majority-b128-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b128-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.26804123711340205
+    },
+    {
+      "run": "tfidf_nearest-b128-s23",
+      "targets": 485,
+      "official_joint_accuracy": 0.24536082474226803
+    },
+    {
+      "run": "majority-b4-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.03917525773195876
+    },
+    {
+      "run": "lexical_majority-b4-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.06391752577319587
+    },
+    {
+      "run": "tfidf_nearest-b4-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.041237113402061855
+    },
+    {
+      "run": "majority-b16-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.03711340206185567
+    },
+    {
+      "run": "lexical_majority-b16-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.08041237113402062
+    },
+    {
+      "run": "tfidf_nearest-b16-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.09896907216494845
+    },
+    {
+      "run": "majority-b64-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b64-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.27835051546391754
+    },
+    {
+      "run": "tfidf_nearest-b64-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.18969072164948453
+    },
+    {
+      "run": "majority-b128-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b128-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.32577319587628867
+    },
+    {
+      "run": "tfidf_nearest-b128-s47",
+      "targets": 485,
+      "official_joint_accuracy": 0.23917525773195877
+    },
+    {
+      "run": "majority-b4-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.004123711340206186
+    },
+    {
+      "run": "lexical_majority-b4-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.024742268041237112
+    },
+    {
+      "run": "tfidf_nearest-b4-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.03917525773195876
+    },
+    {
+      "run": "majority-b16-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.05979381443298969
+    },
+    {
+      "run": "lexical_majority-b16-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.10721649484536082
+    },
+    {
+      "run": "tfidf_nearest-b16-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.10927835051546392
+    },
+    {
+      "run": "majority-b64-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b64-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.3319587628865979
+    },
+    {
+      "run": "tfidf_nearest-b64-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.23711340206185566
+    },
+    {
+      "run": "majority-b128-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b128-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.3422680412371134
+    },
+    {
+      "run": "tfidf_nearest-b128-s83",
+      "targets": 485,
+      "official_joint_accuracy": 0.2721649484536082
+    },
+    {
+      "run": "majority-b4-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.002061855670103093
+    },
+    {
+      "run": "lexical_majority-b4-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.006185567010309278
+    },
+    {
+      "run": "tfidf_nearest-b4-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.032989690721649485
+    },
+    {
+      "run": "majority-b16-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.05979381443298969
+    },
+    {
+      "run": "lexical_majority-b16-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.09896907216494845
+    },
+    {
+      "run": "tfidf_nearest-b16-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.15257731958762888
+    },
+    {
+      "run": "majority-b64-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.03917525773195876
+    },
+    {
+      "run": "lexical_majority-b64-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.19381443298969073
+    },
+    {
+      "run": "tfidf_nearest-b64-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.2556701030927835
+    },
+    {
+      "run": "majority-b128-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.15051546391752577
+    },
+    {
+      "run": "lexical_majority-b128-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.3670103092783505
+    },
+    {
+      "run": "tfidf_nearest-b128-s101",
+      "targets": 485,
+      "official_joint_accuracy": 0.2639175257731959
+    }
+  ],
+  "files": [
+    {
+      "file": "psseval.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/psseval.py",
+      "sha256": "e2546570e7327e269992d1256281735ab00ded6754a01929932275e87e207821"
+    },
+    {
+      "file": "conllu2json.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/conllu2json.py",
+      "sha256": "1efcc2ca6162a7ce3940ad1704cb08e3c1cedb62caf2235f051776c9c1710d37"
+    },
+    {
+      "file": "lexcatter.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/lexcatter.py",
+      "sha256": "3d5660f3f1f9b672a07473dc38701a9f23b92444658d5e82624d1790c0852d8d"
+    },
+    {
+      "file": "mwerender.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/mwerender.py",
+      "sha256": "fca1a93098671543327e69d57fedebd391a920c30294dc0d00117462bccea861"
+    },
+    {
+      "file": "tagging.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/tagging.py",
+      "sha256": "212dbedb435a54951f08f47d089ca3804285df948941b8a44c6f8218e2cdcecd"
+    },
+    {
+      "file": "supersenses.py",
+      "url": "https://raw.githubusercontent.com/nert-nlp/streusle/8ba61fe4f216e7967500a862554a4fff79d25f5d/supersenses.py",
+      "sha256": "6f43c624286901c2db13b6185ca051f168cbd34aebbcbb424da1e39bb73bca0b"
+    }
+  ],
+  "scope": "These valid given-target controls only; not equivalence for arbitrary invalid or auto-identification outputs"
+}

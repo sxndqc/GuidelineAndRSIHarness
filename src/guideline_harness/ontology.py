@@ -1,0 +1,4 @@
+"""SNACS v2.6 label inventory; factual labels from pinned STREUSLE supersenses.py.
+Source: nert-nlp/streusle@8ba61fe4f216e7967500a862554a4fff79d25f5d.
+"""
+SNACS_LABELS = frozenset(['p.Agent', 'p.Ancillary', 'p.Approximator', 'p.Beneficiary', 'p.Causer', 'p.Characteristic', 'p.Circumstance', 'p.ComparisonRef', 'p.Configuration', 'p.Content', 'p.Cost', 'p.Direction', 'p.Duration', 'p.EndTime', 'p.Ensemble', 'p.Experiencer', 'p.Explanation', 'p.Extent', 'p.Force', 'p.Frequency', 'p.Gestalt', 'p.Goal', 'p.Identity', 'p.Instrument', 'p.Interval', 'p.Locus', 'p.Manner', 'p.Means', 'p.Org', 'p.OrgMember', 'p.Originator', 'p.PartPortion', 'p.Participant', 'p.Path', 'p.Possession', 'p.Possessor', 'p.Purpose', 'p.QuantityItem', 'p.QuantityValue', 'p.Recipient', 'p.SetIteration', 'p.SocialRel', 'p.Source', 'p.Species', 'p.StartTime', 'p.Stimulus', 'p.Stuff', 'p.Temporal', 'p.Theme', 'p.Time', 'p.Topic', 'p.Whole'])

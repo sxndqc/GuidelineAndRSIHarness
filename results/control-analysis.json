@@ -1,0 +1,101 @@
+{
+  "paired_comparisons": [
+    {
+      "budget": 4,
+      "left": "lexical_majority",
+      "right": "tfidf_nearest",
+      "accuracy_difference": 0.024329896907216497,
+      "descriptive_95_percentile_interval": [
+        -0.01573069567296199,
+        0.07809989771564947
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 4,
+      "left": "lexical_majority",
+      "right": "majority",
+      "accuracy_difference": 0.01814432989690722,
+      "descriptive_95_percentile_interval": [
+        0.008246315238402063,
+        0.02845204822465146
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 16,
+      "left": "lexical_majority",
+      "right": "tfidf_nearest",
+      "accuracy_difference": -0.002474226804123711,
+      "descriptive_95_percentile_interval": [
+        -0.0372093023255814,
+        0.031107106612193885
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 16,
+      "left": "lexical_majority",
+      "right": "majority",
+      "accuracy_difference": 0.06144329896907216,
+      "descriptive_95_percentile_interval": [
+        0.032821515914899874,
+        0.0895470288005833
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 64,
+      "left": "lexical_majority",
+      "right": "tfidf_nearest",
+      "accuracy_difference": 0.06103092783505155,
+      "descriptive_95_percentile_interval": [
+        -0.007024508696634289,
+        0.1116206878591642
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 64,
+      "left": "lexical_majority",
+      "right": "majority",
+      "accuracy_difference": 0.14556701030927835,
+      "descriptive_95_percentile_interval": [
+        0.11865122560877278,
+        0.1768952822117171
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 128,
+      "left": "lexical_majority",
+      "right": "tfidf_nearest",
+      "accuracy_difference": 0.07628865979381444,
+      "descriptive_95_percentile_interval": [
+        0.036171557823918336,
+        0.11479134241245133
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    },
+    {
+      "budget": 128,
+      "left": "lexical_majority",
+      "right": "majority",
+      "accuracy_difference": 0.17608247422680415,
+      "descriptive_95_percentile_interval": [
+        0.13578696312364427,
+        0.2177107359604783
+      ],
+      "resampling": "paired adaptation trajectories and test documents",
+      "repeats": 2000
+    }
+  ],
+  "caution": "Five trajectories; descriptive controls, no inference about LLM agents."
+}

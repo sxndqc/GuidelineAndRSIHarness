@@ -1,0 +1,50 @@
+[
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.emnlp.xml",
+    "local_source": "/workspace/research/sources/emnlp2024.xml",
+    "sha256": "aa24add8a52d2083349e79d164e8a1adc84411343d49264fa0824332498053d2",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.acl.xml",
+    "local_source": "/workspace/research/sources/2026-acl.txt",
+    "sha256": "2bcccce38e1da6ee1e05f9733892d60435626ae645476a1f80c0bcf6668eff63",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.findings.xml",
+    "local_source": "/workspace/research/sources/findings2025.xml",
+    "sha256": "3ea04cfc76b8f8be6aa8be8ec8e2665d1003d65a546e8468173832d370a0b29f",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.acl.xml",
+    "local_source": "/workspace/research/sources/acl2024.xml",
+    "sha256": "c389b45e4d6de53a513103b9ec0a82fcf13775cd5643e7c44f3afa97a03083e9",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2024.findings.xml",
+    "local_source": "/workspace/research/sources/findings2024.xml",
+    "sha256": "ba39584aef70bd01f7dd31d27914b8f082342cf30cc171e48d5678c99513b19d",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.acl.xml",
+    "local_source": "/workspace/research/sources/acl2025.xml",
+    "sha256": "d9f02dbd5a2b79758e60c0245acde891f3ce5157146571b9b91cfbeb823c31cc",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2025.emnlp.xml",
+    "local_source": "/workspace/research/sources/emnlp2025.xml",
+    "sha256": "f78c4b3243ec1df89057d03225edfec66e79b19466b00021edbdc14ef6b3a818",
+    "retrieval_date": "2026-10-06"
+  },
+  {
+    "source_url": "https://raw.githubusercontent.com/acl-org/acl-anthology/master/data/xml/2026.findings.xml",
+    "local_source": "/workspace/research/sources/2026-findings.txt",
+    "sha256": "9808d655fe2d84c66ad777b9993dd88e4c30c152bac224f8f2caeb084f09fcbf",
+    "retrieval_date": "2026-10-06"
+  }
+]
