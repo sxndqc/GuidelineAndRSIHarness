@@ -1,0 +1,40 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "thread.started",
+      "item_type": null,
+      "usage": null
+    },
+    {
+      "type": "item.completed",
+      "item_type": "error",
+      "usage": null
+    },
+    {
+      "type": "turn.started",
+      "item_type": null,
+      "usage": null
+    },
+    {
+      "type": "item.completed",
+      "item_type": "agent_message",
+      "usage": null
+    },
+    {
+      "type": "turn.completed",
+      "item_type": null,
+      "usage": {
+        "input_tokens": 8663,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "output": {
+    "action": "finish",
+    "arguments_json": "{\"summary\":\"SCHEMA_OK\"}"
+  }
+}

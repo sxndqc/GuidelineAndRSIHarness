@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "0603c1ab31a07ce2e51e1be44a6a866bdcf950a6509f7875c9aef40729998fac",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.6666666666666666,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.6666666666666666,
+        "role_macro_f1": 0.6666666666666666,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.6666666666666666,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 3,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "0f016089cce7a0296b73c4bbbc50f35c21c2ec172c9ccb37a737956166c311ee",
+      "prediction_sha256": "7cc6051e2cdb2562a060056a4636630e9c18eadce7abb97487d08f4be0623846",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.6666666666666666,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.6666666666666666,
+        "role_macro_f1": 0.6666666666666666,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.6666666666666666,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 3,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "SNACS given-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

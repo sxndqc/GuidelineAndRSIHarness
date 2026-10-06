@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "network_403": "resolved; real model calls and datasets succeeded",
+  "current_confirmed_failure": {
+    "http_status": 429,
+    "error_type": "insufficient_quota",
+    "provider_code": "credit_balance_exhausted",
+    "source": "Exact failed-request diagnostic replay with GPT5.4 fixed snapshot"
+  },
+  "additional_evidence": "A Fashionpedia401 failed request succeeded on exact input replay; earlier generic HTTP errors cannot all be attributed to quota.",
+  "response": "No new inference calls. Preserve all raw attempts. New runner records safe machine codes and stops on exhausted credit.",
+  "needed": "Fund or increase quota on the configured API project, or replace openai secret with a funded project credential. No credential values should be sent in chat.",
+  "scope": "OpenAI API credit path only",
+  "alternative_codex_subscription": {
+    "state": "verified_real_completion_after_user_device_login",
+    "models": [
+      "gpt-6-sol",
+      "gpt-6-luna"
+    ],
+    "credential_handling": "Official CLI only; no token extraction; separate experiment batch required"
+  }
+}

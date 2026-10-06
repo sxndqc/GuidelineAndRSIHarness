@@ -1,0 +1,3 @@
+{
+  "snacs_adapt_rules.txt": "Useful SNACS adaptation rules from examples and guidelines:\n1) to + destination/goal mention (go to a place, school, elsewhere) -> role/function often p.Goal; do not confuse with source or path.\n2) of can be p.Whole when it links a partitive quantity expression to its whole (e.g., each of you).\n3) of can be p.Topic when the complement is what a stimulus/mental-state predicate is about (e.g., proud of your contributions).\n4) Possessive pronouns before nouns typically annotate as p.Possessor / p.Possessor.\n5) by in phrases like start by saying is p.Means / p.Means (means of doing/speaking).\n6) at + named venue/place and on + street/road are typically p.Locus / p.Locus.\n7) throughout + time span is p.Duration / p.Duration."
+}

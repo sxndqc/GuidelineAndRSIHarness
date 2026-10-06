@@ -1,0 +1,6 @@
+{
+  "model": "gpt-5.4-mini-2026-03-17",
+  "input_rate": 0.75,
+  "output_rate": 4.5,
+  "output": "results/fashion-agent-pilot-mini"
+}

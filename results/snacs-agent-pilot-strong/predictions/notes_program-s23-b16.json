@@ -1,0 +1,71 @@
+{
+  "reviews-256677-0005": {
+    "swes:5": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-126086-0001": {},
+  "reviews-225861-0003": {},
+  "reviews-329807-0003": {},
+  "reviews-325741-0004": {},
+  "reviews-200668-0002": {},
+  "reviews-128808-0003": {},
+  "reviews-335490-0002": {
+    "swes:3": [
+      "p.Duration",
+      "p.Duration"
+    ]
+  },
+  "reviews-325741-0002": {},
+  "reviews-325330-0002": {},
+  "reviews-171255-0002": {},
+  "reviews-200668-0001": {},
+  "reviews-363428-0004": {},
+  "reviews-314880-0003": {
+    "swes:7": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:9": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:11": [
+      "p.QuantityItem",
+      "p.Whole"
+    ],
+    "swes:12": [
+      "p.OrgMember",
+      "p.Possessor"
+    ],
+    "swes:22": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-313126-0001": {
+    "swes:8": [
+      "p.OrgMember",
+      "p.Possessor"
+    ]
+  },
+  "reviews-369608-0003": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:1": [
+      "p.Extent",
+      "p.Extent"
+    ]
+  },
+  "reviews-130216-0001": {},
+  "reviews-245928-0003": {},
+  "reviews-363482-0002": {},
+  "reviews-211933-0001": {},
+  "reviews-130647-0003": {},
+  "reviews-165032-0002": {},
+  "reviews-229442-0003": {},
+  "reviews-384229-0002": {}
+}

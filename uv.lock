@@ -269,12 +269,14 @@ dependencies = [
 [package.optional-dependencies]
 reports = [
     { name = "matplotlib" },
+    { name = "pillow" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "matplotlib", marker = "extra == 'reports'", specifier = "==3.10.8" },
     { name = "numpy", specifier = "==2.3.5" },
+    { name = "pillow", marker = "extra == 'reports'", specifier = "==12.3.0" },
     { name = "scikit-learn", specifier = "==1.8.0" },
 ]
 provides-extras = ["reports"]

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-06",
+  "scope": "engineering pilot, not an annotation-guideline benchmark result",
+  "selection": "official16train-prefix images / seed20261006 random16validation images; one uniformly selected legal-box region per image using20261006+imageID; no label-based filtering",
+  "representation": "bbox with10%maxside context, red outline, aspect-preserving max512pixels JPEG; no instance mask",
+  "materials": "46 category/294 attribute names and hierarchy only, not full guideline",
+  "models": [
+    "gpt-5.4-2026-03-05",
+    "gpt-5.4-mini-2026-03-17"
+  ],
+  "conditions": [
+    "frozen",
+    "notes"
+  ],
+  "budgets": [
+    0,
+    4,
+    16
+  ],
+  "trajectory_seed": 11,
+  "zero_budget": "frozen only",
+  "metrics": "category accuracy; microF1 agreement with published attribute IDs. Empty/empty contributes0counts, all-zero denominator null; invalid/failed category wrong and omitted attributes false negatives. Report validity separately.",
+  "limitations": [
+    "prefix training selection",
+    "single trajectory",
+    "16validation regions =>6.25pp per error",
+    "visual perception/crop losses confound annotation-rule learning",
+    "no complete operational guideline"
+  ],
+  "test_feedback": "no test feedback; assets frozen separately per validation crop",
+  "cost": "shared research ledger within30USD total envelope"
+}

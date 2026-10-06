@@ -1,6 +1,6 @@
 # Manifesto / MARPOR benchmark 审查
 
-核验日期：2026-10-06。结论：**研究适配准备 GO；当前真实数据实验 NO-GO（可解除的资源门槛），作为主 benchmark 暂不承诺。** Manifesto 能提供“按复杂规范给政治文本编码”的不同任务，但不能仅凭其跨国规模就认定它测量的是少样本规范学习。当前尚未取得并逐条读完完整 handbook，未下载真实 corpus，未运行模型实验。
+核验日期：2026-10-06。结论：**研究适配准备 GO；当前真实数据实验仍需 corpus 凭据/合法导出，作为主 benchmark 暂不承诺。** 网络更新后已实际取得并阅读2026版完整handbook的训练、切分、歧义、上下文与背景知识章节；尚未取得真实 corpus 或运行Manifesto模型实验。下文§1–7保留初次受网络限制的检查记录，**当前证据以§8追加核验为准**。Manifesto 能提供“按复杂规范给政治文本编码”的不同任务，但不能仅凭其跨国规模就认定它测量的是少样本规范学习。
 
 ## 1. 实际核验的来源与证据边界
 
@@ -112,3 +112,25 @@ MPDS/Main Dataset 的政党—选举级类别比例与左右立场指标不能�
 建议安全配置 secret 名称为 **`MANIFESTO_API_KEY`**。这是本项目建议的环境变量名，不是 manifestoR 官方自动读取的约定。获取数据脚本显式使用 `mp_setapikey(key = Sys.getenv("MANIFESTO_API_KEY"))`；缺失时停止，日志只记录“已配置/未配置”。不得打印key、提交key文件、把完整认证请求头写日志。
 
 当前完成真实实验仍缺：官网网络策略变更生效；可用 API key 或合法官方导出；选定版本的完整 handbook；corpus 文本与编码的具体使用/再分发条款；实际 availability 清单与真实导出 schema；足够独立文档和专家审计。网络设置保存后应重试官方入口，不能把本次403当作永久不可访问。给 corpus 解锁仅解决数据访问，并不能自动证明版本对齐、标注一致性或数据许可。
+
+## 8. 网络解锁后的官方正文核验（取代上文访问状态）
+
+官网手册、corpus说明及条款均已HTTP200。下载了[2026 v5 handbook](https://manifesto-project.wzb.eu/down/papers/handbook_2026_version_5.pdf)（187,404 bytes，SHA-256 `9165ba714c80080c7cc97c93a7c53f254b93ef0cb7e15c779e6a51a8f0cc8943`）及[2021 v5 handbook](https://manifesto-project.wzb.eu/down/papers/handbook_2021_version_5.pdf)（186,127 bytes，SHA-256 `2389675c650baa5adfebb14e9ffb4cef1e1bd1625bbf55234f81499854812d55`）。本地放置在ignored `data/raw/manifesto/`，同目录保留条款；不要把这些原始材料提交GitHub。
+
+### 新证据改变的实验设计
+
+- 2026手册§3要求训练测试、supervisor详细反馈、entry test及是否准入的决定；不是只读handbook即可开始编码。它支持研究“规范+实例反馈”，但没有给出“少量例子即可学会”的结论。
+- §4.1明确一个quasi-sentence恰有一个statement/message，一般不能跨自然句；是否切分取决于独立论点，不是标点或发现多个类别词。特殊语言例外也被手册注明。
+- §4.3给出六级context hierarchy：剩余句内文本→前后句→全段→章/节→整个manifesto→当时该国相关议题的政治语境。**忠实规范实验应允许逐级读取未标注上下文。上文固定窗口设计只能作为受限输入ablation，不应称完整规范遵循任务。**
+- §4.5明确期待coders是该国公民或长期居民，允许在其他线索不足时使用国家历史、社会议题、政党系统等背景知识，但禁止个人偏好扭曲编码。因此背景知识既是混淆因素，也是官方任务的一部分。主实验应记录并控制可检索背景资料，另报限知识条件，而非一概禁止背景再将失败归因于规范学习。
+- 同为handbook 5仍有2021和2026正文修订；metadata整数`5`不足以证明逐条规范完全相同。正文版本必须额外固定。
+
+### 访问与再分发
+
+[Corpus官网](https://manifesto-project.wzb.eu/information/documents/corpus)现在确认：CSV下载需要login/register，API下载需要API key；官方最新引用为Corpus 2026-1。它还明确`H`代表未编码标题，增加了`is_copy_of`字段，跨党共用manifesto应分组处理。公开浏览功能不是已验证可匿名批量下载的监督数据接口。
+
+[Terms of Use](https://manifesto-project.wzb.eu/information/documents/terms_of_use)允许科学研究，明确写道：**“Redistribution of the provided data is forbidden except when redistribution is authorized in writing by the Manifesto Project.”** 因此仓库发布代码、来源/版本/ID与下载说明，默认不发布原始语料或手册；保存下载来源与条款。条款还列出成果引用与向项目报告发表成果的义务，但本次没有发送邮件或向任何人传送材料。
+
+[官方manifestoberta说明](https://manifesto-project.wzb.eu/information/documents/manifestoberta)提供56topics sentence/context模型，称基于all annotated statements训练。它是必须考虑的领域强基线，但不能把已训练过的当前corpus切分当其未见测试；应核对具体模型训练版本或只作为受污染参考上限，不能用它判定从零学习样本复杂度。
+
+当前剩余阻碍已经收窄为：Manifesto账户key或合法官方导出、实际schema/availability及足够独立文档、版本匹配与专家审计。官网网络及完整手册可得性已解除。OpenAI模型API是否可用是另一项能力，不能代替Manifesto数据凭据。

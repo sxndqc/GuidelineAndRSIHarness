@@ -1,0 +1,114 @@
+[
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-360698-0001",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 1
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-278775-0009",
+    "new": true,
+    "decisions": 3,
+    "total_unique": 2
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-080221-0004",
+    "new": true,
+    "decisions": 4,
+    "total_unique": 3
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-224906-0007",
+    "new": true,
+    "decisions": 2,
+    "total_unique": 4
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-294081-0009",
+    "new": true,
+    "decisions": 2,
+    "total_unique": 5
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-162422-0009",
+    "new": true,
+    "decisions": 2,
+    "total_unique": 6
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-063963-0004",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 7
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-377347-0011",
+    "new": true,
+    "decisions": 3,
+    "total_unique": 8
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-235423-0007",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 9
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-005636-0001",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 10
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-085980-0001",
+    "new": true,
+    "decisions": 4,
+    "total_unique": 11
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-324337-0002",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 12
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-150192-0004",
+    "new": true,
+    "decisions": 3,
+    "total_unique": 13
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-133981-0004",
+    "new": true,
+    "decisions": 5,
+    "total_unique": 14
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-191666-0008",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 15
+  },
+  {
+    "kind": "gold_reveal",
+    "id": "reviews-156460-0001",
+    "new": true,
+    "decisions": 1,
+    "total_unique": 16
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "model": "gpt-5.4-mini-2026-03-17",
+  "base_url": "https://api.openai.com/v1",
+  "key_env": "openai",
+  "reasoning_effort": "none",
+  "data_root": "data/prepared/snacs",
+  "output": "results/snacs-agent-dev-mini-v4",
+  "materials_manifest": "configs/snacs-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_limit": 3,
+  "evaluation_seed": 20261006,
+  "conditions": [
+    "frozen",
+    "notes"
+  ],
+  "budgets": [
+    4
+  ],
+  "seeds": [
+    11
+  ],
+  "adapt_calls": 16,
+  "predict_calls": 8,
+  "max_completion_tokens": 2000,
+  "cost_ledger": "results/api-development-cost-ledger.json",
+  "cost_ceiling_usd": 5,
+  "native_tools": true,
+  "input_rate_ceiling": 0.75,
+  "output_rate_ceiling": 4.5
+}

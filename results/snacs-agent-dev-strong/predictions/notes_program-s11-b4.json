@@ -1,0 +1,15 @@
+{
+  "reviews-267982-0002": {
+    "swes:5": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-125629-0002": {},
+  "reviews-228944-0003": {
+    "swes:22": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  }
+}

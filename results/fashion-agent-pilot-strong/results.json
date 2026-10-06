@@ -1,0 +1,25 @@
+{
+  "status": "interrupted_provider_and_cost_limits",
+  "results": [
+    {
+      "condition": "frozen",
+      "budget": 0,
+      "seed": 11,
+      "model": "gpt-5.4-2026-03-05",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.0,
+        "valid_output_rate": 0.0,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 0,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "completed_instances": 0
+    }
+  ],
+  "interpretation": "One operational cell attempted with no completed predictions. Do not interpret as model capability. Remaining registered cells incomplete."
+}

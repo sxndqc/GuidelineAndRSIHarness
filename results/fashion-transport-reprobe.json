@@ -1,0 +1,32 @@
+{
+  "text": "{\"action\": \"read_example\", \"arguments\": {\"id\": \"26\"}}",
+  "native_tool_calls": [
+    {
+      "id": "call_vftCW82F0q84w3n3nfoYSs37",
+      "type": "function",
+      "function": {
+        "name": "read_example",
+        "arguments": "{\"id\":\"26\"}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3846,
+    "completion_tokens": 17,
+    "total_tokens": 3863,
+    "prompt_tokens_details": {
+      "cached_tokens": 3200,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "latency_seconds": 1.4871277589991223,
+  "response_id": "chatcmpl-EW21PTOc7XZjiWQB0VIv6yc1wBXne",
+  "finish_reason": "tool_calls"
+}

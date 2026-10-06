@@ -3,22 +3,68 @@
   "requested_deliverable": "Complete agent experiments across annotation benchmarks and an empirical paper draft",
   "requested_deliverable_complete": false,
   "completed": {
-    "benchmark_audits": ["UMR", "SNACS", "GUM/DISRPT", "UD EWT", "Manifesto", "Fashionpedia"],
-    "actual_data_downloaded": ["Pinned STREUSLE official train/dev/test"],
+    "benchmark_audits": [
+      "UMR",
+      "SNACS",
+      "GUM/DISRPT",
+      "UD EWT",
+      "Manifesto",
+      "Fashionpedia"
+    ],
+    "actual_data_downloaded": [
+      "Pinned STREUSLE official train/dev/test",
+      "Full SNACS2.6 guideline",
+      "Official Fashionpedia validation annotations",
+      "Closest ACL2026 full text and public code/data"
+    ],
     "non_llm_control_runs": 60,
     "evaluated_test_sentences": 259,
     "evaluated_test_targets": 485,
-    "unit_tests": 10,
-    "real_program_isolation_test": "passed"
+    "unit_tests": 15,
+    "real_program_isolation_test": "passed",
+    "real_snacs_configuration_loops": 26,
+    "planned_snacs_predictions": 624,
+    "successful_snacs_predictions": 481,
+    "fashion_mini_cells": 5,
+    "paper_pages": 6
   },
-  "not_executed": ["LLM/agent experiments", "strong/weak model comparison", "Manifesto experiments", "Fashionpedia experiments", "expert guideline-gap adjudication", "closest-paper reproduction"],
-  "blockers": [
-    {"item": "Inference", "evidence": "Codex ChatGPT login present; minimal call denied by proxy HTTP CONNECT 403 at chatgpt.com; no model API binding or GPU found", "needed": "Apply network settings and verify reproducible backend, or configure a model API and secure credential"},
-    {"item": "Manifesto", "evidence": "Official corpus requires key; no binding present; official site blocked", "needed": "Official API access or legitimate export, version-aligned handbook and terms"},
-    {"item": "Fashionpedia", "evidence": "Official S3 annotations/images HTTP403; API sample is not research data", "needed": "Apply S3 access; obtain real annotations/images and audit definitions"},
-    {"item": "SNACS materials", "evidence": "Official data and ontology obtained; complete guideline audit pending", "needed": "Version-aligned full guideline and embedded-example audit"}
+  "not_executed": [
+    "Clean fully completed model comparison",
+    "Manifesto predictions",
+    "Human sample-efficiency baseline",
+    "Expert guideline-gap adjudication",
+    "Closest-paper model reproduction"
   ],
-  "saved_network_domains": ["chatgpt.com", "manifesto-project.wzb.eu", "aclanthology.org", "s3.amazonaws.com", "arxiv.org"],
+  "blockers": [
+    {
+      "item": "Inference funding",
+      "evidence": "HTTP429 insufficient_quota / credit_balance_exhausted during exact failed-request diagnostic replay",
+      "needed": "Funded API project or replacement secure openai binding; network403 is resolved"
+    },
+    {
+      "item": "Manifesto",
+      "evidence": "Official handbook and terms acquired; annotated corpus requires registered API key or legitimate export",
+      "needed": "Corpus access; network is no longer the blocker"
+    }
+  ],
+  "saved_network_domains": [
+    "chatgpt.com",
+    "manifesto-project.wzb.eu",
+    "aclanthology.org",
+    "s3.amazonaws.com",
+    "arxiv.org"
+  ],
   "saved_secret_requirement": "MANIFESTO_API_KEY; no value supplied",
-  "publication_state": "draft saved; runtime application and publication unconfirmed"
+  "publication_state": "Six-page diagnostic draft with real pilot scores and explicit failed/incomplete comparisons; not ACL-ready",
+  "inference_status": {
+    "state": "verified_real_completion",
+    "endpoint": "https://api.openai.com/v1",
+    "credential_binding": "openai",
+    "models": [
+      "gpt-5.4-2026-03-05",
+      "gpt-5.4-mini-2026-03-17"
+    ],
+    "evidence": "results/api-reasoning-smoke.json"
+  },
+  "running": []
 }

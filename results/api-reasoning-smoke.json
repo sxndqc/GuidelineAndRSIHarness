@@ -1,0 +1,60 @@
+[
+  {
+    "requested_model": "gpt-5.4-2026-03-05",
+    "model": "gpt-5.4-2026-03-05",
+    "choice": {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "API_OK",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    },
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 15,
+      "total_tokens": 27,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  {
+    "requested_model": "gpt-5.4-mini-2026-03-17",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "choice": {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "API_OK",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    },
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 15,
+      "total_tokens": 27,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "input_rate": 2.5,
+  "output_rate": 15,
+  "output": "results/fashion-agent-pilot-strong",
+  "cost_ceiling_usd": 27.6
+}

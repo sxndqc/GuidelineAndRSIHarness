@@ -1,0 +1,55 @@
+{
+  "inventory_count": 294,
+  "maximum_attribute_id": 340,
+  "fix": "Inventory membership replaces incorrect contiguous-range assumption; category correctness independent of attribute validity.",
+  "all_existing_reported_metrics_unchanged": true,
+  "cells": [
+    {
+      "tier": "mini",
+      "condition": "frozen",
+      "budget": 0,
+      "changed": false
+    },
+    {
+      "tier": "mini",
+      "condition": "frozen",
+      "budget": 4,
+      "changed": false
+    },
+    {
+      "tier": "mini",
+      "condition": "frozen",
+      "budget": 16,
+      "changed": false
+    },
+    {
+      "tier": "mini",
+      "condition": "notes",
+      "budget": 4,
+      "changed": false
+    },
+    {
+      "tier": "mini",
+      "condition": "notes",
+      "budget": 16,
+      "changed": false
+    },
+    {
+      "tier": "strong",
+      "condition": "frozen",
+      "budget": 0,
+      "changed": false
+    }
+  ],
+  "corrected_gold_self_score": {
+    "instances": 16,
+    "category_accuracy": 1.0,
+    "valid_output_rate": 1.0,
+    "published_attribute_micro_f1": 1.0,
+    "attribute_tp": 49,
+    "attribute_fp": 0,
+    "attribute_fn": 0,
+    "empty_gold_instances": 3,
+    "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+  }
+}

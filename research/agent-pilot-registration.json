@@ -1,0 +1,39 @@
+{
+  "status": "frozen_before_agent_test_evaluation",
+  "date": "2026-10-06",
+  "scope": "Bounded empirical pilot for paper sample, not definitive sample complexity",
+  "primary_outcome": "SNACS joint target accuracy",
+  "models": [
+    "gpt-5.4-2026-03-05",
+    "gpt-5.4-mini-2026-03-17"
+  ],
+  "reasoning_effort": "none, required by supported native-tools Chat Completions transport; not maximal reasoning comparison",
+  "test_selection": "Seed20261006 shuffle of official test sentences, first24; same instances everywhere",
+  "budgets": [
+    0,
+    4,
+    16
+  ],
+  "trajectory_seeds": [
+    11,
+    23
+  ],
+  "zero_budget": "frozen only, seed11 only, manual native examples remain",
+  "conditions": [
+    "frozen",
+    "notes",
+    "notes_program"
+  ],
+  "static_control": "full manual + all16 examples, seed11, same24test",
+  "cost_limit_usd": 30,
+  "cost_allocation": "5 conservative development + 25 research ledger incl strong dev",
+  "limitations": [
+    "24 held-out sentences and two trajectories are low power",
+    "Cannot establish sufficient sample count or unseen construction transfer",
+    "No human few-shot baseline",
+    "Strong versus mini is model-tier not parameter-count causality",
+    "Closest-paper moderation replication remains separately required for novelty claim"
+  ],
+  "stopping": "No score-dependent stopping, automatic cost ceiling; disclose incomplete cells if reached",
+  "implementation": "per-run saved source hashes; no test-feedback adaptation"
+}

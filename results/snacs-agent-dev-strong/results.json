@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-2026-03-05",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "9f61ec54e706cd5261e37c97ea7a80ad69e50d982f35c31ecb18e6316ec6ebdd",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 1.0,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.6666666666666666,
+        "role_macro_f1": 1.0,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.6666666666666666,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 3,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes_program",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-2026-03-05",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "58dfe51f22068eddc3ab520470e11fdb48871a14b95c7b20cb8773b824905a4a",
+      "prediction_sha256": "28758044d19b3bc09efd5f7060610a728db16b784d0a0e7a73ccd3c8ebb57276",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.6666666666666666,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.6666666666666666,
+        "role_macro_f1": 0.6666666666666666,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.6666666666666666,
+        "valid_output_rate": 0.6666666666666666
+      },
+      "completed_instances": 2,
+      "failed_or_exhausted_instances": 1
+    }
+  ],
+  "scope": "SNACS given-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

@@ -1,0 +1,371 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 0,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 0,
+        "unique_labeled_sentences": 0,
+        "labeled_decisions": 0,
+        "reveal_calls": 0
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "4a55eaa45f4c95c1e21e9597d2462385a16c9eda0cd250e3058f711fbe951881",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.36,
+        "function_accuracy": 0.38,
+        "joint_accuracy": 0.14,
+        "role_macro_f1": 0.322534516765286,
+        "function_macro_f1": 0.23291589363017934,
+        "sentence_exact": 0.0,
+        "valid_output_rate": 0.7916666666666666
+      },
+      "completed_instances": 24,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "9d4452710e0f7b2675de9e21b4db9f9723b97c007ac249529576853301bc148c",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.36,
+        "function_accuracy": 0.36,
+        "joint_accuracy": 0.28,
+        "role_macro_f1": 0.31578144078144077,
+        "function_macro_f1": 0.34444444444444444,
+        "sentence_exact": 0.25,
+        "valid_output_rate": 0.875
+      },
+      "completed_instances": 21,
+      "failed_or_exhausted_instances": 3
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 39,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "5a63c3a5783632aeaa1d3a6cc6cacc52e425e2ed22a753cc24704fde6a9faa69",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.16,
+        "function_accuracy": 0.18,
+        "joint_accuracy": 0.12,
+        "role_macro_f1": 0.18205128205128202,
+        "function_macro_f1": 0.19546485260770974,
+        "sentence_exact": 0.125,
+        "valid_output_rate": 0.4583333333333333
+      },
+      "completed_instances": 13,
+      "failed_or_exhausted_instances": 11
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "692d5f44de41a7ddebb61854e6295d83be3e1845dc90853f05e51b969e27efea",
+      "prediction_sha256": "2156e4b0ca0890cbae5af42216f96fcd25ece3741f1e73ecf0f8b983177819fb",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.36,
+        "function_accuracy": 0.38,
+        "joint_accuracy": 0.26,
+        "role_macro_f1": 0.2729700854700855,
+        "function_macro_f1": 0.4198515769944341,
+        "sentence_exact": 0.25,
+        "valid_output_rate": 0.875
+      },
+      "completed_instances": 22,
+      "failed_or_exhausted_instances": 2
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 39,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "9e3f009ba6ac5cbe65fbcf15b7ef11e58cbc2227c4e7ffea31e76e38f9153a9b",
+      "prediction_sha256": "39310d73f0d1631ac1cacc75dd982750a3eb493c58686d44556c38a10348985f",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.36,
+        "function_accuracy": 0.38,
+        "joint_accuracy": 0.28,
+        "role_macro_f1": 0.3258547008547008,
+        "function_macro_f1": 0.37552923267208976,
+        "sentence_exact": 0.08333333333333333,
+        "valid_output_rate": 0.8333333333333334
+      },
+      "completed_instances": 20,
+      "failed_or_exhausted_instances": 4
+    },
+    {
+      "condition": "notes_program",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "8b154f7d6f194a81f813fc75e8218008d844358b473863cc6f7eb460f41d46eb",
+      "prediction_sha256": "a334f1fe2855974e8b3595a7e4aaeacc6348fb78450ebe2122855639bb276b32",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.34,
+        "function_accuracy": 0.56,
+        "joint_accuracy": 0.26,
+        "role_macro_f1": 0.2936507936507936,
+        "function_macro_f1": 0.5088522588522588,
+        "sentence_exact": 0.2916666666666667,
+        "valid_output_rate": 0.9166666666666666
+      },
+      "completed_instances": 22,
+      "failed_or_exhausted_instances": 2
+    },
+    {
+      "condition": "notes_program",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 39,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "8b154f7d6f194a81f813fc75e8218008d844358b473863cc6f7eb460f41d46eb",
+      "prediction_sha256": "dbcf3bb00cdd38f45f4c67c7ec184bcd84a44d5d760f618c506c71e07e1e0496",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.38,
+        "function_accuracy": 0.48,
+        "joint_accuracy": 0.34,
+        "role_macro_f1": 0.41428571428571426,
+        "function_macro_f1": 0.5367724867724868,
+        "sentence_exact": 0.2916666666666667,
+        "valid_output_rate": 0.875
+      },
+      "completed_instances": 21,
+      "failed_or_exhausted_instances": 3
+    },
+    {
+      "condition": "frozen",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "79946df0d1469ea04a1e6de9aadbdcccf080cbbb0c7d0af0b4b8231fdf16e78a",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.32,
+        "function_accuracy": 0.32,
+        "joint_accuracy": 0.22,
+        "role_macro_f1": 0.2913752913752914,
+        "function_macro_f1": 0.2752099752099752,
+        "sentence_exact": 0.20833333333333334,
+        "valid_output_rate": 0.8333333333333334
+      },
+      "completed_instances": 20,
+      "failed_or_exhausted_instances": 4
+    },
+    {
+      "condition": "frozen",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "0ffb884d55f18121ac3956d279979285691ce361cd5a8c0ff06f80f5b71e3486",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.34,
+        "function_accuracy": 0.34,
+        "joint_accuracy": 0.26,
+        "role_macro_f1": 0.2899572649572649,
+        "function_macro_f1": 0.31213151927437643,
+        "sentence_exact": 0.25,
+        "valid_output_rate": 0.7916666666666666
+      },
+      "completed_instances": 19,
+      "failed_or_exhausted_instances": 5
+    },
+    {
+      "condition": "notes",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "b3def274eb7c1a0f7b9130173ae55f32f4f5122dc3dc50bf45b2b03f52e036fb",
+      "prediction_sha256": "b9393b86a1ab1bcc1906f3c685f1f60bbf20ac6cf3164df7d1860aa16f03573a",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.4,
+        "function_accuracy": 0.46,
+        "joint_accuracy": 0.34,
+        "role_macro_f1": 0.28717948717948716,
+        "function_macro_f1": 0.3831581117295403,
+        "sentence_exact": 0.2916666666666667,
+        "valid_output_rate": 0.9166666666666666
+      },
+      "completed_instances": 22,
+      "failed_or_exhausted_instances": 2
+    },
+    {
+      "condition": "notes",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "b3def274eb7c1a0f7b9130173ae55f32f4f5122dc3dc50bf45b2b03f52e036fb",
+      "prediction_sha256": "34879de39a0c6ccd5a189466ea1500bea3a292a0b40b7e22ac413e7eef792c2d",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.44,
+        "function_accuracy": 0.5,
+        "joint_accuracy": 0.38,
+        "role_macro_f1": 0.32229437229437224,
+        "function_macro_f1": 0.3974025974025974,
+        "sentence_exact": 0.25,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 24,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes_program",
+      "seed": 23,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 10,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "910bc70c8c296d651a8c63f9c614580e46aadf773dbda331d7f5e5f50e32c44b",
+      "prediction_sha256": "dc272c2d29d717bd5c9b8c4f46ec840648fd3f7ed0dde58ab001715b01be9f19",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.3,
+        "function_accuracy": 0.38,
+        "joint_accuracy": 0.24,
+        "role_macro_f1": 0.3038461538461538,
+        "function_macro_f1": 0.2968253968253968,
+        "sentence_exact": 0.25,
+        "valid_output_rate": 0.875
+      },
+      "completed_instances": 23,
+      "failed_or_exhausted_instances": 1
+    },
+    {
+      "condition": "notes_program",
+      "seed": 23,
+      "budget": 16,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 35,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "910bc70c8c296d651a8c63f9c614580e46aadf773dbda331d7f5e5f50e32c44b",
+      "prediction_sha256": "460f98fe99dd193c7e69e2fae21c475df7a0639e25dcc108d6cfc157fc2d07b5",
+      "metrics": {
+        "sentences": 24,
+        "targets": 50,
+        "documents": 22,
+        "role_accuracy": 0.4,
+        "function_accuracy": 0.44,
+        "joint_accuracy": 0.34,
+        "role_macro_f1": 0.29829059829059823,
+        "function_macro_f1": 0.3224489795918367,
+        "sentence_exact": 0.3333333333333333,
+        "valid_output_rate": 0.9583333333333334
+      },
+      "completed_instances": 24,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "SNACS given-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

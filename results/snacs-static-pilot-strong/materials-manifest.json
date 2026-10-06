@@ -1,0 +1,71 @@
+{
+  "status": "audited",
+  "audit_scope": "Version, integrity, numbered native-example inventory and local research-pilot material review; not expert certification of policy completeness or redistribution clearance.",
+  "audit_date": "2026-10-06",
+  "source": {
+    "title": "Adposition and Case Supersenses v2.6: Guidelines for English",
+    "url": "https://arxiv.org/abs/1704.02134v8",
+    "pdf_url": "https://arxiv.org/pdf/1704.02134v8",
+    "arxiv_version": "v8",
+    "arxiv_date": "2022-07-07",
+    "document_date": "2022-06-18",
+    "guideline_version": "2.6",
+    "pdf_pages": 114,
+    "pdf_sha256": "98d9724a16849c0907780916f6f7ed3ae6c5a62239bcea3335265162ea210c4d"
+  },
+  "files": [
+    {
+      "name": "snacs-guidelines-v2.6.txt",
+      "path": "/workspace/GuidelineAndRSIHarness/data/raw/papers/snacs-guidelines.txt",
+      "sha256": "2399afd629aa682a5f74d66499ec7a3f6079df2186fead27bc9b57cdd7bbbbce",
+      "characters": 234709,
+      "bytes": 236057,
+      "role": "Full guideline including original examples, references and indices"
+    }
+  ],
+  "embedded_labeled_examples": null,
+  "embedded_example_inventory": {
+    "numbered_example_groups": 541,
+    "numbered_range": [
+      1,
+      541
+    ],
+    "missing_numbers": [],
+    "regex_anchor_occurrences": 543,
+    "method_regex": "(?m)^[ \\t\\f]*\\((\\d+)\\)[ \\t]+",
+    "count_unit": "Unique printed numbered example groups, not sentences or gold target decisions",
+    "exact_labeled_instance_count": "not established; subexamples, inline examples, contrasting/negative examples and repeated references occur",
+    "budget_interpretation": "All conditions receive this existing supervision in addition to newly purchased sentence budgets; budget 0 is not zero examples."
+  },
+  "version_alignment": {
+    "streusle_commit": "8ba61fe4f216e7967500a862554a4fff79d25f5d",
+    "evidence": "Manual abstract maps STREUSLE 4.5 to guideline 2.6; pinned README records 4.5 SNACS2.6 renamings and later UD/minor fixes. Official inventory contains 52 labels.",
+    "qualification": "Ontology-version alignment established; no claim that every later corpus correction is explicitly explained in this handbook."
+  },
+  "license_review": {
+    "pdf_explicit_license_statement": "not found",
+    "arxiv_metadata_license": "unverified: metadata request blocked by environment network",
+    "dataset_license_does_not_transfer_to_handbook": true,
+    "use_scope": "Local reference material for requested research pilot. Do not redistribute full PDF/text as repository artifacts without confirming applicable rights.",
+    "redistribution_clearance": "pending; not asserted by audited status"
+  },
+  "overlap_screen": {
+    "method": "NFKD lowercase; remove non ASCII alphanumeric characters; check complete projected sentences with normalized length >=25 as substrings of normalized manual",
+    "results": {
+      "train": {
+        "sentences_checked": 1827,
+        "normalized_full_sentence_matches": []
+      },
+      "dev": {
+        "sentences_checked": 233,
+        "normalized_full_sentence_matches": []
+      },
+      "test": {
+        "sentences_checked": 228,
+        "normalized_full_sentence_matches": []
+      }
+    },
+    "qualification": "Zero full-sentence hits is not proof of independence: labeled inline fragments, paraphrases, PDF extraction changes and short examples remain unaudited. No unseen-construction claim from this screen."
+  },
+  "audit_report": "research/snacs-materials-audit.md"
+}

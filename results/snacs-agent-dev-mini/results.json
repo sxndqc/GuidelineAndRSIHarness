@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "c91b24f3d44e724cd98643c372f5e246cee48ae90b37a4cc8d0d033ddcf901e0",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.3333333333333333,
+        "function_accuracy": 0.3333333333333333,
+        "joint_accuracy": 0.3333333333333333,
+        "role_macro_f1": 0.3333333333333333,
+        "function_macro_f1": 0.3333333333333333,
+        "sentence_exact": 0.3333333333333333,
+        "valid_output_rate": 0.6666666666666666
+      },
+      "completed_instances": 2,
+      "failed_or_exhausted_instances": 1
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "ce31d3e31008ff4723aee026dd76a41939150358bd1bc6c071d26f89e56a11b2",
+      "prediction_sha256": "23a650ca5f4db350a748db26453d5ea27e7bcccd5235c5960b329307b52654bf",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.3333333333333333,
+        "function_accuracy": 0.3333333333333333,
+        "joint_accuracy": 0.3333333333333333,
+        "role_macro_f1": 0.3333333333333333,
+        "function_macro_f1": 0.3333333333333333,
+        "sentence_exact": 0.3333333333333333,
+        "valid_output_rate": 0.6666666666666666
+      },
+      "completed_instances": 3,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes_program",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "2faff424b5b66b418a081f862e801cee75c0fad7773f81358685d6c6e3fe0eba",
+      "prediction_sha256": "23a650ca5f4db350a748db26453d5ea27e7bcccd5235c5960b329307b52654bf",
+      "metrics": {
+        "sentences": 3,
+        "targets": 3,
+        "documents": 3,
+        "role_accuracy": 0.3333333333333333,
+        "function_accuracy": 0.3333333333333333,
+        "joint_accuracy": 0.3333333333333333,
+        "role_macro_f1": 0.3333333333333333,
+        "function_macro_f1": 0.3333333333333333,
+        "sentence_exact": 0.3333333333333333,
+        "valid_output_rate": 0.6666666666666666
+      },
+      "completed_instances": 3,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "SNACS given-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

@@ -1,70 +1,120 @@
 # Guideline and RSI Harness
 
-Research on how fixed-weight agents adapt annotation policies through examples,
-natural-language memory and executable programs.
+Fixed-weight annotation agents with guideline retrieval, purchased examples,
+persistent notes, and optional sandboxed programs.
 
-**Status (2026-10-06): a real-data control experiment is complete; the requested
-full agent study is NOT complete.** Do not interpret the non-LLM results as
-agent learning, compare unrun models, or treat a data audit as a guideline-gap finding.
+**2026-10-06: real diagnostic experiments and a six-page paper sample are available.
+The complete ACL study is not finished.** Network 403 was resolved. A subsequent
+real inference request returned `429 / credit_balance_exhausted`; API calls are
+paused. The user has reauthorized the official Codex CLI subscription channel;
+real structured calls with GPT-6-Sol and GPT-6-Luna now succeed. A separate clean
+follow-up batch is being prepared. Unequal earlier provider failures invalidate clean capability comparisons.
 
-## Read first
+## Review the actual work
 
-- [ACL-format working paper](paper/main.pdf) / [LaTeX source](paper/main.tex)
-- [Research design (Chinese)](research/research-proposal.zh.md)
-- [Manifesto audit](research/manifesto-audit.md)
-- [Fashionpedia audit](research/fashionpedia-audit.md)
-- [Cross-domain protocol review](research/cross-domain-protocol-review.md)
-- [Actual control results](results/control-table.md), [raw report](results/snacs-controls-v2/baseline-results.json)
-- [Experiment status and unresolved requirements](research/experiment-status.json)
+- [Paper PDF](paper/main.pdf) / [source](paper/main.tex)
+- [Agent results and failure accounting](results/agent-analysis.json)
+- [Fixed SNACS pilot settings](research/agent-pilot-registration.json)
+- [Fashionpedia pilot settings](research/fashion-pilot-registration.json)
+- [Current blocker and exact diagnosis](research/inference-blocker.json)
+- [SNACS manual audit](research/snacs-materials-audit.md)
+- [Closest ACL paper: full-text/code review](research/closest-work-fulltext-review.md)
+- [Manifesto audit](research/manifesto-audit.md) / [Fashionpedia acquisition](research/bounded-material-acquisition.md)
+- Final AI reviews: [validity](research/final-pilot-validity-review.md),
+  [contribution](research/final-pilot-contribution-review.md),
+  [benchmarks](research/final-pilot-benchmark-review.md).
 
-## What has actually run
+## What actually ran
 
-Pinned official STREUSLE data; document-disjoint official splits; given-target
-SNACS projection stripping other gold layers; 60 real non-LLM control runs
-(3 methods × 4 labeled-sentence budgets × 5 paired trajectories) over all
-485 retained targets in 259 official test sentences. Artifacts include predictions,
-source hashes, purchased-example IDs, summary statistics and paired descriptive
-bootstrap intervals. All 60 runs match the pinned official scorer on role,
-function, joint accuracy and target denominators. Dataset text is not redistributed in this repository.
+- **Non-LLM controls:** 60 runs, four budgets and five paired trajectories;
+  all 485 retained SNACS targets in 259 official test sentences. The pinned
+  upstream scorer independently matches all 60 outputs.
+- **SNACS agents:** 26 configuration loops / 624 planned prediction episodes,
+  two GPT-5.4 snapshots, budgets 0/4/16 and two nested example trajectories;
+  the same 24 test sentences / 50 targets / 22 documents. Mini completed 275
+  predictions, the larger model 206. All failures remain in denominators.
+- **Full-context control:** Mini B16 completed; larger-tier cell interrupted.
+- **Fashionpedia:** real official images, 16 training and 16 validation regions;
+  Mini attempted all five cells. Larger-tier comparison interrupted. This is
+  given-box taxonomy-conditioned classification, not the official segmentation
+  benchmark or evidence of learning an audited annotation manual.
+- **Important negative diagnostic:** no formal SNACS agent executed a program.
+  The program-enabled arm cannot establish effects of executable self-evolution.
 
-Ten regression/unit checks and a real bubblewrap isolation check are provided.
-The model stub in unit tests is only a software fixture; it never produces
-reported research results. The controller exposes bounded tools, meters gold,
-freezes test assets and executes agent-written Python in a network-isolated
-filesystem. Program execution fails closed if bubblewrap is unavailable.
+The full SNACS manual contains 541 numbered example groups. B0 therefore means
+zero **additional** purchased sentences. No human few-shot baseline, expert
+confirmed guideline gap, reliable sufficient-example count or ACL-ready claim
+is made. The three reviewers are AI agents, not human conference reviewers.
 
-**Currently implemented model track: SNACS given-target classification.**
-Manifesto/Fashionpedia are audited candidate tracks, not secretly substituted
-by synthetic data or a two-image API sample. No vision adapter is claimed ready.
-
-## Reproduce the completed controls
-
-Python 3.11+ (tested with 3.12.14), NumPy 2.3.5, scikit-learn 1.8.0.
-For figures use matplotlib 3.10.8. Use the existing isolated checkout;
-do not create a worktree unless specifically requested.
+## Reproduce offline checks and controls
 
 ```bash
 uv --cache-dir /tmp/guideline-uv-cache sync --frozen --extra reports
 .venv/bin/python -m guideline_harness.cli fetch-streusle
 .venv/bin/python -m guideline_harness.cli prepare-snacs
 .venv/bin/python -m unittest discover -s tests -v
-.venv/bin/python -m guideline_harness.cli baselines \
-  --split test --output runs/reproduced-controls
+.venv/bin/python -m guideline_harness.cli baselines --split test --output runs/reproduced-controls
+.venv/bin/python scripts/verify_upstream_scorer.py
 ```
 
-The downloader pins commit `8ba61fe4f216e7967500a862554a4fff79d25f5d`, preserves TLS
-verification, and records SHA-256 for every source. Preparation checks hashes.
-One purchased example means one sentence and reveals all retained SNACS decisions
-in that sentence. Gold target spans are supplied to every condition.
-The source annotation license is CC BY-SA 4.0, with source-text permissions
-described in the upstream README; these permissions do not cover other corpora.
+STREUSLE commit: `8ba61fe4f216e7967500a862554a4fff79d25f5d`.
+The source annotation license is CC BY-SA 4.0; source-text rights are separately
+described upstream. Public outputs contain predictions and IDs. Full episode
+traces remain local under ignored `episodes/` because they include source
+materials; published trace summaries retain hashes, response IDs, usage and
+resource-access metadata. Raw handbooks, images and corpus texts are not pushed.
 
-The analysis script currently regenerates publication artifacts from the two
-committed control-run reports and local prepared gold:
+## Materials and model runs
 
 ```bash
-.venv/bin/python scripts/analyze_controls.py
-.venv/bin/python scripts/verify_upstream_scorer.py
+.venv/bin/python scripts/fetch_snacs_manual.py
+.venv/bin/python scripts/acquire_fashion_bounded.py
+.venv/bin/python scripts/prepare_fashion_pilot.py
+```
+
+The image downloader uses official HTTP ranges and a transfer cap rather than
+fetching a 3.3GB ZIP. Its prefix training selection is deliberately documented.
+Official Fashionpedia attribute IDs are sparse: use inventory membership,
+not the mistaken assumption that 294 labels have IDs 0 through 293.
+
+Configure an authorized HTTPS endpoint and secure credential binding. Current
+configs use `https://api.openai.com/v1`, key environment variable `openai`, and
+fixed model snapshots. Never put a key in source or chat. Native Chat Completions
+with these snapshots was verified with `reasoning_effort=none`; Responses did
+not authenticate through this environment binding and is not used in results.
+
+**Restore API quota before starting more API runs.** The independently authenticated
+Codex subscription adapter is available as `backend: codex_cli`; it disables native
+host tools and lets the evidence controller execute only authorized actions. Copy a config to a fresh output
+path and a reviewed cost ledger, then run:
+
+```bash
+.venv/bin/python -m guideline_harness.cli agent configs/my-new-run.json
+.venv/bin/python scripts/run_fashion_pilot.py configs/my-new-vision-run.json
+```
+
+File-locked cost reservations cover concurrent requests. Official uncached
+prices provide conservative estimates; unresolved old requests retain their
+reservation and are not silently treated as free. These estimates are not an
+invoice. New code records safe HTTP machine codes and stops on quota exhaustion.
+A frozen run's original implementation hashes remain with its results; later
+transport/scorer fixes do not retroactively change its recorded execution.
+
+Program execution requires Linux bubblewrap and `/usr/bin/python3`:
+
+```bash
+.venv/bin/python scripts/check_sandbox.py
+```
+
+It isolates the filesystem, environment and network; there is no unsandboxed
+fallback. Managed environments may require supported command escalation for
+nested namespaces.
+
+## Regenerate the paper
+
+```bash
+MPLCONFIGDIR=/tmp/guideline-mpl .venv/bin/python scripts/analyze_controls.py
+MPLCONFIGDIR=/tmp/guideline-mpl .venv/bin/python scripts/analyze_agents.py
 cd paper
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 bibtex main
@@ -72,52 +122,7 @@ pdflatex -interaction=nonstopmode -halt-on-error main.tex
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-## Model experiments: explicit prerequisites
-
-`configs/snacs-pilot.example.json` is a configuration example, not a completed run.
-`configs/snacs-materials.json` deliberately remains `pending_audit`: a label
-inventory is not the full guideline. Supply version-aligned, legally available
-materials with hashes and an embedded-example audit before changing this status.
-An `audited` string is a controller gate, not proof of expert scientific review.
-
-The implemented provider uses an HTTPS OpenAI-compatible **Chat Completions**
-endpoint. Set `ANNOTATION_API_BASE` (ending in `/v1` where required) and a secure
-`ANNOTATION_API_KEY` binding; specify the exact model version in the config.
-Never place credentials in source, CLI arguments, tracked files or chat.
-The API's `max_completion_tokens` parameter must be supported by the selected
-provider. No provider SDK or authentication-file scraping is used.
-
-```bash
-.venv/bin/python -m guideline_harness.cli agent configs/my-audited-run.json
-```
-
-Failed/truncated calls retain known metadata; unknown usage is not counted as
-zero. The caller must budget actual provider cost; no price is invented.
-For `notes_program`, Linux bubblewrap and `/usr/bin/python3` are required:
-
-```bash
-.venv/bin/python scripts/check_sandbox.py
-```
-
-The real test checks that host gold, repository, inherited environment marker
-and external network are inaccessible. Within this managed environment it
-requires the supported command-approval flow to create nested namespaces;
-there is no unsandboxed fallback.
-
-## Remaining research requirements
-
-The existing Codex login was verified, but its minimal inference call was
-blocked by the network proxy (403). The CLI login has **not** been validated as
-an experimental backend, and it is not silently used as this API provider.
-No model API binding or GPU was found. Network additions are saved as a draft;
-saving a draft does not apply/publish it.
-
-Manifesto Corpus needs an official key or legitimate export, full handbook,
-version/split/terms checks. Fashionpedia needs official full annotations and
-actual images, plus definition/attribute-completeness audits. Its two-image
-API sample has a different schema and is not used for research results.
-
-Three AI reviewer agents critiqued the design, datasets and implementation.
-They are not independent human annotators or actual ACL reviewers. Their audits
-are retained under `research/`. The working paper's limitations and unrun
-conditions are explicit; no acceptance or novelty claim is made.
+Before submission: restore stable inference, reproduce the closest moderation
+baseline, expand held-out data and trajectories, and test an expert-verified
+convention or policy change. Manifesto has complete manuals available locally,
+but its annotated corpus still requires a legitimate account/export.

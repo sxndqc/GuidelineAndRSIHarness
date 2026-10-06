@@ -1,0 +1,75 @@
+{
+  "full_traces": "Retained locally in ignored episodes/; not published because they contain source materials.",
+  "episodes": [
+    {
+      "episode": "frozen-s11-b4-reviews-125629-0002.json",
+      "raw_sha256": "22bfc81c6e790e8ee2575c10829b4b7f2adfee185e0cb8a2efb09f9bd5013213",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-reviews-228944-0003.json",
+      "raw_sha256": "658630617e2b6c633b0957f5d94d7291a7fd78d3a6c9b5ee337dd123fd57fabd",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-reviews-267982-0002.json",
+      "raw_sha256": "8dfa5201c72e7c373034c011f9fb5a7e3ba1eacdafd89743d1c7d02e109903a4",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "notes-s11-b4-adapt.json",
+      "raw_sha256": "f78e462cd54c5c04490a13c42440e58f155ae03e006cc3b98d2d6c0e26b06211",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "notes-s11-b4-reviews-125629-0002.json",
+      "raw_sha256": "09428d8cfcf9a50706b12ed65943df3a402348561be26a2d318ccc6c6bd2e60b",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "notes-s11-b4-reviews-228944-0003.json",
+      "raw_sha256": "e6dfea1ae9470bbc92b49d20764d34fa6e09144aebd52fbf9a8dcec8a6e56ef6",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "notes-s11-b4-reviews-267982-0002.json",
+      "raw_sha256": "858fe728399162530e93e73ec206d834c12d1d02cab61727d02196eeab8c0c85",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "full_traces": "Retained locally in ignored episodes/; not published because they contain source materials.",
+  "episodes": [
+    {
+      "episode": "frozen-s11-b0-4044.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-4319.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-4544.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-4585.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-469.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-4846.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-487.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-5107.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-5297.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-5583.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-6343.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-6832.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-6992.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-8343.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-8888.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b0-8915.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-4044.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-4319.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-4544.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-4585.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-469.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-4846.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-487.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-5107.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-5297.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-5583.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-6343.json",
+      "raw_sha256": "fe344f230475ff52d6900b46dc87316bebb9680663f521b0d7c5bf27d23ca413",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": 429,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-6832.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-6992.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-8343.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-8888.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "frozen-s11-b4-8915.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    }
+  ]
+}

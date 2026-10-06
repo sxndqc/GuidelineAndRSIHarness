@@ -2,7 +2,10 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 import copy
+import json
 import random
+import math
+from collections import Counter
 import re
 from pathlib import PurePosixPath
 
@@ -66,13 +69,37 @@ class AgentView:
             length = min(12000, max(1, int(args.get("length", 6000))))
             return {"name": key, "start": start, "text": content[start:start+length], "total_chars": len(content)}
         if name == "search_materials":
-            query = args["query"].lower()
-            results = []
+            def words(text):
+                # PDF small caps: C OMPARISON R EF -> ComparisonRef.
+                text=re.sub(r"\b[A-Z][A-Z ]{2,}[A-Z]\b",lambda m:m[0].replace(" ",""),text)
+                return set(re.findall(r"[a-z]+",text.lower()))
+            query=words(args["query"])
+            chunks=[]
             for key, content in {**self.materials, **self.assets}.items():
-                index = content.lower().find(query)
-                if index >= 0:
-                    results.append({"name": key, "start": max(0,index-200), "text": content[max(0,index-200):index+1000]})
-            return results[:10]
+                for start in range(0,len(content),800):
+                    chunk=content[start:start+1200]
+                    chunks.append((key,start,chunk,words(chunk)))
+            df=Counter(w for _,_,_,ws in chunks for w in ws)
+            ranked=[]
+            for key,start,chunk,ws in chunks:
+                overlap=query & ws
+                if overlap:
+                    score=sum(math.log(1+len(chunks)/(1+df[w])) for w in overlap)
+                    ranked.append((score,key,start,chunk))
+            ranked.sort(key=lambda x:(-x[0],x[1],x[2]))
+            return [{"name":key,"start":start,"score":score,"text":chunk} for score,key,start,chunk in ranked[:5]]
+        if name == "search_examples":
+            query=set(re.findall(r"\w+",args["query"].lower()))
+            limit=min(8,max(1,int(args.get("limit",3))))
+            ranked=[]
+            for key, example in self.examples.items():
+                text=example["input"].get("text","")+" "+" ".join(t.get("text","") for t in example["input"].get("targets",[]))
+                words=set(re.findall(r"\w+",text.lower()))
+                score=len(query & words)/max(1,len(query | words))
+                if key.lower()==args["query"].lower(): score=1.0
+                if score>0: ranked.append((score,key))
+            ranked.sort(key=lambda x:(-x[0],x[1]))
+            return [{"similarity":score,"example":copy.deepcopy(self.examples[key])} for score,key in ranked[:limit]]
         if name == "read_example":
             if args["id"] not in self.examples:
                 raise ValueError("Example has not been purchased")

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "development_original_conservative_ceiling": 5,
+  "development_reconciled_upper_bound": 2.2576175,
+  "method": "Completed requests repriced at official uncached GPT5.4-mini rates; all unknown outcomes retain full original reservations. Original ledger retained unchanged.",
+  "research_ceiling_reallocated": 27.6,
+  "extra_unmetered_diagnostics_buffer": 0.1423825,
+  "total_hard_ceiling": 30,
+  "reason": "Reallocate unused conservative development reserve without increasing total budget or selecting runs by scores."
+}

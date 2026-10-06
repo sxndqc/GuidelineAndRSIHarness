@@ -1,0 +1,32 @@
+{
+  "text": "{\"action\": \"finish\", \"arguments\": {\"summary\": \"Visible colors include dark green, blue, beige/skin tones, white, and orange-yellow background tones.\"}}",
+  "native_tool_calls": [
+    {
+      "id": "call_hIqvEUAxlcOgwp052mpCd9OZ",
+      "type": "function",
+      "function": {
+        "name": "finish",
+        "arguments": "{\"summary\":\"Visible colors include dark green, blue, beige/skin tones, white, and orange-yellow background tones.\"}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 36,
+    "total_tokens": 377,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "latency_seconds": 1.248031474002346,
+  "response_id": "chatcmpl-EW1uTpZitrxseGtvJSvvb4zco77CD",
+  "finish_reason": "tool_calls"
+}

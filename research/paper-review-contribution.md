@@ -2,6 +2,8 @@
 
 审阅日期：2026-10-06。审阅对象：`paper/main.tex`、`paper/references.bib`、控制实验表、`results/snacs-controls/baseline-results.json` 及预测文件、`results/control-analysis.json`、`results/verification.json` 和实验状态记录。本意见来自 AI 审稿角色，不代表真实 ACL 审稿或领域专家裁决。
 
+后续状态更新：最近邻 Kim et al. (2026) 现已完成全文与公开实现阅读，详见 [closest-work-fulltext-review.md](closest-work-fulltext-review.md)。本文下面“尚未读全方法”的判断记录的是本次终审当时状态，不再适用于该篇；其真正的模型复现仍未运行。全文明确已有 10 train 文档适应、100 official-dev 文档独立评测，不能把独立评测当作我们的新贡献。最新父任务诊断还显示网络已恢复，Codex 推理当前为 401 登录失效，不能再沿用 403 作为当前阻塞说明。
+
 ## 结论
 
 **当前版本是诚实的研究协议与初步控制实验工作稿，不是完成的 ACL 实证研究，也尚不能作为用户要求的完整研究交付。** 建议当前不投稿，以核心 agent 对照为下一实验优先级。不可投稿的主要原因是证据不覆盖核心科学问题，而不是必须取得正结果：即使持久记忆与程序都没有收益，经过充分控制的真实负结果仍可能形成论文。

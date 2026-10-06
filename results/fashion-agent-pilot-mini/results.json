@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "budget": 0,
+      "seed": 11,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.3125,
+        "valid_output_rate": 1.0,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 10,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "completed_instances": 16
+    },
+    {
+      "condition": "frozen",
+      "budget": 4,
+      "seed": 11,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.375,
+        "valid_output_rate": 0.9375,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 2,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "completed_instances": 15
+    },
+    {
+      "condition": "frozen",
+      "budget": 16,
+      "seed": 11,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.125,
+        "valid_output_rate": 0.5,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 1,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "completed_instances": 8
+    },
+    {
+      "condition": "notes",
+      "budget": 4,
+      "seed": 11,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.1875,
+        "valid_output_rate": 0.8125,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 1,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "108e8a8cf04cdcb69d976b73c7bda6e51869144cb514f0e52081a8f70d263b88",
+      "completed_instances": 13
+    },
+    {
+      "condition": "notes",
+      "budget": 16,
+      "seed": 11,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "metrics": {
+        "instances": 16,
+        "category_accuracy": 0.125,
+        "valid_output_rate": 0.8125,
+        "published_attribute_micro_f1": 0.0,
+        "attribute_tp": 0,
+        "attribute_fp": 3,
+        "attribute_fn": 49,
+        "empty_gold_instances": 3,
+        "warning": "Agreement with published annotation; unlisted attributes are not certified semantic negatives. Not official AP."
+      },
+      "asset_sha256": "108e8a8cf04cdcb69d976b73c7bda6e51869144cb514f0e52081a8f70d263b88",
+      "completed_instances": 13
+    }
+  ]
+}

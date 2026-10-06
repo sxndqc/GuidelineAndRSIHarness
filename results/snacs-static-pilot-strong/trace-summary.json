@@ -1,0 +1,268 @@
+{
+  "full_traces": "Retained locally in ignored episodes/; not published because they contain source materials.",
+  "episodes": [
+    {
+      "episode": "static-s11-b16-reviews-126086-0001.json",
+      "raw_sha256": "e3e7adac27df2a241a7b9ca0a78a4c630cce866780d9f2ab0afd1b7ad81464b1",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-128808-0003.json",
+      "raw_sha256": "21a89c5446109dde279a5e871a0a96e9ceeda0fa2e914f199931ecfe0cfe662b",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-130216-0001.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-130647-0003.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-165032-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-171255-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-200668-0001.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-200668-0002.json",
+      "raw_sha256": "ae3fe3ccf861b20caa4e9e4e8b4b097619769f71bf9d852e25da9f3544a75523",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-211933-0001.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-225861-0003.json",
+      "raw_sha256": "007706229966ac2a2f2593ccdb3d68eb77e7a956edb133f7b5f2cefc7aeff53c",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-229442-0003.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-245928-0003.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-256677-0005.json",
+      "raw_sha256": "f9650133c1bbc32577fe81421a0d88305c8d9a575b83b0614383e124a1331a5a",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69539,
+            "completion_tokens": 28,
+            "total_tokens": 69567,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-2026-03-05",
+          "latency_seconds": 2.622073107995675,
+          "response_id": "chatcmpl-EW25y4eDZu5yaM9gTJzRzUUk3zimS",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-313126-0001.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-314880-0003.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325330-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325741-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325741-0004.json",
+      "raw_sha256": "0cab66d50db981c15c06db4fcdf109b86a4f99c324e0e77b3ddfcb10459faf1d",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-329807-0003.json",
+      "raw_sha256": "495eda423148ce3b25029844b0a86cdec0e41486d6889736c1335f592381a022",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-335490-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-363428-0004.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-363482-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-369608-0003.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-384229-0002.json",
+      "raw_sha256": "ac236273a6c8537cead859a35f467802ccafc60421d48f1d1ffc9d53c0c8a08a",
+      "status": "cost_budget_exhausted",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    }
+  ]
+}

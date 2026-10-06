@@ -10,7 +10,10 @@ requires-python = ">=3.11"
 dependencies = ["numpy==2.3.5", "scikit-learn==1.8.0"]
 
 [project.optional-dependencies]
-reports = ["matplotlib==3.10.8"]
+reports = [
+    "matplotlib==3.10.8",
+    "pillow==12.3.0",
+]
 
 [project.scripts]
 guideline-harness = "guideline_harness.cli:main"

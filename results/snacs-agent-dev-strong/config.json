@@ -1,0 +1,31 @@
+{
+  "model": "gpt-5.4-2026-03-05",
+  "base_url": "https://api.openai.com/v1",
+  "key_env": "openai",
+  "reasoning_effort": "none",
+  "data_root": "data/prepared/snacs",
+  "output": "results/snacs-agent-dev-strong",
+  "materials_manifest": "configs/snacs-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_limit": 3,
+  "evaluation_seed": 20261006,
+  "conditions": [
+    "frozen",
+    "notes_program"
+  ],
+  "budgets": [
+    4
+  ],
+  "seeds": [
+    11
+  ],
+  "adapt_calls": 24,
+  "predict_calls": 8,
+  "max_completion_tokens": 2000,
+  "cost_ledger": "results/api-research-cost-ledger.json",
+  "cost_ceiling_usd": 25,
+  "native_tools": true,
+  "input_rate_ceiling": 2.5,
+  "output_rate_ceiling": 15,
+  "workers": 4
+}

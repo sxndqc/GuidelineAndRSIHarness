@@ -1,0 +1,636 @@
+{
+  "full_traces": "Retained locally in ignored episodes/; not published because they contain source materials.",
+  "episodes": [
+    {
+      "episode": "static-s11-b16-reviews-126086-0001.json",
+      "raw_sha256": "f30ad1655e949a7b821010b84919f6cac847985c634fe1e76565cd6d95c0d628",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69590,
+            "completion_tokens": 26,
+            "total_tokens": 69616,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.5728911879996303,
+          "response_id": "chatcmpl-EW1r0OtjGZmnpVyAox9hmGpBy3ixK",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-128808-0003.json",
+      "raw_sha256": "614fd709ea0cdc4168b2725cd5ceba5927ffeb996cc58a45ad330d737fe4e67d",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69550,
+            "completion_tokens": 27,
+            "total_tokens": 69577,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.184723867001594,
+          "response_id": "chatcmpl-EW1r3F47eYjhrUvGl3LhstWFFVSCM",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-130216-0001.json",
+      "raw_sha256": "7a5f074d000fe560ddc496b0f35a4d32562c2c66da652ec970126bd547c70e46",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69613,
+            "completion_tokens": 57,
+            "total_tokens": 69670,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.4256019909953466,
+          "response_id": "chatcmpl-EW1r9wVk1pnsmd30vFsZ6sP8qAERq",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-130647-0003.json",
+      "raw_sha256": "b4edf5c70ec99761dea12e0aeb88ea17b29ff7499328f871d3122dc900577722",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-165032-0002.json",
+      "raw_sha256": "576f3c3094af70ccab43692d8f704cc7362db2274a8d1d50e6c889af33daaa33",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69691,
+            "completion_tokens": 74,
+            "total_tokens": 69765,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.0424190999983693,
+          "response_id": "chatcmpl-EW1rCuvrLOEAkYPd9s8aDy48cluKX",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-171255-0002.json",
+      "raw_sha256": "0591ef87c7d71de442fb9634f31d467ac59c88fe7852ddce966401c3a3f17818",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69656,
+            "completion_tokens": 74,
+            "total_tokens": 69730,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 4.312385500001255,
+          "response_id": "chatcmpl-EW1r5LAd3Vgq0nzfEjeESVet6fYF9",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-200668-0001.json",
+      "raw_sha256": "8ebf900bda2be29576fe7bb3a037f9005fc8f7f65a1da8c8842f79c6a7c4ce30",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-200668-0002.json",
+      "raw_sha256": "45c5c70c1753c15aac9b3f5cb9e486adb4daa58a61f537ad78ffdfe8fafad079",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69563,
+            "completion_tokens": 28,
+            "total_tokens": 69591,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.4642289690018515,
+          "response_id": "chatcmpl-EW1r2ZIdTmcXRSON0uyw1Wb9rzKSO",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-211933-0001.json",
+      "raw_sha256": "3db0a10b669c26cf24e669d701815dea8d6da06df0fad640d7710d0068372cb3",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-225861-0003.json",
+      "raw_sha256": "ff87d248e836e090cabbd9a51425865291a3ec210d96f740d142875f7d3b1929",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69575,
+            "completion_tokens": 42,
+            "total_tokens": 69617,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.9307631379997474,
+          "response_id": "chatcmpl-EW1qzkJCMoXoq5ENhG1DOr2oRZnOk",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-229442-0003.json",
+      "raw_sha256": "d84310a51406a63ca4ed7dd2eebd3182cc08bcb96dda93e1186b1a04744f3a24",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69669,
+            "completion_tokens": 70,
+            "total_tokens": 69739,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.8640296290031984,
+          "response_id": "chatcmpl-EW1rDaPRKZWoDRNZNRPGAGqWIX1Qu",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-245928-0003.json",
+      "raw_sha256": "e08783eb6731c1d2e3597c1c5267997542d6c9765ff5602a2a654c355ea5e1e0",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-256677-0005.json",
+      "raw_sha256": "f9a285d7041853fa21ee8b71c4ae92f5e81aa6be263e30d2744b4f7e0260f2e0",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69539,
+            "completion_tokens": 28,
+            "total_tokens": 69567,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.240610918997845,
+          "response_id": "chatcmpl-EW1qzRUFGrxF0pDftHNBzndNMUEHB",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-313126-0001.json",
+      "raw_sha256": "ab0fdb41c0d2a31457911595707c4bff45f76e8c530aa48e2e11b56293f851be",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69560,
+            "completion_tokens": 30,
+            "total_tokens": 69590,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.966317889004131,
+          "response_id": "chatcmpl-EW1r9eYvckPYwvUqlC41XOiUKMSyE",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-314880-0003.json",
+      "raw_sha256": "1db284cdc464b88dd2a145d45278d92efe57943b131494a7536768a957719eaa",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69699,
+            "completion_tokens": 82,
+            "total_tokens": 69781,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.0402540389986825,
+          "response_id": "chatcmpl-EW1r71v4xruRCQBnFA3clNohh8dVy",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325330-0002.json",
+      "raw_sha256": "6f402ed1f49c2a901fe7c3751e6e1d56dd9100531954c5a62bc557000a9e58ce",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69612,
+            "completion_tokens": 40,
+            "total_tokens": 69652,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.8360119680000935,
+          "response_id": "chatcmpl-EW1r5zG7uuuZwEwkre6lugeycQOsK",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325741-0002.json",
+      "raw_sha256": "d363e95c7f63adb5c14750f0b89d8e942e5de846b49f58ce7b0c25e770d12284",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69603,
+            "completion_tokens": 30,
+            "total_tokens": 69633,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.9862235489999875,
+          "response_id": "chatcmpl-EW1r3df48xzDRa3DZaD6dAYMCz54u",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-325741-0004.json",
+      "raw_sha256": "9409860ea84d4307bc14bda87d874e7b3718dee2665f77f4a1f52b348eae91a2",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-329807-0003.json",
+      "raw_sha256": "7550727997ef2a39db9a8e64fd25a9522f9a00cdfe52ebca82ecd95083f1820b",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-335490-0002.json",
+      "raw_sha256": "3ed01cfcb0777b350905095d12baa9bb13d32e3d732f8c90a3c3dd88f249fa6c",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69527,
+            "completion_tokens": 26,
+            "total_tokens": 69553,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.103118030994665,
+          "response_id": "chatcmpl-EW1r3zQZWvLUEZzho0iXYYyXoREQH",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-363428-0004.json",
+      "raw_sha256": "3d9d1708115f47a703c2ba95a45884d1e727e7c979cc92782686146e821d00d7",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69575,
+            "completion_tokens": 44,
+            "total_tokens": 69619,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 3.2910079840003164,
+          "response_id": "chatcmpl-EW1r6HiDqoeOU4YsE9ee11osqhgMp",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-363482-0002.json",
+      "raw_sha256": "c7fdae730365ff015b8452a9b07fec0a92292d25af4c125842b9105ecf2bc566",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69580,
+            "completion_tokens": 42,
+            "total_tokens": 69622,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 2.3989505549980095,
+          "response_id": "chatcmpl-EW1rBSdmEDfvNiTJMiBYYnntw5nPw",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-369608-0003.json",
+      "raw_sha256": "524fef4287ca431ad3c924462aab0609470265f1fc00f3b2a62d3b89cb89538c",
+      "status": "completed",
+      "error_type": null,
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [
+        {
+          "step": 0,
+          "usage": {
+            "prompt_tokens": 69572,
+            "completion_tokens": 42,
+            "total_tokens": 69614,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "model": "gpt-5.4-mini-2026-03-17",
+          "latency_seconds": 4.288726588005375,
+          "response_id": "chatcmpl-EW1r9UhKn92kgAJmWqaH9202mspGX",
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "tools": []
+    },
+    {
+      "episode": "static-s11-b16-reviews-384229-0002.json",
+      "raw_sha256": "56106e6719c31f2999ed9672c6e81c3ac948aa446923533244403659c2c4819f",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "http_status": null,
+      "provider_code": null,
+      "model_calls": [],
+      "tools": []
+    }
+  ]
+}
