@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-06T17:36:04.915480+00:00",
+  "run": "codex-study-cap_pa-luna",
+  "scope": "Manual bounded continuation after observed CAP capacity interruption; complete prior failure streams checked for unknown/native tool events. Timeout elsewhere is not reclassified as capacity.",
+  "classified_transport_events": [
+    {
+      "index": 545,
+      "model": "gpt-6-luna",
+      "reason": "timeout",
+      "raw_sha256": "d426ade14d48c1d098d6b18e4e68b0f8137a50aa8034f3e743566a860b3d20bc"
+    },
+    {
+      "index": 552,
+      "model": "gpt-6-luna",
+      "reason": "policy_refusal",
+      "raw_sha256": "dce193214608a1c47e0fac8ac05f5650201557ad3aa4dcbc2f9c1a8b771fb398"
+    },
+    {
+      "index": 629,
+      "model": "gpt-6-luna",
+      "reason": "capacity",
+      "raw_sha256": "250638cc7176c0ad8cdd5c77538ae2863ceffc33f585369adef8e20cda599d6a"
+    },
+    {
+      "index": 902,
+      "model": "gpt-6-luna",
+      "reason": "capacity",
+      "raw_sha256": "cf7a48f2a6703f0c9fe5ede1fcbc1a0eb20b56f9dd8db167f1bddfc261b26612"
+    }
+  ],
+  "annotated_interrupted_episodes": 7,
+  "limitations": "Legacy controller omitted per-episode backend reason; this is posthoc operational audit, not contemporaneous provenance."
+}

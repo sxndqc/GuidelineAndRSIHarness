@@ -9,24 +9,29 @@
       "GUM/DISRPT",
       "UD EWT",
       "Manifesto",
-      "Fashionpedia"
+      "Fashionpedia",
+      "CAP Pennsylvania",
+      "ContractNLI"
     ],
     "actual_data_downloaded": [
       "Pinned STREUSLE official train/dev/test",
       "Full SNACS2.6 guideline",
       "Official Fashionpedia validation annotations",
-      "Closest ACL2026 full text and public code/data"
+      "Closest ACL2026 full text and public code/data",
+      "CAP Pennsylvania official CSV and full Part2 topic codebook",
+      "ContractNLI official release"
     ],
     "non_llm_control_runs": 60,
     "evaluated_test_sentences": 259,
     "evaluated_test_targets": 485,
-    "unit_tests": 15,
+    "unit_tests": 25,
     "real_program_isolation_test": "passed",
     "real_snacs_configuration_loops": 26,
     "planned_snacs_predictions": 624,
     "successful_snacs_predictions": 481,
     "fashion_mini_cells": 5,
-    "paper_pages": 6
+    "paper_pages": 6,
+    "subscription_matched_non_llm_control_runs": 45
   },
   "not_executed": [
     "Clean fully completed model comparison",
@@ -36,11 +41,6 @@
     "Closest-paper model reproduction"
   ],
   "blockers": [
-    {
-      "item": "Inference funding",
-      "evidence": "HTTP429 insufficient_quota / credit_balance_exhausted during exact failed-request diagnostic replay",
-      "needed": "Funded API project or replacement secure openai binding; network403 is resolved"
-    },
     {
       "item": "Manifesto",
       "evidence": "Official handbook and terms acquired; annotated corpus requires registered API key or legitimate export",
@@ -55,16 +55,20 @@
     "arxiv.org"
   ],
   "saved_secret_requirement": "MANIFESTO_API_KEY; no value supplied",
-  "publication_state": "Six-page diagnostic draft with real pilot scores and explicit failed/incomplete comparisons; not ACL-ready",
+  "publication_state": "Earlier completed diagnostic paper preserved; new cross-domain live paper marks pending cells and is not submission-ready",
   "inference_status": {
-    "state": "verified_real_completion",
-    "endpoint": "https://api.openai.com/v1",
-    "credential_binding": "openai",
+    "state": "verified_and_running",
+    "backend": "official Codex CLI subscription",
     "models": [
-      "gpt-5.4-2026-03-05",
-      "gpt-5.4-mini-2026-03-17"
+      "gpt-6-sol",
+      "gpt-6-luna"
     ],
-    "evidence": "results/api-reasoning-smoke.json"
+    "authorization": "User completed official device login",
+    "api_path": "Separate API credit remains exhausted; not used for current runs",
+    "live_status": "research/subscription-supervisor-status.json"
   },
-  "running": []
+  "running": [
+    "112-cell subscription study across SNACS and CAP PA",
+    "Bounded supervisor with automatic paper regeneration"
+  ]
 }

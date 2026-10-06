@@ -1,0 +1,589 @@
+{
+  "scope": "Frozen Codex CLI-system study; additional supervision, not from-scratch learning",
+  "runs": [
+    {
+      "directory": "results/codex-study-cap_pa-luna",
+      "status": "backend_unavailable",
+      "expected_cells": 28,
+      "completed_cells": 1,
+      "evaluation_rows": 215,
+      "targets": 215,
+      "groups": 128,
+      "batches": 16,
+      "observed_gold_labels": 73,
+      "cells": [
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 0,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 0,
+            "unique_labeled_sentences": 0,
+            "labeled_decisions": 0,
+            "reveal_calls": 0
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "23aead22c75dff7427d36c6c8d52c241baaf92c642021fc285743ec6b808313d",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.44651162790697674,
+            "group_macro_accuracy": 0.4184027777777778,
+            "macro_f1_observed": 0.3412486251084156,
+            "macro_f1_inventory": 0.10379645680380974,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 96,
+              "targets": 215,
+              "accuracy": 0.44651162790697674
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 101
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 3644015,
+            "evaluation_completion_tokens": 29455
+          }
+        }
+      ]
+    },
+    {
+      "directory": "results/codex-study-cap_pa-sol",
+      "status": "running",
+      "expected_cells": 28,
+      "completed_cells": 3,
+      "evaluation_rows": 215,
+      "targets": 215,
+      "groups": 128,
+      "batches": 16,
+      "observed_gold_labels": 73,
+      "cells": [
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 0,
+          "model": "gpt-6-sol",
+          "supervision": {
+            "limit": 0,
+            "unique_labeled_sentences": 0,
+            "labeled_decisions": 0,
+            "reveal_calls": 0
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "a0affd703621a8cd124960881664edbe98aad470b1aff7141dff0a8eab884963",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.641860465116279,
+            "group_macro_accuracy": 0.5863715277777778,
+            "macro_f1_observed": 0.538352852786883,
+            "macro_f1_inventory": 0.16374899272267693,
+            "valid_output_rate": 0.8837209302325582
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 14,
+          "completed_instances": 190,
+          "failed_or_exhausted_batches": 2,
+          "failed_or_exhausted_instances": 25,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 138,
+              "targets": 215,
+              "accuracy": 0.641860465116279
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 14,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 179,
+            "evaluation_tool_budget_exhausted": 2
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 6766893,
+            "evaluation_completion_tokens": 28561
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 4,
+          "model": "gpt-6-sol",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "6bc401135c5753fc405beb5b57c9c3a43ef14c6e386914a060002e96f0f161af",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.6465116279069767,
+            "group_macro_accuracy": 0.6098090277777778,
+            "macro_f1_observed": 0.5656040946956592,
+            "macro_f1_inventory": 0.17203791213659633,
+            "valid_output_rate": 0.9255813953488372
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 199,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 16,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 137,
+              "targets": 208,
+              "accuracy": 0.6586538461538461
+            },
+            "purchased_label_seen": {
+              "correct": 2,
+              "targets": 7,
+              "accuracy": 0.2857142857142857
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 189,
+            "evaluation_tool_budget_exhausted": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 7287362,
+            "evaluation_completion_tokens": 28748
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 16,
+          "model": "gpt-6-sol",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "8a7ea2aad09c811db447f38a2a2675fc6d5f0aebd5b7607b4198d2f933c5dd25",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.6186046511627907,
+            "group_macro_accuracy": 0.5824652777777778,
+            "macro_f1_observed": 0.5664341786547986,
+            "macro_f1_inventory": 0.17229039600750126,
+            "valid_output_rate": 0.8790697674418605
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 14,
+          "completed_instances": 189,
+          "failed_or_exhausted_batches": 2,
+          "failed_or_exhausted_instances": 26,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 104,
+              "targets": 176,
+              "accuracy": 0.5909090909090909
+            },
+            "purchased_label_seen": {
+              "correct": 29,
+              "targets": 39,
+              "accuracy": 0.7435897435897436
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 14,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 189,
+            "evaluation_tool_budget_exhausted": 2
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 8021967,
+            "evaluation_completion_tokens": 31124
+          }
+        }
+      ]
+    },
+    {
+      "directory": "results/codex-study-snacs-luna",
+      "status": "running",
+      "expected_cells": 28,
+      "completed_cells": 2,
+      "evaluation_rows": 114,
+      "targets": 202,
+      "groups": 64,
+      "batches": 16,
+      "observed_gold_labels": 64,
+      "cells": [
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 0,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 0,
+            "unique_labeled_sentences": 0,
+            "labeled_decisions": 0,
+            "reveal_calls": 0
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "69cb596e198e233d6cd1c23f0c6414726c96fc5bb6916c19e996e89de8429d21",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5297029702970297,
+            "function_accuracy": 0.5891089108910891,
+            "joint_accuracy": 0.400990099009901,
+            "role_macro_f1": 0.4163965663965664,
+            "function_macro_f1": 0.46111773050668686,
+            "sentence_exact": 0.2807017543859649,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 81,
+              "targets": 202,
+              "accuracy": 0.400990099009901
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 73
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2579773,
+            "evaluation_completion_tokens": 28275
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 9,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "bdec9406d82b41909f29f73142445a3a705a14e972d14994f6803d20c23f40fb",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.4900990099009901,
+            "function_accuracy": 0.5643564356435643,
+            "joint_accuracy": 0.37623762376237624,
+            "role_macro_f1": 0.39465722594686653,
+            "function_macro_f1": 0.47159302072756043,
+            "sentence_exact": 0.2807017543859649,
+            "valid_output_rate": 0.9298245614035088
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 107,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 7,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 38,
+              "targets": 152,
+              "accuracy": 0.25
+            },
+            "purchased_label_seen": {
+              "correct": 38,
+              "targets": 50,
+              "accuracy": 0.76
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 79,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2742603,
+            "evaluation_completion_tokens": 26510
+          }
+        }
+      ]
+    },
+    {
+      "directory": "results/codex-study-snacs-sol",
+      "status": "running",
+      "expected_cells": 28,
+      "completed_cells": 2,
+      "evaluation_rows": 114,
+      "targets": 202,
+      "groups": 64,
+      "batches": 16,
+      "observed_gold_labels": 64,
+      "cells": [
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 0,
+          "model": "gpt-6-sol",
+          "supervision": {
+            "limit": 0,
+            "unique_labeled_sentences": 0,
+            "labeled_decisions": 0,
+            "reveal_calls": 0
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "29a323ce05f6b19ecc80ccc536f9bb20b2f6beb9e0fe8e4455a4f57ed7916faa",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.7772277227722773,
+            "function_accuracy": 0.8663366336633663,
+            "joint_accuracy": 0.7128712871287128,
+            "role_macro_f1": 0.6961776005031137,
+            "function_macro_f1": 0.7984839874569902,
+            "sentence_exact": 0.5789473684210527,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 144,
+              "targets": 202,
+              "accuracy": 0.7128712871287128
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 177
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 7739582,
+            "evaluation_completion_tokens": 33937
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 11,
+          "budget": 4,
+          "model": "gpt-6-sol",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 9,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "86e9ef28d9c8af2f7322b56bc7636d2faa85e64090038b37d421708bf8ed9b93",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.7623762376237624,
+            "function_accuracy": 0.8613861386138614,
+            "joint_accuracy": 0.7178217821782178,
+            "role_macro_f1": 0.6865842386965381,
+            "function_macro_f1": 0.7761324744733602,
+            "sentence_exact": 0.5701754385964912,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 99,
+              "targets": 152,
+              "accuracy": 0.6513157894736842
+            },
+            "purchased_label_seen": {
+              "correct": 46,
+              "targets": 50,
+              "accuracy": 0.92
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 174
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 7342531,
+            "evaluation_completion_tokens": 35102
+          }
+        }
+      ]
+    }
+  ],
+  "aggregates": [
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition": "frozen",
+      "budget": 0,
+      "seeds": 1,
+      "mean": 0.44651162790697674,
+      "min": 0.44651162790697674,
+      "max": 0.44651162790697674,
+      "descriptive95_interval": [
+        0.319045566502463,
+        0.5836920138817586
+      ],
+      "valid_output_rate": 1.0
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-sol",
+      "condition": "frozen",
+      "budget": 0,
+      "seeds": 1,
+      "mean": 0.641860465116279,
+      "min": 0.641860465116279,
+      "max": 0.641860465116279,
+      "descriptive95_interval": [
+        0.5023234956721243,
+        0.7512162052776425
+      ],
+      "valid_output_rate": 0.8837209302325582
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-sol",
+      "condition": "frozen",
+      "budget": 4,
+      "seeds": 1,
+      "mean": 0.6465116279069767,
+      "min": 0.6465116279069767,
+      "max": 0.6465116279069767,
+      "descriptive95_interval": [
+        0.5253369815668202,
+        0.7352974149300976
+      ],
+      "valid_output_rate": 0.9255813953488372
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-sol",
+      "condition": "frozen",
+      "budget": 16,
+      "seeds": 1,
+      "mean": 0.6186046511627907,
+      "min": 0.6186046511627907,
+      "max": 0.6186046511627907,
+      "descriptive95_interval": [
+        0.47195111616870855,
+        0.7297423004399748
+      ],
+      "valid_output_rate": 0.8790697674418605
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition": "frozen",
+      "budget": 0,
+      "seeds": 1,
+      "mean": 0.400990099009901,
+      "min": 0.400990099009901,
+      "max": 0.400990099009901,
+      "descriptive95_interval": [
+        0.3471473016774316,
+        0.45102167182662517
+      ],
+      "valid_output_rate": 1.0
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition": "frozen",
+      "budget": 4,
+      "seeds": 1,
+      "mean": 0.37623762376237624,
+      "min": 0.37623762376237624,
+      "max": 0.37623762376237624,
+      "descriptive95_interval": [
+        0.30845771144278605,
+        0.4427860696517413
+      ],
+      "valid_output_rate": 0.9298245614035088
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-sol",
+      "condition": "frozen",
+      "budget": 0,
+      "seeds": 1,
+      "mean": 0.7128712871287128,
+      "min": 0.7128712871287128,
+      "max": 0.7128712871287128,
+      "descriptive95_interval": [
+        0.6536585365853659,
+        0.774869109947644
+      ],
+      "valid_output_rate": 1.0
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-sol",
+      "condition": "frozen",
+      "budget": 4,
+      "seeds": 1,
+      "mean": 0.7178217821782178,
+      "min": 0.7178217821782178,
+      "max": 0.7178217821782178,
+      "descriptive95_interval": [
+        0.6682926829268293,
+        0.7680507325013565
+      ],
+      "valid_output_rate": 1.0
+    }
+  ],
+  "paired_effects": [],
+  "uncertainty": "Descriptive 95% percentile bootstrap over paired adaptation seeds and fixed evaluation batches; three seeds and sixteen batches limit calibration. No multiple-comparison correction or universal sufficiency claim.",
+  "transport": {
+    "calls": 1478,
+    "states": {
+      "action_validated": 1462,
+      "timeout": 1,
+      "failed": 3,
+      "invalid_action": 3,
+      "started": 9
+    },
+    "usage": {
+      "prompt_tokens": 58513234,
+      "completion_tokens": 322295
+    },
+    "unknown_usage_calls": 13
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "updated_utc": "2026-10-06T17:39:19.910943+00:00",
+  "states": {
+    "snacs-sol": {
+      "state": "running",
+      "completed_cells": 3
+    },
+    "snacs-luna": {
+      "state": "running",
+      "completed_cells": 2
+    },
+    "cap_pa-sol": {
+      "state": "running",
+      "completed_cells": 3
+    },
+    "cap_pa-luna": {
+      "state": "running",
+      "completed_cells": 1
+    }
+  },
+  "supervisor_continuations": {
+    "snacs-sol": 0,
+    "snacs-luna": 0,
+    "cap_pa-sol": 0,
+    "cap_pa-luna": 0
+  },
+  "transport_calls": 1540,
+  "deadline_hours": 8,
+  "note": "Runs continue in the workspace while supervisor is alive. Blocked states are not completed experiments."
+}

@@ -15,13 +15,14 @@ SCHEMA={'type':'object','properties':{
 DISABLED=['shell_tool','unified_exec','apps','plugins','multi_agent','browser_use','browser_use_external','computer_use','view_image','image_generation','hooks','memories','code_mode_host','unbounded_connection_retries']
 
 class CodexBackendUnavailable(RuntimeError):
-    pass
+    def __init__(self,message,reason='unknown',ledger_index=None):
+        super().__init__(message);self.reason=reason;self.ledger_index=ledger_index
 
 class CodexModel:
     def __init__(self,model,reasoning_effort='medium',ledger='runs/codex/subscription-ledger.json',max_calls=4096,timeout=180):
         self.model=model;self.reasoning_effort=reasoning_effort
         self.path=Path(ledger).resolve();self.path.parent.mkdir(parents=True,exist_ok=True)
-        self.max_calls=max_calls;self.timeout=timeout;self.blocked=False
+        self.max_calls=max_calls;self.timeout=timeout;self.blocked=False;self.block_reason="unknown"
         self.driver=Path('/tmp/guideline-codex-driver');self.driver.mkdir(exist_ok=True)
         self.schema=self.driver/('action-schema-'+hashlib.sha256(json.dumps(SCHEMA,sort_keys=True).encode()).hexdigest()[:12]+'.json');self.schema.write_text(json.dumps(SCHEMA))
         self.logdir=self.path.parent/(self.path.stem+'-transport');self.logdir.mkdir(exist_ok=True)
@@ -37,10 +38,21 @@ class CodexModel:
             tmp=self.path.with_suffix('.tmp');tmp.write_text(json.dumps(events,indent=2));tmp.replace(self.path)
             return index
 
-    def complete(self,messages):
-        if self.blocked:raise CodexBackendUnavailable('Backend halted after a transport or isolation failure')
+    def complete(self,messages,_capacity_attempt=0):
+        if self.blocked:raise CodexBackendUnavailable('Backend halted after a transport or isolation failure',self.block_reason)
         prompt='''You are one actor in an externally controlled annotation experiment. Native host tools are unavailable and must not be called. Continue the serialized conversation below by emitting exactly one authorized action under the output schema. arguments_json must be a valid JSON encoding of that action's argument object. A finish action returns the requested prediction or adaptation summary. The external controller will execute tools and send their results on the next turn. Do not solve missing tool calls by accessing the host or internet.\n'''+json.dumps(messages,ensure_ascii=False)
         if len(prompt)>1_000_000:raise ValueError('Prompt exceeds fixed controller limit')
+        prompt_hash=hashlib.sha256(prompt.encode()).hexdigest()
+        refusals=self.path.parent/'terminal-refusals.json'
+        known=json.loads(refusals.read_text()) if refusals.exists() else {}
+        history=json.loads(self.path.read_text()) if self.path.exists() else []
+        capacity_failures=sum(e.get('terminal_reason')=='capacity' and e.get('model')==self.model and e.get('prompt_sha256')==prompt_hash for e in history)
+        if capacity_failures>=3:
+            self.blocked=True;self.block_reason='capacity'
+            raise CodexBackendUnavailable('Capacity retry limit already reached','capacity')
+        refusal_key=self.model+'\n'+prompt_hash
+        if refusal_key in known:
+            return {'text':'','finish_reason':'content_filter','usage':{'usage_unknown':True},'ledger_index':known[refusal_key],'previously_recorded_refusal':True}
         started=time.monotonic()
         index=self.record({'status':'started','model':self.model,'reasoning_effort':self.reasoning_effort,'started_utc':datetime.now(timezone.utc).isoformat(),'prompt_sha256':hashlib.sha256(prompt.encode()).hexdigest(),'channel':'official_codex_cli_chatgpt_subscription'})
         output=self.logdir/f'{index:06d}-final.json'
@@ -57,8 +69,8 @@ class CodexModel:
             (self.logdir/f'{index:06d}-events.jsonl').write_text(stdout)
             (self.logdir/f'{index:06d}-stderr.txt').write_text(stderr)
             self.record({'status':'timeout','latency_seconds':time.monotonic()-started},index)
-            self.blocked=True
-            raise CodexBackendUnavailable('Codex CLI request timed out') from None
+            self.blocked=True;self.block_reason='timeout'
+            raise CodexBackendUnavailable('Codex CLI request timed out','timeout',index) from None
         r=subprocess.CompletedProcess(cmd,process.returncode,stdout,stderr)
         (self.logdir/f'{index:06d}-events.jsonl').write_text(r.stdout)
         (self.logdir/f'{index:06d}-stderr.txt').write_text(r.stderr)
@@ -68,26 +80,41 @@ class CodexModel:
             except ValueError:
                 if line.strip():
                     self.record({'status':'invalid_event_stream'},index)
-                    self.blocked=True
-                    raise CodexBackendUnavailable('Non-JSON line in official JSON event stream')
+                    self.blocked=True;self.block_reason='invalid_event_stream'
+                    raise CodexBackendUnavailable('Non-JSON line in official JSON event stream','invalid_event_stream',index)
         allowed_events={'thread.started','turn.started','turn.completed','turn.failed','item.started','item.updated','item.completed','error'}
         unknown=[e.get('type') for e in events if e.get('type') not in allowed_events]
         if unknown:
             self.record({'status':'unrecognized_event_protocol','event_types':unknown},index)
-            self.blocked=True
-            raise CodexBackendUnavailable('Unrecognized CLI event protocol')
+            self.blocked=True;self.block_reason='unknown_protocol'
+            raise CodexBackendUnavailable('Unrecognized CLI event protocol','unknown_protocol',index)
         forbidden=[e.get('item',{}).get('type') for e in events if e.get('item',{}).get('type') not in (None,'agent_message','reasoning','error')]
         if forbidden:
             self.record({'status':'unauthorized_native_tool_event','types':forbidden},index)
-            self.blocked=True
-            raise CodexBackendUnavailable('Native tool event invalidates isolated model call')
+            self.blocked=True;self.block_reason='isolation_violation'
+            raise CodexBackendUnavailable('Native tool event invalidates isolated model call','isolation_violation',index)
         usage=next((e['usage'] for e in reversed(events) if e.get('type')=='turn.completed' and 'usage' in e),{})
         normalized={'prompt_tokens':usage['input_tokens'],'completion_tokens':usage['output_tokens'],'native':usage} if 'input_tokens' in usage and 'output_tokens' in usage else {'usage_unknown':True,'native':usage}
         thread=next((e.get('thread_id') for e in events if e.get('type')=='thread.started'),None)
         self.record({'status':'transport_completed' if r.returncode==0 else 'failed','exit_code':r.returncode,'usage':normalized,'thread_id':thread,'latency_seconds':time.monotonic()-started},index)
+        if r.returncode!=0 and any('flagged as potentially violating our usage policy' in json.dumps(e).lower() for e in events):
+            self.record({'terminal_reason':'policy_refusal'},index)
+            with refusals.with_suffix('.lock').open('a') as lock:
+                fcntl.flock(lock,fcntl.LOCK_EX)
+                known=json.loads(refusals.read_text()) if refusals.exists() else {}
+                known[refusal_key]=index
+                tmp=refusals.with_suffix('.tmp');tmp.write_text(json.dumps(known,indent=2));tmp.replace(refusals)
+            return {'text':'','finish_reason':'content_filter','usage':normalized,'ledger_index':index,'model':self.model,'backend':'codex_cli_subscription'}
+        is_capacity=r.returncode!=0 and any('Selected model is at capacity' in json.dumps(e) for e in events)
+        if is_capacity:self.record({'terminal_reason':'capacity'},index)
+        if is_capacity and _capacity_attempt<2 and capacity_failures<2:
+            self.record({'retry_reason':'capacity','retry_delay_seconds':30*(2**_capacity_attempt),'capacity_attempt':_capacity_attempt+1},index)
+            time.sleep(30*(2**_capacity_attempt))
+            return self.complete(messages,_capacity_attempt+1)
         if r.returncode!=0 or not output.exists():
             self.blocked=True
-            raise CodexBackendUnavailable('Codex CLI failed; retained local diagnostic log')
+            self.block_reason='capacity' if any('Selected model is at capacity' in json.dumps(e) for e in events) else 'transport_failure'
+            raise CodexBackendUnavailable('Codex CLI failed; retained local diagnostic log',self.block_reason,index)
         try:
             action=json.loads(output.read_text());arguments=json.loads(action['arguments_json'])
             if action['action'] not in SCHEMA['properties']['action']['enum'] or not isinstance(arguments,dict):raise ValueError('Invalid action schema')

@@ -1,0 +1,67 @@
+{
+  "status": "running",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 0,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 0,
+        "unique_labeled_sentences": 0,
+        "labeled_decisions": 0,
+        "reveal_calls": 0
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "69cb596e198e233d6cd1c23f0c6414726c96fc5bb6916c19e996e89de8429d21",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.5297029702970297,
+        "function_accuracy": 0.5891089108910891,
+        "joint_accuracy": 0.400990099009901,
+        "role_macro_f1": 0.4163965663965664,
+        "function_macro_f1": 0.46111773050668686,
+        "sentence_exact": 0.2807017543859649,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "bdec9406d82b41909f29f73142445a3a705a14e972d14994f6803d20c23f40fb",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.4900990099009901,
+        "function_accuracy": 0.5643564356435643,
+        "joint_accuracy": 0.37623762376237624,
+        "role_macro_f1": 0.39465722594686653,
+        "function_macro_f1": 0.47159302072756043,
+        "sentence_exact": 0.2807017543859649,
+        "valid_output_rate": 0.9298245614035088
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 107,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 7
+    }
+  ]
+}

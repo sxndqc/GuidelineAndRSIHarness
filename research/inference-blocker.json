@@ -8,8 +8,8 @@
     "source": "Exact failed-request diagnostic replay with GPT5.4 fixed snapshot"
   },
   "additional_evidence": "A Fashionpedia401 failed request succeeded on exact input replay; earlier generic HTTP errors cannot all be attributed to quota.",
-  "response": "No new inference calls. Preserve all raw attempts. New runner records safe machine codes and stops on exhausted credit.",
-  "needed": "Fund or increase quota on the configured API project, or replace openai secret with a funded project credential. No credential values should be sent in chat.",
+  "response": "No new calls on exhausted API credit path. Authorized official Codex subscription experiments are running separately.",
+  "needed": "No API funding is required to use the currently working Codex subscription route. API-specific recovery would require funded project credit.",
   "scope": "OpenAI API credit path only",
   "alternative_codex_subscription": {
     "state": "verified_real_completion_after_user_device_login",

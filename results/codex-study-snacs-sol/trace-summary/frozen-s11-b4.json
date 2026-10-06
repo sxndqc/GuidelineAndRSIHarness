@@ -1,0 +1,77 @@
+{
+  "trace_statistics": {
+    "evaluation_completed": 16,
+    "evaluation_asset_read_episodes": 0,
+    "evaluation_calls": 174
+  },
+  "usage": {
+    "evaluation_prompt_tokens": 7342531,
+    "evaluation_completion_tokens": 35102
+  },
+  "raw_trace_hashes": [
+    {
+      "file": "frozen-s11-b4-batch000.json",
+      "sha256": "f1b54fe2856cb451cd1564a001e3fbfb5b3dacb7f4f77442a4f1ea0be8795d53"
+    },
+    {
+      "file": "frozen-s11-b4-batch001.json",
+      "sha256": "13edfecbb104e942c69df19a34a54a616f07732313279aaf61daa1acc7d4da2d"
+    },
+    {
+      "file": "frozen-s11-b4-batch002.json",
+      "sha256": "528bc75982c0268e0750816c3ea8c15a8b4ddff79a4a0d5f2a4b59638b87a8c5"
+    },
+    {
+      "file": "frozen-s11-b4-batch003.json",
+      "sha256": "d4d3b0db9b898e06c8ead4007e2edeb7e2ceb4889187db8a8b806e6620d6fab3"
+    },
+    {
+      "file": "frozen-s11-b4-batch004.json",
+      "sha256": "d6ef34292b2d8caa257dfd261d23c722c0f05580b29c3c72abf10cdd1035fb94"
+    },
+    {
+      "file": "frozen-s11-b4-batch005.json",
+      "sha256": "b97c897f8f4be4fac5bd2e74cbba0cbfeb746c85e73e75e13e1adf3db172e918"
+    },
+    {
+      "file": "frozen-s11-b4-batch006.json",
+      "sha256": "1b5527a8a437729d6ac98c4f03b213f475a759d35590851e0ee2d435294bbdb7"
+    },
+    {
+      "file": "frozen-s11-b4-batch007.json",
+      "sha256": "8d5e04abfe521ff90a0c087cfae5c36f17c6faf4af62186ca3dc4a431c8b96c2"
+    },
+    {
+      "file": "frozen-s11-b4-batch008.json",
+      "sha256": "d6738512a8250920ef02d576eb87609bd129d23ce39968a3cd675f82afeb729a"
+    },
+    {
+      "file": "frozen-s11-b4-batch009.json",
+      "sha256": "77d7815422479c24791f1474b89aa8e7daf977ea463c6d05d9a5c1c8577195b0"
+    },
+    {
+      "file": "frozen-s11-b4-batch010.json",
+      "sha256": "1153e41cfbd7ec3aac864871a8a3f4f815c984be51054d6c9413dde8923f4009"
+    },
+    {
+      "file": "frozen-s11-b4-batch011.json",
+      "sha256": "a322a66f77ef07b3dbc98ccec17e12f1c7540f2abe38f63fb8050586c139a85e"
+    },
+    {
+      "file": "frozen-s11-b4-batch012.json",
+      "sha256": "45a1f3eda6772edbfe73302811c9e4945b01e53e3d76c7f04f4dc10fd12b418d"
+    },
+    {
+      "file": "frozen-s11-b4-batch013.json",
+      "sha256": "9b08ae513a603c29e440d3acefcfc56461a12501ba16bca4d0948d9dee1663ea"
+    },
+    {
+      "file": "frozen-s11-b4-batch014.json",
+      "sha256": "a459f553dbffd150d27e67b908a886c5eeb73787684cff49b5fc3985bb986aa5"
+    },
+    {
+      "file": "frozen-s11-b4-batch015.json",
+      "sha256": "672ab875d4ecc191cb693c2bf90549031919e03ac1ddd5d42e5059bad7b7ea9e"
+    }
+  ]
+}

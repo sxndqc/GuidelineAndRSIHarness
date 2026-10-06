@@ -1,0 +1,825 @@
+{
+  "status": "completed",
+  "sampling": "shuffle rows then keep first per family, same as agent study",
+  "results": [
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 11,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.15841584158415842,
+        "function_accuracy": 0.19801980198019803,
+        "joint_accuracy": 0.13366336633663367,
+        "role_macro_f1": 0.008288008288008289,
+        "function_macro_f1": 0.012243648607284972,
+        "sentence_exact": 0.09649122807017543,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s11-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 11,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.16831683168316833,
+        "function_accuracy": 0.3217821782178218,
+        "joint_accuracy": 0.12871287128712872,
+        "role_macro_f1": 0.024861878453038676,
+        "function_macro_f1": 0.06577510796391331,
+        "sentence_exact": 0.09649122807017543,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s11-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.0297029702970297,
+        "function_accuracy": 0.19306930693069307,
+        "joint_accuracy": 0.024752475247524754,
+        "role_macro_f1": 0.009092266145557682,
+        "function_macro_f1": 0.04426238249767661,
+        "sentence_exact": 0.02631578947368421,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s11-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 11,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.054455445544554455,
+        "function_accuracy": 0.06930693069306931,
+        "joint_accuracy": 0.054455445544554455,
+        "role_macro_f1": 0.003129890453834116,
+        "function_macro_f1": 0.004801097393689986,
+        "sentence_exact": 0.017543859649122806,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s11-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 11,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.1485148514851485,
+        "function_accuracy": 0.3069306930693069,
+        "joint_accuracy": 0.12376237623762376,
+        "role_macro_f1": 0.0519108004239695,
+        "function_macro_f1": 0.1552046148684804,
+        "sentence_exact": 0.07017543859649122,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s11-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.1188118811881188,
+        "function_accuracy": 0.28217821782178215,
+        "joint_accuracy": 0.10891089108910891,
+        "role_macro_f1": 0.06316360562629031,
+        "function_macro_f1": 0.1713875486246545,
+        "sentence_exact": 0.07017543859649122,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s11-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 11,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.15841584158415842,
+        "function_accuracy": 0.19801980198019803,
+        "joint_accuracy": 0.13366336633663367,
+        "role_macro_f1": 0.008288008288008289,
+        "function_macro_f1": 0.012243648607284972,
+        "sentence_exact": 0.09649122807017543,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s11-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 11,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.2871287128712871,
+        "function_accuracy": 0.4603960396039604,
+        "joint_accuracy": 0.25742574257425743,
+        "role_macro_f1": 0.10899417271629964,
+        "function_macro_f1": 0.23185319150231432,
+        "sentence_exact": 0.18421052631578946,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s11-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.18316831683168316,
+        "function_accuracy": 0.3613861386138614,
+        "joint_accuracy": 0.17326732673267325,
+        "role_macro_f1": 0.15914373451030345,
+        "function_macro_f1": 0.26367516660078133,
+        "sentence_exact": 0.13157894736842105,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s11-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 23,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.024752475247524754,
+        "function_accuracy": 0.024752475247524754,
+        "joint_accuracy": 0.024752475247524754,
+        "role_macro_f1": 0.0014639145073927682,
+        "function_macro_f1": 0.001789228842368939,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s23-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 23,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.0594059405940594,
+        "function_accuracy": 0.13861386138613863,
+        "joint_accuracy": 0.054455445544554455,
+        "role_macro_f1": 0.01907865133671585,
+        "function_macro_f1": 0.04140015225524697,
+        "sentence_exact": 0.017543859649122806,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s23-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.04950495049504951,
+        "function_accuracy": 0.13861386138613863,
+        "joint_accuracy": 0.04950495049504951,
+        "role_macro_f1": 0.015061094819159335,
+        "function_macro_f1": 0.04369870560036388,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s23-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 23,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.024752475247524754,
+        "function_accuracy": 0.024752475247524754,
+        "joint_accuracy": 0.024752475247524754,
+        "role_macro_f1": 0.0014639145073927682,
+        "function_macro_f1": 0.001789228842368939,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s23-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 23,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.1188118811881188,
+        "function_accuracy": 0.2722772277227723,
+        "joint_accuracy": 0.10891089108910891,
+        "role_macro_f1": 0.0518332057805742,
+        "function_macro_f1": 0.10279790309120883,
+        "sentence_exact": 0.06140350877192982,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s23-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.07920792079207921,
+        "function_accuracy": 0.19306930693069307,
+        "joint_accuracy": 0.06435643564356436,
+        "role_macro_f1": 0.033462452804426876,
+        "function_macro_f1": 0.07584557127575603,
+        "sentence_exact": 0.03508771929824561,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s23-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 23,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.15841584158415842,
+        "function_accuracy": 0.19801980198019803,
+        "joint_accuracy": 0.13366336633663367,
+        "role_macro_f1": 0.008288008288008289,
+        "function_macro_f1": 0.012243648607284972,
+        "sentence_exact": 0.09649122807017543,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s23-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 23,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.28217821782178215,
+        "function_accuracy": 0.49504950495049505,
+        "joint_accuracy": 0.2524752475247525,
+        "role_macro_f1": 0.12665974839887884,
+        "function_macro_f1": 0.23733628821596267,
+        "sentence_exact": 0.16666666666666666,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s23-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.18811881188118812,
+        "function_accuracy": 0.3712871287128713,
+        "joint_accuracy": 0.17326732673267325,
+        "role_macro_f1": 0.13025233599946245,
+        "function_macro_f1": 0.23886115442792646,
+        "sentence_exact": 0.11403508771929824,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s23-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 47,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.024752475247524754,
+        "function_accuracy": 0.024752475247524754,
+        "joint_accuracy": 0.024752475247524754,
+        "role_macro_f1": 0.0014639145073927682,
+        "function_macro_f1": 0.001789228842368939,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s47-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 47,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.06435643564356436,
+        "function_accuracy": 0.10891089108910891,
+        "joint_accuracy": 0.04455445544554455,
+        "role_macro_f1": 0.02407195646189357,
+        "function_macro_f1": 0.02545302615183817,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s47-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 4,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.07425742574257425,
+        "function_accuracy": 0.1485148514851485,
+        "joint_accuracy": 0.04455445544554455,
+        "role_macro_f1": 0.02426235080655943,
+        "function_macro_f1": 0.028031200315844513,
+        "sentence_exact": 0.02631578947368421,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s47-b4.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 47,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.04455445544554455,
+        "function_accuracy": 0.15346534653465346,
+        "joint_accuracy": 0.034653465346534656,
+        "role_macro_f1": 0.002585092632485998,
+        "function_macro_f1": 0.009855348911142902,
+        "sentence_exact": 0.0,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s47-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 47,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.08415841584158416,
+        "function_accuracy": 0.29207920792079206,
+        "joint_accuracy": 0.06435643564356436,
+        "role_macro_f1": 0.060007584750426,
+        "function_macro_f1": 0.1025298219630377,
+        "sentence_exact": 0.008771929824561403,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s47-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 16,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.10891089108910891,
+        "function_accuracy": 0.3118811881188119,
+        "joint_accuracy": 0.10396039603960396,
+        "role_macro_f1": 0.06602153712068774,
+        "function_macro_f1": 0.12109776674798087,
+        "sentence_exact": 0.05263157894736842,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s47-b16.json"
+    },
+    {
+      "task": "snacs",
+      "method": "majority",
+      "seed": 47,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.15841584158415842,
+        "function_accuracy": 0.19801980198019803,
+        "joint_accuracy": 0.13366336633663367,
+        "role_macro_f1": 0.008288008288008289,
+        "function_macro_f1": 0.012243648607284972,
+        "sentence_exact": 0.09649122807017543,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-majority-s47-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "lexical_majority",
+      "seed": 47,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.24257425742574257,
+        "function_accuracy": 0.44554455445544555,
+        "joint_accuracy": 0.23267326732673269,
+        "role_macro_f1": 0.12231477837538442,
+        "function_macro_f1": 0.21336957398812093,
+        "sentence_exact": 0.14912280701754385,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-lexical_majority-s47-b64.json"
+    },
+    {
+      "task": "snacs",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 64,
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.14356435643564355,
+        "function_accuracy": 0.2623762376237624,
+        "joint_accuracy": 0.12376237623762376,
+        "role_macro_f1": 0.1298859528271293,
+        "function_macro_f1": 0.16163097234525806,
+        "sentence_exact": 0.07017543859649122,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/snacs-tfidf_nearest-s47-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 11,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.004651162790697674,
+        "group_macro_accuracy": 0.0078125,
+        "macro_f1_observed": 0.00012683916793505834,
+        "macro_f1_inventory": 3.8580246913580246e-05,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s11-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.013953488372093023,
+        "group_macro_accuracy": 0.0234375,
+        "macro_f1_observed": 0.006967957726438925,
+        "macro_f1_inventory": 0.002119420475125173,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s11-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 11,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.004651162790697674,
+        "group_macro_accuracy": 0.0078125,
+        "macro_f1_observed": 0.00012683916793505834,
+        "macro_f1_inventory": 3.8580246913580246e-05,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s11-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.06976744186046512,
+        "group_macro_accuracy": 0.07465277777777778,
+        "macro_f1_observed": 0.029138943248532292,
+        "macro_f1_inventory": 0.008863095238095238,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s11-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 11,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.004651162790697674,
+        "group_macro_accuracy": 0.0078125,
+        "macro_f1_observed": 0.00012683916793505834,
+        "macro_f1_inventory": 3.8580246913580246e-05,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s11-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 11,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.15813953488372093,
+        "group_macro_accuracy": 0.171875,
+        "macro_f1_observed": 0.08213360299877964,
+        "macro_f1_inventory": 0.024982304245462144,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s11-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 23,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.027906976744186046,
+        "group_macro_accuracy": 0.0390625,
+        "macro_f1_observed": 0.0007438170210128308,
+        "macro_f1_inventory": 0.00022624434389140272,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s23-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.05116279069767442,
+        "group_macro_accuracy": 0.0546875,
+        "macro_f1_observed": 0.004119888763003399,
+        "macro_f1_inventory": 0.0012531328320802004,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s23-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 23,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.027906976744186046,
+        "group_macro_accuracy": 0.0390625,
+        "macro_f1_observed": 0.0007438170210128308,
+        "macro_f1_inventory": 0.00022624434389140272,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s23-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.046511627906976744,
+        "group_macro_accuracy": 0.0546875,
+        "macro_f1_observed": 0.01349107513491075,
+        "macro_f1_inventory": 0.004103535353535354,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s23-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 23,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.05581395348837209,
+        "group_macro_accuracy": 0.0625,
+        "macro_f1_observed": 0.001448313318447891,
+        "macro_f1_inventory": 0.0004405286343612335,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s23-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 23,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.13953488372093023,
+        "group_macro_accuracy": 0.1284722222222222,
+        "macro_f1_observed": 0.05046376256292737,
+        "macro_f1_inventory": 0.01534939444622374,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s23-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 47,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.009302325581395349,
+        "group_macro_accuracy": 0.015625,
+        "macro_f1_observed": 0.00025250931128085346,
+        "macro_f1_inventory": 7.680491551459293e-05,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s47-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 4,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.009302325581395349,
+        "group_macro_accuracy": 0.015625,
+        "macro_f1_observed": 0.004064428721962969,
+        "macro_f1_inventory": 0.0012362637362637362,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s47-b4.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 47,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.009302325581395349,
+        "group_macro_accuracy": 0.015625,
+        "macro_f1_observed": 0.00025250931128085346,
+        "macro_f1_inventory": 7.680491551459293e-05,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s47-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 16,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.07906976744186046,
+        "group_macro_accuracy": 0.0546875,
+        "macro_f1_observed": 0.018677333947277542,
+        "macro_f1_inventory": 0.005681022408963585,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s47-b16.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "majority",
+      "seed": 47,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.037209302325581395,
+        "group_macro_accuracy": 0.0234375,
+        "macro_f1_observed": 0.0009828613551200933,
+        "macro_f1_inventory": 0.00029895366218236175,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-majority-s47-b64.json"
+    },
+    {
+      "task": "cap_pa",
+      "method": "tfidf_nearest",
+      "seed": 47,
+      "budget": 64,
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.09767441860465116,
+        "group_macro_accuracy": 0.09331597222222222,
+        "macro_f1_observed": 0.03995796831959136,
+        "macro_f1_inventory": 0.012153882030542374,
+        "valid_output_rate": 1.0
+      },
+      "predictions": "results/subscription-controls/cap_pa-tfidf_nearest-s47-b64.json"
+    }
+  ]
+}

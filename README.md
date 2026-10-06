@@ -3,16 +3,21 @@
 Fixed-weight annotation agents with guideline retrieval, purchased examples,
 persistent notes, and optional sandboxed programs.
 
-**2026-10-06: real diagnostic experiments and a six-page paper sample are available.
-The complete ACL study is not finished.** Network 403 was resolved. A subsequent
-real inference request returned `429 / credit_balance_exhausted`; API calls are
-paused. The user has reauthorized the official Codex CLI subscription channel;
-real structured calls with GPT-6-Sol and GPT-6-Luna now succeed. A separate clean
-follow-up batch is being prepared. Unequal earlier provider failures invalidate clean capability comparisons.
+**2026-10-06: Codex login is verified and real subscription experiments are running.**
+The old API `429 / credit_balance_exhausted` is distinct from subscription access.
+The new study uses GPT-6-Sol and GPT-6-Luna, SNACS and CAP Pennsylvania, three
+conditions, budgets 0/4/16/64, and three paired example trajectories. Its 112-cell
+matrix is not yet complete; the live paper explicitly marks pending results.
+The bounded supervisor preserves completed outcomes, handles only audited
+resource interruptions, and regenerates the paper as results arrive. A refusal
+is terminal; model capacity failures receive limited same-model backoff.
 
 ## Review the actual work
 
-- [Paper PDF](paper/main.pdf) / [source](paper/main.tex)
+- [Current cross-domain paper PDF](paper/subscription-study.pdf) / [source](paper/subscription-study.tex)
+- [Live execution status](research/subscription-supervisor-status.json) / [new study analysis](results/subscription-study-analysis.json)
+- [Frozen design](research/codex-study-protocol.md) / [operational continuation amendment](research/subscription-resumption-amendment.md)
+- [Earlier API diagnostic paper](paper/main.pdf) / [source](paper/main.tex)
 - [Agent results and failure accounting](results/agent-analysis.json)
 - [Fixed SNACS pilot settings](research/agent-pilot-registration.json)
 - [Fashionpedia pilot settings](research/fashion-pilot-registration.json)
@@ -25,6 +30,18 @@ follow-up batch is being prepared. Unequal earlier provider failures invalidate 
   [benchmarks](research/final-pilot-benchmark-review.md).
 
 ## What actually ran
+
+The new subscription batch has a fixed test sample of 64 SNACS documents
+(114 sentences, 202 targets) and 128 CAP families (215 records). It compares
+frozen example retrieval, persistent notes, and an error-guided addendum
+comparator. Forty-five matched non-LLM control cells are complete. See live
+status for completed model cells; do not treat the planned grid as completed.
+CAP preparation groups exact and approximate near duplicates before splitting,
+keeps conflicting labels, and quarantines 17 unsupported-code rows. Its handbook
+and historical label alignment, summary sufficiency, and sparse test-class
+coverage remain explicit limitations.
+
+The separate earlier diagnostics are:
 
 - **Non-LLM controls:** 60 runs, four budgets and five paired trajectories;
   all 485 retained SNACS targets in 259 official test sentences. The pinned
@@ -68,6 +85,9 @@ resource-access metadata. Raw handbooks, images and corpus texts are not pushed.
 
 ```bash
 .venv/bin/python scripts/fetch_snacs_manual.py
+.venv/bin/python scripts/fetch_cap_pa.py
+.venv/bin/python scripts/group_cap_near_duplicates.py
+.venv/bin/python scripts/prepare_cap_pa.py
 .venv/bin/python scripts/acquire_fashion_bounded.py
 .venv/bin/python scripts/prepare_fashion_pilot.py
 ```
@@ -126,3 +146,25 @@ Before submission: restore stable inference, reproduce the closest moderation
 baseline, expand held-out data and trajectories, and test an expert-verified
 convention or policy change. Manifesto has complete manuals available locally,
 but its annotated corpus still requires a legitimate account/export.
+
+## Subscription study and long-run recovery
+
+Use official `codex login --device-auth` when needed; never extract tokens into
+an API-key adapter. The current session has already logged in successfully.
+Runs use `configs/codex-study-*.json`. Original settings and implementation hashes
+remain with each run. Explicit resume changes only resource/scheduling settings;
+completed predictions, refusals and tool exhaustion are never rerun for selection.
+Legacy first-capture content hashes and posthoc interruption classifications are
+marked in provenance rather than described as contemporaneous evidence.
+
+```bash
+.venv/bin/python scripts/analyze_subscription_study.py
+MPLCONFIGDIR=/tmp/guideline-mpl XDG_CACHE_HOME=/tmp/guideline-cache .venv/bin/python scripts/render_subscription_paper.py
+```
+
+The active `scripts/supervise_subscription_study.py` process checks progress,
+regenerates the live PDF every five minutes, and commits/pushes final outcomes
+when all jobs complete or stop with a recorded blocker. It has a process lock,
+a finite deadline, and bounded continuation attempts. It cannot make provider
+capacity or quota available. Check its status before launching another copy.
+The completed API diagnostic paper is preserved separately from the live paper.

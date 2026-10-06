@@ -30,17 +30,36 @@ Prediction keys must exactly match the given targets. Return labels with their p
 Guidelines are available through tools and are not injected in full. Do not invent observations or gold labels.
 ''' + '\nValid labels: '+', '.join(sorted(SNACS_LABELS))
 
-def episode(model, view, instruction, allow_code=False, max_calls=16, system_prompt=None, prediction_kind="pair"):
+def episode(model, view, instruction, allow_code=False, max_calls=16, system_prompt=None, prediction_kind="pair", prior=None):
     instruction={**instruction,'maximum_model_calls':max_calls,'available_guidelines':sorted(view.materials),'available_assets':sorted(view.assets)}
     if view.assets:
         instruction['asset_instruction']='Read relevant persistent assets before deciding; their contents are available through read_material.'
     messages=[{'role':'system','content':system_prompt or SYSTEM},{'role':'user','content':json.dumps(instruction,ensure_ascii=False)}]
-    trace=[]
-    for step in range(max_calls):
+    if prior and prior['status']=='backend_unavailable' and prior.get('backend_reason') not in ('capacity','timeout','legacy_audited_resource'):
+        raise CodexBackendUnavailable('Refusing continuation of an unclassified or isolation interruption',prior.get('backend_reason','unknown'))
+    trace=copy.deepcopy(prior.get('trace',[])) if prior else []
+    if prior:
+        view.log=copy.deepcopy(prior.get('tool_log',[]))
+        last_action=None
+        for entry in trace:
+            if 'text' in entry:
+                messages.append({'role':'assistant','content':entry['text']})
+                try:last_action=json.loads(entry['text'])
+                except (ValueError,TypeError):last_action=None
+            elif 'tool_result' in entry:
+                messages.append({'role':'user','content':json.dumps({'tool_result':entry['tool_result'],'remaining_model_calls':max_calls-entry['step']-1},ensure_ascii=False)})
+                if entry.get('tool_name')=='write_asset' and last_action and view.writable:
+                    args=last_action['arguments'];view.assets[entry['tool_result']['written']]=args['text']
+            elif 'tool_or_schema_error' in entry:messages.append({'role':'user','content':json.dumps({'error':entry['tool_or_schema_error'],'remaining_model_calls':max_calls-entry['step']-1})})
+    if prior and prior['status'] not in ('backend_unavailable','cost_budget_exhausted'):return copy.deepcopy(prior)
+    start_step=max((e['step'] for e in trace),default=-1)+1
+    for step in range(start_step,max_calls):
         started=time.monotonic()
         try:
             response=model.complete(messages)
             trace.append({'step':step,**response})
+            if response.get('finish_reason') == 'content_filter':
+                return {'status':'cached_terminal_skip' if response.get('previously_recorded_refusal') else 'refused','trace':trace,'tool_log':view.log}
             if response.get('finish_reason') == 'length':
                 return {'status':'truncated','trace':trace,'tool_log':view.log}
             if not isinstance(response.get('text'), str):
@@ -69,8 +88,8 @@ def episode(model, view, instruction, allow_code=False, max_calls=16, system_pro
                 output=view.call(name,args)
             trace.append({'step':step,'tool_name':name,'tool_result':output})
             messages.append({'role':'user','content':json.dumps({'tool_result':output,'remaining_model_calls':max_calls-step-1},ensure_ascii=False)})
-        except CodexBackendUnavailable:
-            return {'status':'backend_unavailable','trace':trace,'tool_log':view.log}
+        except CodexBackendUnavailable as exc:
+            return {'status':'backend_unavailable','trace':trace,'tool_log':view.log,'backend_reason':exc.reason,'backend_ledger_index':exc.ledger_index}
         except QuotaExhausted as exc:
             return {'status':'quota_exhausted','trace':trace,'tool_log':view.log,'http_status':exc.status,'provider_code':exc.provider_code}
         except BudgetExceeded:
@@ -106,6 +125,10 @@ def pack_batches(records, groups_per_batch):
 
 
 
+def archive_interruption(out,name,value):
+    path=out/'resource-interruptions'/(Path(name).stem+'-'+digest(value)[:12]+'.json')
+    if not path.exists():write_json(path,value)
+
 def moderate(model,materials,visible,assets,system,kind,config,out,prefix):
     """One bounded error-guided addendum update, accepted only on adaptation gain.
 
@@ -117,9 +140,12 @@ def moderate(model,materials,visible,assets,system,kind,config,out,prefix):
     allowed=SNACS_LABELS if kind=='pair' else set(read_json(config['materials_manifest'])['labels'])
     def probe(state,stage):
         results={};episodes=[];valid=True
-        for batch in pack_batches(rows,config.get('moderation_groups_per_batch',16)):
+        saved=out/'episodes'/f'{prefix}-moderation-{stage}.json'
+        previous=read_json(saved) if config.get('resume') and saved.exists() else []
+        if previous:archive_interruption(out,saved.name,previous)
+        for index,batch in enumerate(pack_batches(rows,config.get('moderation_groups_per_batch',16))):
             view=AgentView(materials,{},state,writable=False)
-            result=episode(model,view,{'phase':'evaluate','input':batch['input'],'inline_guidelines':materials,'inline_assets':state,'instruction':'All current original guidelines and persistent assets are included. Predict adaptation labels and call finish directly. No labeled examples are accessible in this probe.'},max_calls=config.get('moderation_probe_calls',2),system_prompt=system,prediction_kind=kind)
+            result=episode(model,view,{'phase':'evaluate','input':batch['input'],'inline_guidelines':materials,'inline_assets':state,'instruction':'All current original guidelines and persistent assets are included. Predict adaptation labels and call finish directly. No labeled examples are accessible in this probe.'},max_calls=config.get('moderation_probe_calls',2),system_prompt=system,prediction_kind=kind,prior=previous[index] if index<len(previous) else None)
             episodes.append(result)
             write_json(out/'episodes'/f'{prefix}-moderation-{stage}.json',episodes)
             if result['status'] in ('backend_unavailable','cost_budget_exhausted','quota_exhausted'):raise BudgetExceeded('Moderation probe backend stopped')
@@ -151,7 +177,10 @@ def moderate(model,materials,visible,assets,system,kind,config,out,prefix):
       ('pattern','Compare the observed error examples with correct contrasts. Consult relevant original rules. Write error-pattern.md explaining the shared decision boundary and remaining uncertainty. Do not invent extra labeled cases.','error-pattern.md'),
       ('principle','Read error-pattern.md. Derive an IF/THEN annotation principle with explicit applicability conditions and negative constraints. Write candidate-principle.md. Ground it in the supplied evidence and original guideline.','candidate-principle.md'),
       ('update','Read the pattern and candidate principle. Revise policy-addendum.md with a concise reusable rule, preserving justified prior rules. This is an addendum to the original handbook, not a full rewrite. The controller will accept it only if adaptation accuracy improves.','policy-addendum.md')]:
-        result=episode(model,view,{**base_instruction,'instruction':instruction},max_calls=config.get('moderation_stage_calls',8),system_prompt=system,prediction_kind=kind)
+        saved=out/'episodes'/f'{prefix}-moderation-{stage}.json'
+        previous=read_json(saved) if config.get('resume') and saved.exists() else None
+        if previous:archive_interruption(out,saved.name,previous)
+        result=episode(model,view,{**base_instruction,'instruction':instruction},max_calls=config.get('moderation_stage_calls',8),system_prompt=system,prediction_kind=kind,prior=previous)
         write_json(out/'episodes'/f'{prefix}-moderation-{stage}.json',result)
         if result['status'] in ('backend_unavailable','cost_budget_exhausted','quota_exhausted'):raise BudgetExceeded('Moderation update backend stopped')
         if result['status']!='completed' or not view.assets.get(required_asset):
@@ -170,7 +199,13 @@ def moderate(model,materials,visible,assets,system,kind,config,out,prefix):
 def run_agent(config_path):
     config=read_json(config_path)
     out=Path(config['output'])
-    if out.exists() and any(out.iterdir()): raise ValueError('Use a fresh output directory; never overwrite a run')
+    resume=config.get('resume',False)
+    exists=out.exists() and any(out.iterdir())
+    if exists and not resume:raise ValueError('Use a fresh output directory or explicit resource-only resume')
+    if resume and exists:
+        previous=read_json(out/'config.json')
+        permitted={'resume','subscription_call_limit','workers'}
+        if {k:v for k,v in previous.items() if k not in permitted}!={k:v for k,v in config.items() if k not in permitted}:raise ValueError('Resume may only change resource ceiling, not experimental settings')
     # No artificial mini-guide quietly substituted for a real annotation handbook.
     manifest=read_json(config['materials_manifest'])
     if manifest.get('status')!='audited':
@@ -216,13 +251,23 @@ def run_agent(config_path):
         evaluation=trajectory(evaluation,config['evaluation_seed'])[:config['evaluation_limit']]
     if not evaluation:raise ValueError('Empty evaluation set')
     batches=pack_batches(evaluation,config.get('groups_per_batch',0))
-    write_json(out/'batches.json',[{'id':b['id'],'record_ids':[r['id'] for r in b.get('_rows',[b])]} for b in batches])
-    write_json(out/'config.json',config)
-    write_json(out/'evaluation-ids.json',[r['id'] for r in evaluation])
-    write_json(out/'implementation-hashes.json',{p.name:digest(p.read_text()) for p in Path(__file__).parent.glob('*.py')})
-    write_json(out/'materials-manifest.json',manifest)
-    if (root/'manifest.json').exists():write_json(out/'data-manifest.json',read_json(root/'manifest.json'))
-    results=[]
+    def preserve(name,value):
+        path=out/name
+        if exists and path.exists():
+            if read_json(path)!=value:raise ValueError('Resume input snapshot changed: '+name)
+        else:write_json(path,value)
+    preserve('batches.json',[{'id':b['id'],'record_ids':[r['id'] for r in b.get('_rows',[b])]} for b in batches])
+    if not exists:write_json(out/'config.json',config)
+    else:write_json(out/'resume-config.json',config)
+    preserve('evaluation-ids.json',[r['id'] for r in evaluation])
+    write_json(out/('resume-implementation-hashes.json' if exists else 'implementation-hashes.json'),{p.name:digest(p.read_text()) for p in Path(__file__).parent.glob('*.py')})
+    preserve('materials-manifest.json',manifest)
+    if (root/'manifest.json').exists():preserve('data-manifest.json',read_json(root/'manifest.json'))
+    integrity={'train_sha256':digest(train),'evaluation_split_sha256':digest(read_json(root/f'private/{split}.json'))}
+    preserve('data-content-hashes.json',integrity)
+    if exists and not (out/'data-hash-provenance.json').exists():write_json(out/'data-hash-provenance.json',{'note':'Content hashes first captured on continuation for legacy runs; original source/material manifests and IDs were captured at initial execution.'})
+    results=read_json(out/'results.json').get('results',[]) if exists and (out/'results.json').exists() else []
+    completed={(r['condition'],r['seed'],r['budget']) for r in results}
     budgets=config['budgets']
     if budgets!=sorted(set(budgets)) or any(b<0 or b>len(train) for b in budgets):
         raise ValueError('Budgets must be strictly increasing, within the adaptation pool')
@@ -243,13 +288,22 @@ def run_agent(config_path):
                     if record['id'] not in ledger.revealed: ledger.reveal(record)
                 visible={r['id']:r for r in order[:budget]}
                 prefix=f'{condition}-s{seed}-b{budget}'
-                if condition=='moderation':
+                if (condition,seed,budget) in completed:
+                    assets=read_json(out/'assets'/f'{prefix}.json')
+                    continue
+                saved_assets=out/'assets'/f'{prefix}.json'
+                if resume and saved_assets.exists():
+                    assets=read_json(saved_assets)
+                elif condition=='moderation':
                     assets=moderate(model,materials,visible,assets,system,kind,config,out,prefix)
                 elif condition not in ('frozen','static'):
                     view=AgentView(materials,visible,assets,writable=True)
+                    saved=out/'episodes'/f'{prefix}-adapt.json'
+                    previous=read_json(saved) if resume and saved.exists() else None
+                    if previous:archive_interruption(out,saved.name,previous)
                     adapted=episode(model,view,{'phase':'adapt','new_total_budget':budget,
                         'example_ids':list(visible),'instruction':'Review the authorized guidelines and these purchased examples. Persist useful general rules and exceptions as assets. '+('You may write executable Python.' if condition=='notes_program' else 'Program execution is unavailable.')},
-                        allow_code=condition=='notes_program',max_calls=config.get('adapt_calls',24),system_prompt=system,prediction_kind=kind)
+                        allow_code=condition=='notes_program',max_calls=config.get('adapt_calls',24),system_prompt=system,prediction_kind=kind,prior=previous)
                     write_json(out/'episodes'/f'{prefix}-adapt.json',adapted)
                     if adapted['status'] in ('cost_budget_exhausted','quota_exhausted','backend_unavailable'):
                         write_json(out/'results.json',{'status':adapted['status'],'results':results})
@@ -260,6 +314,13 @@ def run_agent(config_path):
                 write_json(out/'assets'/f'{prefix}.json',assets)
                 predictions={};statuses=[];completed_records=0
                 def evaluate_one(record):
+                    saved_episode=out/'episodes'/f'{prefix}-{record["id"]}.json'
+                    prior=None
+                    if resume and saved_episode.exists():
+                        previous_episode=read_json(saved_episode)
+                        if previous_episode['status'] not in ('cost_budget_exhausted','backend_unavailable'):return record,previous_episode
+                        archive_interruption(out,saved_episode.name,previous_episode)
+                        prior=previous_episode
                     view=AgentView(materials,visible,assets,writable=False)
                     instruction={'phase':'evaluate','id':record['id'],'input':record['input'],
                         'example_ids':list(visible),'instruction':'Annotate this instance. Persistent state is frozen.'}
@@ -267,7 +328,7 @@ def run_agent(config_path):
                         instruction.update(inline_guidelines=materials,inline_examples=list(visible.values()),
                             instruction='All guidelines and purchased examples are included below. Use them and call finish with your prediction directly.')
                     result=episode(model,view,instruction,
-                        allow_code=condition=='notes_program',max_calls=config.get('predict_calls',12),system_prompt=system,prediction_kind=kind)
+                        allow_code=condition=='notes_program',max_calls=config.get('predict_calls',12),system_prompt=system,prediction_kind=kind,prior=prior)
                     if digest(view.assets)!=frozen_hash: raise AssertionError('Evaluation mutated assets')
                     write_json(out/'episodes'/f'{prefix}-{record["id"]}.json',result)
                     return record,result

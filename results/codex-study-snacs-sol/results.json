@@ -1,0 +1,98 @@
+{
+  "status": "running",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 0,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 0,
+        "unique_labeled_sentences": 0,
+        "labeled_decisions": 0,
+        "reveal_calls": 0
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "29a323ce05f6b19ecc80ccc536f9bb20b2f6beb9e0fe8e4455a4f57ed7916faa",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.7772277227722773,
+        "function_accuracy": 0.8663366336633663,
+        "joint_accuracy": 0.7128712871287128,
+        "role_macro_f1": 0.6961776005031137,
+        "function_macro_f1": 0.7984839874569902,
+        "sentence_exact": 0.5789473684210527,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "86e9ef28d9c8af2f7322b56bc7636d2faa85e64090038b37d421708bf8ed9b93",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.7623762376237624,
+        "function_accuracy": 0.8613861386138614,
+        "joint_accuracy": 0.7178217821782178,
+        "role_macro_f1": 0.6865842386965381,
+        "function_macro_f1": 0.7761324744733602,
+        "sentence_exact": 0.5701754385964912,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 39,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "6f4ff2f0ee0caa0f0202a2670f078d98de908dc946a4208eda7a53dbb8891ee6",
+      "metrics": {
+        "sentences": 114,
+        "targets": 202,
+        "documents": 64,
+        "role_accuracy": 0.7326732673267327,
+        "function_accuracy": 0.8663366336633663,
+        "joint_accuracy": 0.6782178217821783,
+        "role_macro_f1": 0.6548570561939547,
+        "function_macro_f1": 0.7792425880708429,
+        "sentence_exact": 0.5087719298245614,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 114,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    }
+  ]
+}

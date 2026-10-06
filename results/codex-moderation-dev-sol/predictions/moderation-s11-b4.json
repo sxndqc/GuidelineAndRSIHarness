@@ -1,0 +1,28 @@
+{
+  "reviews-140302-0002": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Possessor"
+    ],
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:25": [
+      "p.Stimulus",
+      "p.Topic"
+    ]
+  },
+  "reviews-140302-0003": {
+    "swes:6": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-208180-0001": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  }
+}
