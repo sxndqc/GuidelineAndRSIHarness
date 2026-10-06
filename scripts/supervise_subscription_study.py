@@ -1,9 +1,10 @@
 """Bounded continuation and artifact generation for the authorized long study.
 
 Never retries refusals, semantic errors, exhausted tool budgets, isolation events,
-or unknown failures. Only explicit capacity/resource interruptions qualify.
+or unknown failures. Only explicit capacity/resource interruptions or separately audited partial-stream timeouts qualify.
 """
 import fcntl,json,os,subprocess,time
+from guideline_harness.transport_audit import audit_timeout_stream
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -57,8 +58,22 @@ def main():
    if original['output'] in active:states[name]={'state':'running','completed_cells':cells};continue
    if report.get('status')=='completed':states[name]={'state':'completed','completed_cells':cells};continue
    reason=terminal_reason(directory,report)
+   if reason=='timeout':
+    indices=set()
+    for path in (directory/'episodes').glob('*.json'):
+     value=read(path)
+     if value is None:continue
+     for ep in value if isinstance(value,list) else [value]:
+      if ep.get('status')=='backend_unavailable' and ep.get('backend_reason')=='timeout' and ep.get('backend_ledger_index') is not None:indices.add(ep['backend_ledger_index'])
+    audits=[]
+    for index in sorted(indices):
+     stream=run/'subscription-ledger-transport'/f'{index:06d}-events.jsonl'
+     audit=audit_timeout_stream(stream.read_text()) if stream.exists() else {'resumable':False,'reason':'missing_stream'}
+     audits.append({'ledger_index':index,**audit})
+    write(directory/'timeout-continuation-audit.json',{'audits':audits,'max_supervisor_continuations':2,'delay_seconds':180,'note':'Partial proposed actions are retained in transport logs but were not accepted by the controller; retry is selected only by audited transport failure.'})
+    if audits and all(a['resumable'] for a in audits):reason='audited_timeout'
    if len(ledger)>=18000:reason='shared_call_ceiling'
-   if reason not in ('capacity','cost_budget_exhausted') or attempts[name]>=2:
+   if reason not in ('capacity','cost_budget_exhausted','audited_timeout') or attempts[name]>=2:
     states[name]={'state':'blocked','reason':reason,'completed_cells':cells};continue
    if name not in due:due[name]=time.monotonic()+180
    if time.monotonic()<due[name]:states[name]={'state':'cooldown','reason':reason,'completed_cells':cells};continue

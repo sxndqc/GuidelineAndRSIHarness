@@ -1,13 +1,12 @@
 {
-  "updated_utc": "2026-10-06T22:06:51.670773+00:00",
+  "updated_utc": "2026-10-06T23:47:35.987315+00:00",
   "states": {
     "snacs-sol": {
       "state": "completed",
       "completed_cells": 28
     },
     "snacs-luna": {
-      "state": "blocked",
-      "reason": "timeout",
+      "state": "running",
       "completed_cells": 18
     },
     "cap_pa-sol": {
@@ -15,16 +14,15 @@
       "completed_cells": 28
     },
     "cap_pa-luna": {
-      "state": "blocked",
-      "reason": "timeout",
+      "state": "running",
       "completed_cells": 10
     }
   },
   "supervisor_continuations": {
     "snacs-sol": 1,
-    "snacs-luna": 0,
+    "snacs-luna": 1,
     "cap_pa-sol": 1,
-    "cap_pa-luna": 0
+    "cap_pa-luna": 1
   },
   "transport_calls": 12978,
   "deadline_hours": 8,
