@@ -87,6 +87,180 @@
       "completed_instances": 189,
       "failed_or_exhausted_batches": 2,
       "failed_or_exhausted_instances": 26
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 64,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 64,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "c22f11a92e6962be965776fe02b32c839db4d267b8bb344f8b569f53136ab6fb",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.6511627906976745,
+        "group_macro_accuracy": 0.6098090277777778,
+        "macro_f1_observed": 0.5651312798392827,
+        "macro_f1_inventory": 0.17189409761778182,
+        "valid_output_rate": 0.9255813953488372
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 199,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 16
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "7a0628afe05643a44ee43ba9dbe6555a614242991da1f8798fbad7e3e579fc19",
+      "prediction_sha256": "9fb906d816adf95271bd686ce847e6cb06edfe6534e91f4e83d29a5051690821",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.586046511627907,
+        "group_macro_accuracy": 0.5512152777777778,
+        "macro_f1_observed": 0.5376500641206523,
+        "macro_f1_inventory": 0.16353522783669844,
+        "valid_output_rate": 0.8790697674418605
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 14,
+      "completed_instances": 189,
+      "failed_or_exhausted_batches": 2,
+      "failed_or_exhausted_instances": 26
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 16,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "db0f66c60e1a1f2d08dcc1e5e4844f70be93fc625bb0c74d91173b3e3c4ed507",
+      "prediction_sha256": "40babb7a7426707029e676e195f3b7c2aa60c7619c4d2fb816b6abee814b5499",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.6558139534883721,
+        "group_macro_accuracy": 0.6176215277777778,
+        "macro_f1_observed": 0.5878621234785618,
+        "macro_f1_inventory": 0.17880806255806256,
+        "valid_output_rate": 0.9488372093023256
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 204,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 11
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 64,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 64,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "a1b000081071953604e097223c5a4c6b5910ca064ffd6df471a21664d030601a",
+      "prediction_sha256": "df2097a1cab1f1e2ea96dfe8d413ac2d0c63cf5ec973262e4057adba2d6e9894",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.6651162790697674,
+        "group_macro_accuracy": 0.6098090277777778,
+        "macro_f1_observed": 0.5928289406659991,
+        "macro_f1_inventory": 0.18031880278590803,
+        "valid_output_rate": 0.9348837209302325
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 201,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 14
+    },
+    {
+      "condition": "moderation",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "9a5569b4ecfa79fb30b053a09bc9d571178f32939d366d0bfa865f10fe1b2ac3",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.6186046511627907,
+        "group_macro_accuracy": 0.5707465277777778,
+        "macro_f1_observed": 0.5751045317736018,
+        "macro_f1_inventory": 0.17492762841447054,
+        "valid_output_rate": 0.8511627906976744
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 14,
+      "completed_instances": 183,
+      "failed_or_exhausted_batches": 2,
+      "failed_or_exhausted_instances": 32
+    },
+    {
+      "condition": "moderation",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 16,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "7850c229d0948f2c052b9bd957b37c21324f9facb0b1f363b76f5a11fb3d37ec",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.6930232558139535,
+        "group_macro_accuracy": 0.6254340277777778,
+        "macro_f1_observed": 0.6110509589961646,
+        "macro_f1_inventory": 0.18586133336133334,
+        "valid_output_rate": 0.958139534883721
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 206,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 9
     }
   ]
 }

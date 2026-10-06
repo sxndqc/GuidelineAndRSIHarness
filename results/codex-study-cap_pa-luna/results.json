@@ -1,5 +1,5 @@
 {
-  "status": "backend_unavailable",
+  "status": "running",
   "results": [
     {
       "condition": "frozen",
@@ -22,6 +22,151 @@
         "group_macro_accuracy": 0.4184027777777778,
         "macro_f1_observed": 0.3412486251084156,
         "macro_f1_inventory": 0.10379645680380974,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 215,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "6f65d230698a6bc242a161ba158c6fc8aceee2419cfc4ed5840c5712b915c873",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.32558139534883723,
+        "group_macro_accuracy": 0.3090277777777778,
+        "macro_f1_observed": 0.31892501756724156,
+        "macro_f1_inventory": 0.09700635951003597,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 215,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 16,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "ab06b960b64a1b6df63effb83990acbd2703a43740b43845baa3ea463625b691",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.3581395348837209,
+        "group_macro_accuracy": 0.3637152777777778,
+        "macro_f1_observed": 0.2842020091203687,
+        "macro_f1_inventory": 0.08644477777411215,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 16,
+      "completed_instances": 215,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 64,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 64,
+        "unique_labeled_sentences": 64,
+        "labeled_decisions": 64,
+        "reveal_calls": 64
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "084b2fa96f89e9763d1aa5e4c8db827c9f8cab438f93ec6640653abd47d36837",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.4186046511627907,
+        "group_macro_accuracy": 0.3637152777777778,
+        "macro_f1_observed": 0.3160099018786834,
+        "macro_f1_inventory": 0.09611967848809953,
+        "valid_output_rate": 0.9255813953488372
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 15,
+      "completed_instances": 199,
+      "failed_or_exhausted_batches": 1,
+      "failed_or_exhausted_instances": 16
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "17c606af053da5f15281a1c254d6a16d91e5f9d83fa2775edb2b9868467091d4",
+      "prediction_sha256": "5d1b766cc1abd7ab806ad5a547640d8f832aa93b74a30430b05c4626088349dd",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.386046511627907,
+        "group_macro_accuracy": 0.3480902777777778,
+        "macro_f1_observed": 0.30827899423789834,
+        "macro_f1_inventory": 0.09376819408069409,
+        "valid_output_rate": 0.8511627906976744
+      },
+      "evaluation_batches": 16,
+      "completed_batches": 14,
+      "completed_instances": 184,
+      "failed_or_exhausted_batches": 2,
+      "failed_or_exhausted_instances": 31
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 16,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 16,
+        "unique_labeled_sentences": 16,
+        "labeled_decisions": 16,
+        "reveal_calls": 16
+      },
+      "asset_sha256": "1cbac636eba1be0c28f217b9daeb0488d3180837e60513a032714ad89e8f8838",
+      "prediction_sha256": "07a9f65384219a13b4369bf082f43993bfd103e075b6fa2b7030ebcd9953ebb3",
+      "metrics": {
+        "instances": 215,
+        "targets": 215,
+        "groups": 128,
+        "accuracy": 0.31627906976744186,
+        "group_macro_accuracy": 0.3480902777777778,
+        "macro_f1_observed": 0.27239001038356403,
+        "macro_f1_inventory": 0.08285196149166738,
         "valid_output_rate": 1.0
       },
       "evaluation_batches": 16,

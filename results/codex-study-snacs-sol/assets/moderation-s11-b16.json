@@ -1,0 +1,3 @@
+{
+  "policy-addendum.md": "# Policy addendum: depictive `with`\n\nWhen a `with` phrase describes an event participant’s state or bodily condition during the event, label `with` `p.Characteristic/p.Characteristic`. In “walk out with crap all over my hair,” the phrase describes the speaker’s condition while leaving. The internal location of the crap on the hair does not make `with` an accompaniment marker.\n\nChoose the relation expressed by the whole phrase in context. A person or carried item accompanying an event can instead take `p.Ancillary` as its lexical function; for example, “walked in with an umbrella” is `p.Possession/p.Ancillary`. Do not assign the condition reading merely because `with` follows a motion verb."
+}
