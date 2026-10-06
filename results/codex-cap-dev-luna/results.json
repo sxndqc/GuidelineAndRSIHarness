@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "a2a81f7524206d7821250c4fdf3817614e52bce9f3c3cacb30a86a600e6360f7",
+      "metrics": {
+        "instances": 5,
+        "targets": 5,
+        "groups": 4,
+        "accuracy": 0.6,
+        "macro_f1_observed": 0.6,
+        "macro_f1_inventory": 0.007500000000000001,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 2,
+      "completed_batches": 2,
+      "completed_instances": 5,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 4,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "f201500c23ba8e91145174bfcf714f86ca9b3f8625af94ff8fc49f9d8caa73b6",
+      "prediction_sha256": "6c5dc571c06e07f52009427e708ddf0bcb2b9bedf4de1c08f5f13f294bf64180",
+      "metrics": {
+        "instances": 5,
+        "targets": 5,
+        "groups": 4,
+        "accuracy": 0.4,
+        "macro_f1_observed": 0.6666666666666666,
+        "macro_f1_inventory": 0.008333333333333333,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 2,
+      "completed_batches": 2,
+      "completed_instances": 5,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "cap_pa supplied-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

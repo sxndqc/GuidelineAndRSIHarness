@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "moderation",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-sol",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "49b7dabea5950f2560cf9897345e5dfaa0fa5a6c6072d349831dc953bbdc795a",
+      "metrics": {
+        "sentences": 3,
+        "targets": 5,
+        "documents": 2,
+        "role_accuracy": 0.8,
+        "function_accuracy": 1.0,
+        "joint_accuracy": 0.8,
+        "role_macro_f1": 0.8,
+        "function_macro_f1": 1.0,
+        "sentence_exact": 0.6666666666666666,
+        "valid_output_rate": 1.0
+      },
+      "evaluation_batches": 1,
+      "completed_batches": 1,
+      "completed_instances": 3,
+      "failed_or_exhausted_batches": 0,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "snacs supplied-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

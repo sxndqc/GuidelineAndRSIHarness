@@ -1,0 +1,29 @@
+{
+  "backend": "codex_cli",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "subscription_ledger": "runs/codex-dev/subscription-ledger.json",
+  "subscription_call_limit": 500,
+  "data_root": "data/prepared/cap-pa",
+  "output": "results/codex-cap-dev-luna",
+  "materials_manifest": "configs/cap-pa-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_seed": 20261007,
+  "conditions": [
+    "frozen",
+    "notes"
+  ],
+  "budgets": [
+    4
+  ],
+  "seeds": [
+    11
+  ],
+  "adapt_calls": 20,
+  "predict_calls": 10,
+  "workers": 2,
+  "task": "cap_pa",
+  "evaluation_group_limit": 4,
+  "groups_per_batch": 2,
+  "unique_training_groups": true
+}

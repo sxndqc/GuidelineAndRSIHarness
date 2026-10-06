@@ -1,0 +1,29 @@
+{
+  "backend": "codex_cli",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "medium",
+  "subscription_ledger": "runs/codex-dev/subscription-ledger.json",
+  "subscription_call_limit": 500,
+  "data_root": "data/prepared/snacs",
+  "output": "results/codex-moderation-dev-sol",
+  "materials_manifest": "configs/snacs-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_seed": 20261007,
+  "conditions": [
+    "moderation"
+  ],
+  "budgets": [
+    4
+  ],
+  "seeds": [
+    11
+  ],
+  "adapt_calls": 20,
+  "predict_calls": 10,
+  "workers": 2,
+  "evaluation_group_limit": 2,
+  "groups_per_batch": 2,
+  "unique_training_groups": true,
+  "moderation_stage_calls": 6,
+  "moderation_groups_per_batch": 8
+}

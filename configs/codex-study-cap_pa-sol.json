@@ -1,0 +1,38 @@
+{
+  "backend": "codex_cli",
+  "task": "cap_pa",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "medium",
+  "subscription_ledger": "runs/codex-study-v1/subscription-ledger.json",
+  "subscription_call_limit": 6000,
+  "data_root": "data/prepared/cap-pa",
+  "output": "results/codex-study-cap_pa-sol",
+  "materials_manifest": "configs/cap-pa-materials.json",
+  "evaluation_split": "test",
+  "evaluation_group_limit": 128,
+  "evaluation_seed": 20261008,
+  "groups_per_batch": 8,
+  "unique_training_groups": true,
+  "conditions": [
+    "frozen",
+    "notes",
+    "moderation"
+  ],
+  "budgets": [
+    0,
+    4,
+    16,
+    64
+  ],
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "adapt_calls": 24,
+  "predict_calls": 12,
+  "moderation_stage_calls": 6,
+  "moderation_probe_calls": 2,
+  "moderation_groups_per_batch": 16,
+  "workers": 4
+}

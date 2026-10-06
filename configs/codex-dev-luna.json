@@ -1,0 +1,26 @@
+{
+  "backend": "codex_cli",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "subscription_ledger": "runs/codex-dev/subscription-ledger.json",
+  "subscription_call_limit": 250,
+  "data_root": "data/prepared/snacs",
+  "output": "results/codex-dev-luna",
+  "materials_manifest": "configs/snacs-materials.json",
+  "evaluation_split": "dev",
+  "evaluation_limit": 2,
+  "evaluation_seed": 20261007,
+  "conditions": [
+    "frozen",
+    "notes_program"
+  ],
+  "budgets": [
+    4
+  ],
+  "seeds": [
+    11
+  ],
+  "adapt_calls": 20,
+  "predict_calls": 10,
+  "workers": 2
+}

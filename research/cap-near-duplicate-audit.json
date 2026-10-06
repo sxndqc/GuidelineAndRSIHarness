@@ -1,0 +1,10 @@
+{
+  "method": "64-MinHash/16 bands of 4; 5-word shingles; exact set Jaccard >=0.85; connected components",
+  "seed": 20261006,
+  "normalized_groups": 66528,
+  "families": 62465,
+  "union_edges": 4063,
+  "candidate_pairs": 3256588,
+  "overfull_band_queries_skipped": 1929,
+  "limitations": "Approximate candidate retrieval; transitive components may include less similar endpoints. No claim of exhaustive near-duplicate removal. Label blind."
+}

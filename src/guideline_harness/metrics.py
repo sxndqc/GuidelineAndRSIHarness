@@ -50,3 +50,23 @@ def cluster_interval(records, predictions, seed=42, repeats=2000):
     low, high = np.quantile(samples[:,0]/samples[:,1],[.025,.975])
     return {"low": float(low), "high": float(high), "unit": "document", "repeats": repeats,
             "scope": "test-document uncertainty conditional on this adaptation run"}
+
+
+def score_categorical(records,predictions,labels):
+    gold=[];guesses=[];valid=0;group_scores={}
+    for row in records:
+        prediction=predictions.get(row['id'],{})
+        if not isinstance(prediction,dict):prediction={}
+        good_keys=set(prediction)==set(row['gold'])
+        for target,value in row['gold'].items():
+            guess=prediction.get(target,INVALID)
+            if not isinstance(guess,str):guess=INVALID
+            gold.append(value);guesses.append(guess)
+            group_scores.setdefault(row['group'],[]).append(value==guess)
+            valid+=bool(good_keys and guess in labels)
+    return {'instances':len(records),'targets':len(gold),'groups':len({r['group'] for r in records}),
+            'accuracy':float(np.mean(np.array(gold)==np.array(guesses))),
+            'group_macro_accuracy':float(np.mean([np.mean(v) for v in group_scores.values()])),
+            'macro_f1_observed':float(f1_score(gold,guesses,labels=sorted(set(gold)),average='macro',zero_division=0)),
+            'macro_f1_inventory':float(f1_score(gold,guesses,labels=sorted(labels),average='macro',zero_division=0)),
+            'valid_output_rate':valid/len(gold)}

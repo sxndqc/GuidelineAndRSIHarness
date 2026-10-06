@@ -1,0 +1,18 @@
+{
+  "reviews-371492-0005": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-358063-0001": {
+    "swes:7": [
+      "p.Characteristic",
+      "p.Beneficiary"
+    ],
+    "swes:9": [
+      "p.Characteristic",
+      "p.Locus"
+    ]
+  }
+}

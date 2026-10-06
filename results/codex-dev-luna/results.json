@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "results": [
+    {
+      "condition": "frozen",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "prediction_sha256": "ebc98b2028326f3be183890b7290b59677997dd520278b4481c6c273be6ccde2",
+      "metrics": {
+        "sentences": 2,
+        "targets": 3,
+        "documents": 2,
+        "role_accuracy": 0.6666666666666666,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.3333333333333333,
+        "role_macro_f1": 0.6666666666666666,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.0,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 2,
+      "failed_or_exhausted_instances": 0
+    },
+    {
+      "condition": "notes_program",
+      "seed": 11,
+      "budget": 4,
+      "model": "gpt-6-luna",
+      "supervision": {
+        "limit": 4,
+        "unique_labeled_sentences": 4,
+        "labeled_decisions": 9,
+        "reveal_calls": 4
+      },
+      "asset_sha256": "b0951149b30ad4945596539d76003198d1781c92e84ff42d56052ed2aa334ecc",
+      "prediction_sha256": "61efc67ea0138a73a78ece6df89fb24faaa12506fca11d0cbb2142997b557a68",
+      "metrics": {
+        "sentences": 2,
+        "targets": 3,
+        "documents": 2,
+        "role_accuracy": 0.3333333333333333,
+        "function_accuracy": 0.6666666666666666,
+        "joint_accuracy": 0.3333333333333333,
+        "role_macro_f1": 0.2222222222222222,
+        "function_macro_f1": 0.6666666666666666,
+        "sentence_exact": 0.0,
+        "valid_output_rate": 1.0
+      },
+      "completed_instances": 2,
+      "failed_or_exhausted_instances": 0
+    }
+  ],
+  "scope": "SNACS given-target track",
+  "warning": "Do not call these from-scratch sample-complexity estimates; pretraining exposure is unknown."
+}

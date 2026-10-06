@@ -100,6 +100,11 @@ class AgentView:
                 if score>0: ranked.append((score,key))
             ranked.sort(key=lambda x:(-x[0],x[1]))
             return [{"similarity":score,"example":copy.deepcopy(self.examples[key])} for score,key in ranked[:limit]]
+        if name == "read_examples":
+            ids=args["ids"]
+            if not isinstance(ids,list) or not 1<=len(ids)<=16 or any(i not in self.examples for i in ids):
+                raise ValueError("Read 1 to 16 already purchased example IDs")
+            return [copy.deepcopy(self.examples[i]) for i in ids]
         if name == "read_example":
             if args["id"] not in self.examples:
                 raise ValueError("Example has not been purchased")
