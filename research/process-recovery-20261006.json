@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-06T20:58:01.363456+00:00",
+  "cap_timeout_audit": {
+    "ledger_index": 5851,
+    "raw_sha256": "7f631c8259fde23a9287dfec6646904076ef0182943a4b5026358923394b20ca",
+    "observed": "Thread and turn started; only benign code-host-disabled error item; no native tool execution, provider refusal or completed turn in retained stream.",
+    "action": "One same-model continuation of saved episode history after manual transport audit; retain original timeout."
+  },
+  "process_recovery": {
+    "observed": "Supervisor process and SNACS-Luna controller absent; Sol child controllers still running. No terminal traceback found in supervisor log. Cause not established.",
+    "action": "Restart missing controllers and supervisor as detached processes; preserve completed episodes, ledgers and continuation counts. Pending episodes without persisted traces restart, with old transport attempts retained; not claimed exact-history continuation for those episodes."
+  }
+}

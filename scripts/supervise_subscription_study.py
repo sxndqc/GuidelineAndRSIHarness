@@ -48,7 +48,7 @@ def artifacts(final=False):
 def main():
  os.chdir(ROOT);run=ROOT/'runs/codex-study-v1';run.mkdir(parents=True,exist_ok=True)
  lock=(run/'supervisor.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
- start=time.monotonic();attempts={n:0 for n in NAMES};due={};children=[];last_build=0
+ start=time.monotonic();previous=read(ROOT/'research/subscription-supervisor-status.json') or {};attempts={n:previous.get('supervisor_continuations',{}).get(n,0) for n in NAMES};due={};children=[];last_build=0
  while time.monotonic()-start<8*3600:
   children=[p for p in children if p.poll() is None]
   active=active_runs();states={};ledger=read(run/'subscription-ledger.json') or []
