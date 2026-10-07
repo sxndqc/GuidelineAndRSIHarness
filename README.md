@@ -3,14 +3,18 @@
 Fixed-weight annotation agents with guideline retrieval, purchased examples,
 persistent notes, and optional sandboxed programs.
 
-**2026-10-06: Codex login is verified and real subscription experiments are running.**
-The old API `429 / credit_balance_exhausted` is distinct from subscription access.
-The new study uses GPT-6-Sol and GPT-6-Luna, SNACS and CAP Pennsylvania, three
-conditions, budgets 0/4/16/64, and three paired example trajectories. Its 112-cell
-matrix is not yet complete; the live paper explicitly marks pending results.
-The bounded supervisor preserves completed outcomes, handles only audited
-resource interruptions, and regenerates the paper as results arrive. A refusal
-is terminal; model capacity failures receive limited same-model backoff.
+**2026-10-07: the 112-cell subscription experiment matrix is complete.**
+All four task/model runs finished by 03:24 UTC. The study compares GPT-6-Sol and
+GPT-6-Luna on SNACS and CAP Pennsylvania, three methods, budgets 0/4/16/64,
+and three paired example trajectories. Of 1,792 evaluation batches, 1,728
+completed, 55 exhausted the action cap, and 9 were refused; every target remains
+in the denominator. The ledger records 15,896 requests, including interruptions.
+Forty-five matched non-LLM control cells also completed.
+
+At B64, notes-minus-retrieval descriptive intervals contain zero for all four
+task/model combinations. This does not establish a general benefit of persistent
+notes or a sufficient example count. The seven-page paper is a review sample,
+not an ACL-ready claim. UMR has **not** been experimentally evaluated.
 
 ## Review the actual work
 
@@ -34,8 +38,7 @@ is terminal; model capacity failures receive limited same-model backoff.
 The new subscription batch has a fixed test sample of 64 SNACS documents
 (114 sentences, 202 targets) and 128 CAP families (215 records). It compares
 frozen example retrieval, persistent notes, and an error-guided addendum
-comparator. Forty-five matched non-LLM control cells are complete. See live
-status for completed model cells; do not treat the planned grid as completed.
+comparator. Forty-five matched non-LLM control cells are complete. All 112 model configuration cells completed; individual prediction failures remain explicitly counted.
 CAP preparation groups exact and approximate near duplicates before splitting,
 keeps conflicting labels, and quarantines 17 unsupported-code rows. Its handbook
 and historical label alignment, summary sufficiency, and sparse test-class
@@ -162,9 +165,9 @@ marked in provenance rather than described as contemporaneous evidence.
 MPLCONFIGDIR=/tmp/guideline-mpl XDG_CACHE_HOME=/tmp/guideline-cache .venv/bin/python scripts/render_subscription_paper.py
 ```
 
-The active `scripts/supervise_subscription_study.py` process checks progress,
-regenerates the live PDF every five minutes, and commits/pushes final outcomes
-when all jobs complete or stop with a recorded blocker. It has a process lock,
+The `scripts/supervise_subscription_study.py` process checked progress,
+regenerated the PDF every five minutes, and committed/pushed final outcomes
+when all jobs completed or stopped with a recorded blocker. It is now stopped. It has a process lock,
 a finite deadline, and bounded continuation attempts. It cannot make provider
 capacity or quota available. Check its status before launching another copy.
 The completed API diagnostic paper is preserved separately from the live paper.

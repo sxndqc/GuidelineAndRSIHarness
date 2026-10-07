@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "requested_deliverable": "Complete agent experiments across annotation benchmarks and an empirical paper draft",
   "requested_deliverable_complete": false,
   "completed": {
@@ -24,14 +24,17 @@
     "non_llm_control_runs": 60,
     "evaluated_test_sentences": 259,
     "evaluated_test_targets": 485,
-    "unit_tests": 25,
+    "unit_tests": 29,
     "real_program_isolation_test": "passed",
     "real_snacs_configuration_loops": 26,
     "planned_snacs_predictions": 624,
     "successful_snacs_predictions": 481,
     "fashion_mini_cells": 5,
     "paper_pages": 6,
-    "subscription_matched_non_llm_control_runs": 45
+    "subscription_matched_non_llm_control_runs": 45,
+    "subscription_model_configuration_cells": 112,
+    "subscription_evaluation_batches": 1792,
+    "subscription_completed_evaluation_batches": 1728
   },
   "not_executed": [
     "Clean fully completed model comparison",
@@ -55,9 +58,9 @@
     "arxiv.org"
   ],
   "saved_secret_requirement": "MANIFESTO_API_KEY; no value supplied",
-  "publication_state": "Earlier completed diagnostic paper preserved; new cross-domain live paper marks pending cells and is not submission-ready",
+  "publication_state": "Completed bounded cross-domain experiment matrix and seven-page review paper; original broader research questions remain only partially addressed; no UMR experiment or ACL-readiness claim",
   "inference_status": {
-    "state": "verified_and_running",
+    "state": "completed_current_matrix",
     "backend": "official Codex CLI subscription",
     "models": [
       "gpt-6-sol",
@@ -67,8 +70,5 @@
     "api_path": "Separate API credit remains exhausted; not used for current runs",
     "live_status": "research/subscription-supervisor-status.json"
   },
-  "running": [
-    "112-cell subscription study across SNACS and CAP PA",
-    "Bounded supervisor with automatic paper regeneration"
-  ]
+  "running": []
 }

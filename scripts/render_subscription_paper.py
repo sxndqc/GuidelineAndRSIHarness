@@ -21,7 +21,7 @@ def main():
      a=aggregates.get((task,'gpt-6-'+tier,condition,budget))
      values.append(f"{a['mean']*100:.1f} ({a['seeds']})" if a else ('shared B0' if budget==0 and condition!='frozen' else 'pending'))
     lines.append(f'{"SNACS" if task=="snacs" else "CAP PA"} & {tier.title()} & {budget} & '+' & '.join(values)+' \\\\')
- lines+=['\\bottomrule','\\end{tabular}','\\caption{Observed primary accuracy (\\%) and number of completed adaptation trajectories in parentheses. Pending cells have no imputed score. B0 is one shared retrieval starting point. Comparisons with incomplete or unequal trajectory counts are provisional. All evaluated targets, including refusals and call exhaustion, remain in denominators.}','\\label{tab:subscription}','\\end{table*}']
+ lines+=['\\bottomrule','\\end{tabular}','\\caption{Observed primary accuracy (\\%) and number of evaluated example trajectories in parentheses. Pending cells have no imputed score. B0 is one shared retrieval starting point. Comparisons with incomplete or unequal trajectory counts are provisional. All evaluated targets, including refusals and call exhaustion, remain in denominators.}','\\label{tab:subscription}','\\end{table*}']
  t=s.get('transport',{});lines += [f"At this snapshot, {n} of 112 configuration cells are complete. The transport ledger records {t.get('calls',0):,} actor requests. Completed cell scores appear in Table~\\ref{{tab:subscription}}; missing cells are not scored as zero. Operational statuses are retained separately from semantic errors."]
  if s['paired_effects']:
   lines+=['\\paragraph{Completed paired comparisons.}']
@@ -33,6 +33,8 @@ def main():
   if c['budget']==64:groups[c['task'],c['method']].append(c['metrics']['joint_accuracy' if c['task']=='snacs' else 'accuracy'])
  lines+=['\\paragraph{Matched non-LLM controls.} All 45 control cells completed on the same new study samples and purchased trajectories. At $B=64$, mean primary accuracies over the three seeds are: '+ '; '.join(f"{task.replace('_',' ')} {method.replace('_',' ')} {np.mean(v)*100:.1f}\\%" for (task,method),v in groups.items())+'. These controls do not receive guideline knowledge. They are diagnostics, not substitutes for a strong full-context model baseline.']
  lines+=['\\begin{figure*}[t]','\\centering','\\includegraphics[width=.92\\textwidth]{subscription-curves.pdf}','\\caption{Observed completed-cell means. Vertical ranges span completed trajectory values, not confidence intervals; absent points are pending. The figure is descriptive until the planned trajectories complete.}','\\end{figure*}']
+ if complete:
+  lines=[line.replace('Pending cells have no imputed score. ','').replace('Comparisons with incomplete or unequal trajectory counts are provisional. ','All nonzero budgets use three trajectories. ').replace('At this snapshot, 112 of 112 configuration cells are complete.','All 112 configuration cells completed.').replace('; missing cells are not scored as zero.','.').replace('; absent points are pending. The figure is descriptive until the planned trajectories complete.','. All planned trajectories are complete; ranges remain descriptive.') for line in lines]
  (ROOT/'paper/subscription-results.tex').write_text('\n'.join(lines)+'\n')
  fig,axes=plt.subplots(2,2,figsize=(9,5),sharey=True)
  for row,task in enumerate(['snacs','cap_pa']):
