@@ -1,0 +1,13 @@
+{
+  "audits": [
+    {
+      "ledger_index": 14278,
+      "resumable": true,
+      "reason": "incomplete_turn_without_native_tools_or_terminal_event",
+      "events": 3
+    }
+  ],
+  "max_supervisor_continuations": 2,
+  "delay_seconds": 180,
+  "note": "Partial proposed actions are retained in transport logs but were not accepted by the controller; retry is selected only by audited transport failure."
+}

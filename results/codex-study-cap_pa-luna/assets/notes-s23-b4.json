@@ -1,0 +1,3 @@
+{
+  "pa-topic-rules.txt": "Pennsylvania policy topic coding rules from reviewed examples and guideline excerpts:\n- Assign the narrowest topic matching the bill summary's substantive subject.\n- Public School Code provisions concerning agreements between school districts are elementary/secondary education (602).\n- Municipal and residual waste facility siting or host municipality agreements and related moratoria concern solid/hazardous waste management (703).\n- Freezing assets of criminal defendants is criminal justice procedure (1204).\n- Defining racketeering activity under Crimes and Offenses is crime and criminal code (1202).\n- Do not let the statute title alone override the policy subject; use the specific action and affected area in the summary.\n"
+}

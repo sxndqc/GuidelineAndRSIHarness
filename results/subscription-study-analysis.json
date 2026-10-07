@@ -3,9 +3,9 @@
   "runs": [
     {
       "directory": "results/codex-study-cap_pa-luna",
-      "status": "backend_unavailable",
+      "status": "completed",
       "expected_cells": 28,
-      "completed_cells": 10,
+      "completed_cells": 28,
       "evaluation_rows": 215,
       "targets": 215,
       "groups": 128,
@@ -540,6 +540,974 @@
             "evaluation_completion_tokens": 30914,
             "adaptation_prompt_tokens": 1267673,
             "adaptation_completion_tokens": 11470
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 23,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "8b974a8b2f552d01695c3019127f01d8f9352f5c5fecee31e2ab02184168eaba",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.46511627906976744,
+            "group_macro_accuracy": 0.4262152777777778,
+            "macro_f1_observed": 0.3899459968854345,
+            "macro_f1_inventory": 0.118608574052653,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 86,
+              "targets": 197,
+              "accuracy": 0.4365482233502538
+            },
+            "purchased_label_seen": {
+              "correct": 14,
+              "targets": 18,
+              "accuracy": 0.7777777777777778
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 107
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4104321,
+            "evaluation_completion_tokens": 33729
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 23,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "50b25b1fab8c5ead1c217e635575ac751b662a1c4cc603f4da06a86edb7db4f0",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4232558139534884,
+            "group_macro_accuracy": 0.3715277777777778,
+            "macro_f1_observed": 0.31755523776071726,
+            "macro_f1_inventory": 0.09658971815221815,
+            "valid_output_rate": 0.9906976744186047
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 65,
+              "targets": 167,
+              "accuracy": 0.38922155688622756
+            },
+            "purchased_label_seen": {
+              "correct": 26,
+              "targets": 48,
+              "accuracy": 0.5416666666666666
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 102
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4097624,
+            "evaluation_completion_tokens": 35166
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 23,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "cf6d5db060619a004e97db7788d6d144b470a2724ca1f325045e5f353f3e2092",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4511627906976744,
+            "group_macro_accuracy": 0.4184027777777778,
+            "macro_f1_observed": 0.37091661619313343,
+            "macro_f1_inventory": 0.11282047075874475,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 52,
+              "targets": 118,
+              "accuracy": 0.4406779661016949
+            },
+            "purchased_label_seen": {
+              "correct": 45,
+              "targets": 97,
+              "accuracy": 0.4639175257731959
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 126
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 5240639,
+            "evaluation_completion_tokens": 37185
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 23,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "ba664d6a7bbd70349eca1b4b83078fbd98bfadf1f416b47a6414a0198b3bdbea",
+          "prediction_sha256": "0ed76d48cfc78e3b8e0aacc520e2e271fd587f11fd4b0431902446377a524769",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.3395348837209302,
+            "group_macro_accuracy": 0.3480902777777778,
+            "macro_f1_observed": 0.32825325467846356,
+            "macro_f1_inventory": 0.09984369829803266,
+            "valid_output_rate": 0.9813953488372092
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 59,
+              "targets": 197,
+              "accuracy": 0.29949238578680204
+            },
+            "purchased_label_seen": {
+              "correct": 14,
+              "targets": 18,
+              "accuracy": 0.7777777777777778
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 6,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 124
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 154549,
+            "adaptation_completion_tokens": 1133,
+            "evaluation_prompt_tokens": 4420499,
+            "evaluation_completion_tokens": 34962
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 23,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "db1a3cdf77b61e2cb8ab78ce1c3f33d491c89231087209b220231e4ba44ddbc3",
+          "prediction_sha256": "06cef84aa9c2c1df83be2c01ead992acf7958ff5c4b20242a6f52804336dd643",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.2930232558139535,
+            "group_macro_accuracy": 0.3090277777777778,
+            "macro_f1_observed": 0.21100974636429914,
+            "macro_f1_inventory": 0.06418213118580766,
+            "valid_output_rate": 0.9953488372093023
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 32,
+              "targets": 167,
+              "accuracy": 0.19161676646706588
+            },
+            "purchased_label_seen": {
+              "correct": 31,
+              "targets": 48,
+              "accuracy": 0.6458333333333334
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 7,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 93
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 187971,
+            "adaptation_completion_tokens": 2284,
+            "evaluation_prompt_tokens": 3766474,
+            "evaluation_completion_tokens": 32079
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 23,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "983f382e30899eb7c5d78ae0e6a9fffecc3fd56bf94af5a969d530858a5b1833",
+          "prediction_sha256": "e315eb7ae297cc091adb3498a1018198c45ef95da51048ea2ed89e9953063c96",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.40930232558139534,
+            "group_macro_accuracy": 0.4105902777777778,
+            "macro_f1_observed": 0.30676209355012535,
+            "macro_f1_inventory": 0.09330680345482976,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 43,
+              "targets": 118,
+              "accuracy": 0.3644067796610169
+            },
+            "purchased_label_seen": {
+              "correct": 45,
+              "targets": 97,
+              "accuracy": 0.4639175257731959
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 8,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 120
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 303441,
+            "adaptation_completion_tokens": 3373,
+            "evaluation_prompt_tokens": 5034992,
+            "evaluation_completion_tokens": 37816
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 23,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "750afc0e29af8619b76a1f182a3cc1fab87deaeb9a95ec545124280a3dd95997",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.413953488372093,
+            "group_macro_accuracy": 0.3715277777777778,
+            "macro_f1_observed": 0.3477744908723746,
+            "macro_f1_inventory": 0.10578140764034728,
+            "valid_output_rate": 0.9441860465116279
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 83,
+              "targets": 197,
+              "accuracy": 0.4213197969543147
+            },
+            "purchased_label_seen": {
+              "correct": 6,
+              "targets": 18,
+              "accuracy": 0.3333333333333333
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 124,
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 5084332,
+            "evaluation_completion_tokens": 38949,
+            "adaptation_prompt_tokens": 47211,
+            "adaptation_completion_tokens": 192
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 23,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "98569839951734d2fa9131e597fa62228b70343ae7a8d9b5a09cadd620b79e49",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.3767441860465116,
+            "group_macro_accuracy": 0.3715277777777778,
+            "macro_f1_observed": 0.3301267829672342,
+            "macro_f1_inventory": 0.10041356315253375,
+            "valid_output_rate": 0.8883720930232558
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 191,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 24,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 61,
+              "targets": 167,
+              "accuracy": 0.3652694610778443
+            },
+            "purchased_label_seen": {
+              "correct": 20,
+              "targets": 48,
+              "accuracy": 0.4166666666666667
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 103,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1,
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 7,
+            "adaptation_tool_budget_exhausted": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4629376,
+            "evaluation_completion_tokens": 39401,
+            "adaptation_prompt_tokens": 341804,
+            "adaptation_completion_tokens": 2081
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 23,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "31135522d8aae05425c06781403cb4cfbe9e66c887f9e700ff9bf300f4266c29",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.3953488372093023,
+            "group_macro_accuracy": 0.3480902777777778,
+            "macro_f1_observed": 0.31607071331296277,
+            "macro_f1_inventory": 0.09613817529935952,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 49,
+              "targets": 118,
+              "accuracy": 0.4152542372881356
+            },
+            "purchased_label_seen": {
+              "correct": 36,
+              "targets": 97,
+              "accuracy": 0.3711340206185567
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 115,
+            "adaptation_completed": 11,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 29
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 5156601,
+            "evaluation_completion_tokens": 35748,
+            "adaptation_prompt_tokens": 1470425,
+            "adaptation_completion_tokens": 11683
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "6bb8c29c81aff13cd256fd4604fc7844f2d4175500fc604e0599dfa4a9bc0936",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.586046511627907,
+            "group_macro_accuracy": 0.4809027777777778,
+            "macro_f1_observed": 0.4661154880332962,
+            "macro_f1_inventory": 0.14177679427679427,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 123,
+              "targets": 210,
+              "accuracy": 0.5857142857142857
+            },
+            "purchased_label_seen": {
+              "correct": 3,
+              "targets": 5,
+              "accuracy": 0.6
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 125
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4853237,
+            "evaluation_completion_tokens": 37285
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "db95f919b9602e6fc86567621fc27ff579a3048f631dd52b4d84f1796dca7390",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4232558139534884,
+            "group_macro_accuracy": 0.3324652777777778,
+            "macro_f1_observed": 0.23055078637270415,
+            "macro_f1_inventory": 0.07012586418836418,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 71,
+              "targets": 176,
+              "accuracy": 0.4034090909090909
+            },
+            "purchased_label_seen": {
+              "correct": 20,
+              "targets": 39,
+              "accuracy": 0.5128205128205128
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 111
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4444324,
+            "evaluation_completion_tokens": 35721
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "0969e95d7ea943165e85fa5f03b7595ea1ea2b0ec3b0dd9c2a2e0299b5bd30dd",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4325581395348837,
+            "group_macro_accuracy": 0.3871527777777778,
+            "macro_f1_observed": 0.3043272062197801,
+            "macro_f1_inventory": 0.0925661918918498,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 27,
+              "targets": 102,
+              "accuracy": 0.2647058823529412
+            },
+            "purchased_label_seen": {
+              "correct": 66,
+              "targets": 113,
+              "accuracy": 0.584070796460177
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 123
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 5401428,
+            "evaluation_completion_tokens": 40864
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "4c3d393099612f34e7e01bf50cd901e61f21bf6091c9b3bc7a84e5feb05a9126",
+          "prediction_sha256": "a96061f7edee92dc30c470d24544efc83e9c542b9e814794c7871337945d284a",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.48372093023255813,
+            "group_macro_accuracy": 0.4105902777777778,
+            "macro_f1_observed": 0.3753313737452166,
+            "macro_f1_inventory": 0.11416329284750336,
+            "valid_output_rate": 0.9348837209302325
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 201,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 14,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 100,
+              "targets": 210,
+              "accuracy": 0.47619047619047616
+            },
+            "purchased_label_seen": {
+              "correct": 4,
+              "targets": 5,
+              "accuracy": 0.8
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 5,
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 132,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 117848,
+            "adaptation_completion_tokens": 848,
+            "evaluation_prompt_tokens": 5313730,
+            "evaluation_completion_tokens": 39721
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "e6d4749010fd79c9f1bc2353f03c6f130892c89ea9e81a54bd7760e805053953",
+          "prediction_sha256": "26e479743d708f2fb9539f7bf3c1570ca65bfe5f6c97aee4230e45186c834609",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.39069767441860465,
+            "group_macro_accuracy": 0.3324652777777778,
+            "macro_f1_observed": 0.2653760219963197,
+            "macro_f1_inventory": 0.08071854002388058,
+            "valid_output_rate": 0.958139534883721
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 206,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 9,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 63,
+              "targets": 176,
+              "accuracy": 0.35795454545454547
+            },
+            "purchased_label_seen": {
+              "correct": 21,
+              "targets": 39,
+              "accuracy": 0.5384615384615384
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 6,
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 105,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 198215,
+            "adaptation_completion_tokens": 1726,
+            "evaluation_prompt_tokens": 4091964,
+            "evaluation_completion_tokens": 34739
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "461be01dd7c8bc1bdeca57c5c23ef8baaa6e4a9f8bd8cfeda9052bd213c8974a",
+          "prediction_sha256": "bc173c0872c7e30767103278fc5509312150df128ce4c59a3d0fdb691f0fb931",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4186046511627907,
+            "group_macro_accuracy": 0.3832465277777778,
+            "macro_f1_observed": 0.3398633482195126,
+            "macro_f1_inventory": 0.10337510175010174,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 24,
+              "targets": 102,
+              "accuracy": 0.23529411764705882
+            },
+            "purchased_label_seen": {
+              "correct": 66,
+              "targets": 113,
+              "accuracy": 0.584070796460177
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 9,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 88
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 328425,
+            "adaptation_completion_tokens": 4938,
+            "evaluation_prompt_tokens": 3687495,
+            "evaluation_completion_tokens": 26988
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 4,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "27d5de24cd133d7ed76e33e5090667e0d6a57e7c769667422447c829a55694a3",
+          "prediction_sha256": "7df77a5ae10032ac10c3031be85bc9dec441c7dcab71ae967e46eddd4c25b228",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.42790697674418604,
+            "group_macro_accuracy": 0.4184027777777778,
+            "macro_f1_observed": 0.40169685717630926,
+            "macro_f1_inventory": 0.12218279405779404,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 89,
+              "targets": 210,
+              "accuracy": 0.4238095238095238
+            },
+            "purchased_label_seen": {
+              "correct": 3,
+              "targets": 5,
+              "accuracy": 0.6
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 127,
+            "adaptation_completed": 5,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 19
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4921894,
+            "evaluation_completion_tokens": 36239,
+            "adaptation_prompt_tokens": 609793,
+            "adaptation_completion_tokens": 4694
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 16,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "cdffdb3a5b90c8c6574b25601e547bbea20f40338741f205dd8eb8cf7405ae57",
+          "prediction_sha256": "a71be02a7686efa09175d01e4b683ac13cbb845c97d8022d3933d7f3d714f127",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.3813953488372093,
+            "group_macro_accuracy": 0.3793402777777778,
+            "macro_f1_observed": 0.3038308521991036,
+            "macro_f1_inventory": 0.09241521754389401,
+            "valid_output_rate": 0.9953488372093023
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 55,
+              "targets": 176,
+              "accuracy": 0.3125
+            },
+            "purchased_label_seen": {
+              "correct": 27,
+              "targets": 39,
+              "accuracy": 0.6923076923076923
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 111,
+            "adaptation_completed": 5,
+            "adaptation_asset_read_episodes": 4,
+            "adaptation_calls": 20
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 4815162,
+            "evaluation_completion_tokens": 41096,
+            "adaptation_prompt_tokens": 669791,
+            "adaptation_completion_tokens": 5290
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 64,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "cdffdb3a5b90c8c6574b25601e547bbea20f40338741f205dd8eb8cf7405ae57",
+          "prediction_sha256": "fe49fee87d90bbecc47c369b67c5db1d184dbdb7ae7c8511fcceace0e82b8ee1",
+          "metrics": {
+            "instances": 215,
+            "targets": 215,
+            "groups": 128,
+            "accuracy": 0.4372093023255814,
+            "group_macro_accuracy": 0.4027777777777778,
+            "macro_f1_observed": 0.34610288762182395,
+            "macro_f1_inventory": 0.10527296165163812,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 215,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 38,
+              "targets": 102,
+              "accuracy": 0.37254901960784315
+            },
+            "purchased_label_seen": {
+              "correct": 56,
+              "targets": 113,
+              "accuracy": 0.49557522123893805
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 135,
+            "adaptation_completed": 6,
+            "adaptation_asset_read_episodes": 4,
+            "adaptation_calls": 22,
+            "adaptation_tool_budget_exhausted": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 5448375,
+            "evaluation_completion_tokens": 40351,
+            "adaptation_prompt_tokens": 754079,
+            "adaptation_completion_tokens": 7220
           }
         }
       ]
@@ -2072,9 +3040,9 @@
     },
     {
       "directory": "results/codex-study-snacs-luna",
-      "status": "backend_unavailable",
+      "status": "completed",
       "expected_cells": 28,
-      "completed_cells": 18,
+      "completed_cells": 28,
       "evaluation_rows": 114,
       "targets": 202,
       "groups": 64,
@@ -3071,6 +4039,567 @@
             "evaluation_completion_tokens": 27343,
             "adaptation_prompt_tokens": 355499,
             "adaptation_completion_tokens": 3470
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 23,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 147,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "89b26796c55ef174cf0fe6d30fa7fb80facb818cfa67e93b3b0221f05d5475c9",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5247524752475248,
+            "function_accuracy": 0.5792079207920792,
+            "joint_accuracy": 0.44554455445544555,
+            "role_macro_f1": 0.42125434915994797,
+            "function_macro_f1": 0.5081793940122671,
+            "sentence_exact": 0.32456140350877194,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_seen": {
+              "correct": 87,
+              "targets": 163,
+              "accuracy": 0.5337423312883436
+            },
+            "purchased_label_unseen": {
+              "correct": 3,
+              "targets": 39,
+              "accuracy": 0.07692307692307693
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 72,
+            "adaptation_completed": 6,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 21,
+            "adaptation_tool_budget_exhausted": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2678770,
+            "evaluation_completion_tokens": 26332,
+            "adaptation_prompt_tokens": 1595796,
+            "adaptation_completion_tokens": 16728
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 6,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "b2210709411de04bc02838c35c02e9177338cbb51a4c726a7a23b605bc32da3c",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.4900990099009901,
+            "function_accuracy": 0.5445544554455446,
+            "joint_accuracy": 0.35148514851485146,
+            "role_macro_f1": 0.4014993070492233,
+            "function_macro_f1": 0.40025468358801686,
+            "sentence_exact": 0.24561403508771928,
+            "valid_output_rate": 0.9035087719298246
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 105,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 9,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 58,
+              "targets": 179,
+              "accuracy": 0.3240223463687151
+            },
+            "purchased_label_seen": {
+              "correct": 13,
+              "targets": 23,
+              "accuracy": 0.5652173913043478
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 91,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 3358474,
+            "evaluation_completion_tokens": 29928
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 24,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "b242b66dc967ba6d1da720ce6466218a9d0f05a0f1155149aa5cd7524b560889",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5396039603960396,
+            "function_accuracy": 0.6138613861386139,
+            "joint_accuracy": 0.40594059405940597,
+            "role_macro_f1": 0.4155971414075405,
+            "function_macro_f1": 0.46319971995189946,
+            "sentence_exact": 0.2894736842105263,
+            "valid_output_rate": 0.9736842105263158
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 19,
+              "targets": 104,
+              "accuracy": 0.18269230769230768
+            },
+            "purchased_label_seen": {
+              "correct": 63,
+              "targets": 98,
+              "accuracy": 0.6428571428571429
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 72
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2534968,
+            "evaluation_completion_tokens": 27676
+          }
+        },
+        {
+          "condition": "frozen",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 126,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "2ddb81a070c6d830886751868fdc82abd74b426e5e8ef528fb14fdb3a100b0aa",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5,
+            "function_accuracy": 0.5693069306930693,
+            "joint_accuracy": 0.42574257425742573,
+            "role_macro_f1": 0.4327837018450584,
+            "function_macro_f1": 0.4905255800767029,
+            "sentence_exact": 0.35964912280701755,
+            "valid_output_rate": 0.9385964912280702
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 15,
+          "completed_instances": 107,
+          "failed_or_exhausted_batches": 1,
+          "failed_or_exhausted_instances": 7,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 5,
+              "targets": 48,
+              "accuracy": 0.10416666666666667
+            },
+            "purchased_label_seen": {
+              "correct": 81,
+              "targets": 154,
+              "accuracy": 0.525974025974026
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 15,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 80,
+            "evaluation_refused": 1,
+            "calls_unknown_usage": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 3366332,
+            "evaluation_completion_tokens": 30014
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 6,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "2c5b84d8a346c4c7d79de68d379b1e89ee30a8da5a278799b6e250256309a79a",
+          "prediction_sha256": "d0e4431c59c1aad39aa22922c6eb509dbb2f2c570386269ac0d594361c6e0d82",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5544554455445545,
+            "function_accuracy": 0.599009900990099,
+            "joint_accuracy": 0.3910891089108911,
+            "role_macro_f1": 0.4131922370558734,
+            "function_macro_f1": 0.45581628919322686,
+            "sentence_exact": 0.2982456140350877,
+            "valid_output_rate": 0.9824561403508771
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 61,
+              "targets": 179,
+              "accuracy": 0.3407821229050279
+            },
+            "purchased_label_seen": {
+              "correct": 18,
+              "targets": 23,
+              "accuracy": 0.782608695652174
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 6,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 84
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 143375,
+            "adaptation_completion_tokens": 1548,
+            "evaluation_prompt_tokens": 2771728,
+            "evaluation_completion_tokens": 26438
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 24,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "0d921d2332598d9451ac6e1399df598bcaddf552e9da9031ec9c7dfe9ad8ab7f",
+          "prediction_sha256": "6a0283e0931e8b6b629926cdb27fc121e856156ddca2e3a131347e7d5596efe0",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5297029702970297,
+            "function_accuracy": 0.6188118811881188,
+            "joint_accuracy": 0.4158415841584158,
+            "role_macro_f1": 0.461043081497627,
+            "function_macro_f1": 0.5485336145611425,
+            "sentence_exact": 0.2719298245614035,
+            "valid_output_rate": 0.9649122807017544
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 21,
+              "targets": 104,
+              "accuracy": 0.20192307692307693
+            },
+            "purchased_label_seen": {
+              "correct": 63,
+              "targets": 98,
+              "accuracy": 0.6428571428571429
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 6,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 65
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 164229,
+            "adaptation_completion_tokens": 1579,
+            "evaluation_prompt_tokens": 2100105,
+            "evaluation_completion_tokens": 21455
+          }
+        },
+        {
+          "condition": "notes",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 126,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "d64d147fa2d512fa2398ffc78bb340d5e3e9d509517fb5196be8a3c5b600c5e5",
+          "prediction_sha256": "c6e138467dc94ac92f3f0f522c7a1b6b754f4d34a7da743ef04dbb7d6debac28",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5792079207920792,
+            "function_accuracy": 0.6831683168316832,
+            "joint_accuracy": 0.4801980198019802,
+            "role_macro_f1": 0.4824058212606536,
+            "function_macro_f1": 0.5749728010216186,
+            "sentence_exact": 0.3333333333333333,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 6,
+              "targets": 48,
+              "accuracy": 0.125
+            },
+            "purchased_label_seen": {
+              "correct": 91,
+              "targets": 154,
+              "accuracy": 0.5909090909090909
+            }
+          },
+          "trace_statistics": {
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 1,
+            "adaptation_calls": 11,
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 15,
+            "evaluation_calls": 75
+          },
+          "usage": {
+            "adaptation_prompt_tokens": 546337,
+            "adaptation_completion_tokens": 6814,
+            "evaluation_prompt_tokens": 2788026,
+            "evaluation_completion_tokens": 28159
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 4,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 4,
+            "unique_labeled_sentences": 4,
+            "labeled_decisions": 6,
+            "reveal_calls": 4
+          },
+          "asset_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "prediction_sha256": "d58c40ff1d33ec3a7e8675cb2820c2df7b126dac9dc8a3ad3bac4b3f620f23fc",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.46534653465346537,
+            "function_accuracy": 0.5643564356435643,
+            "joint_accuracy": 0.3316831683168317,
+            "role_macro_f1": 0.3800552177353729,
+            "function_macro_f1": 0.4106709156456532,
+            "sentence_exact": 0.2631578947368421,
+            "valid_output_rate": 0.9912280701754386
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 55,
+              "targets": 179,
+              "accuracy": 0.30726256983240224
+            },
+            "purchased_label_seen": {
+              "correct": 12,
+              "targets": 23,
+              "accuracy": 0.5217391304347826
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 0,
+            "evaluation_calls": 82,
+            "adaptation_completed": 1,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 3152778,
+            "evaluation_completion_tokens": 28295,
+            "adaptation_prompt_tokens": 239463,
+            "adaptation_completion_tokens": 876
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 16,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 16,
+            "unique_labeled_sentences": 16,
+            "labeled_decisions": 24,
+            "reveal_calls": 16
+          },
+          "asset_sha256": "388845c9f60bb3c87d980943dec9a6df3416190fa4198008143c1316570777f5",
+          "prediction_sha256": "9f6c56c9dbaa9fd7d179292402fbf787ba5e127bce05a6a05e7ced1747865031",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5445544554455446,
+            "function_accuracy": 0.6039603960396039,
+            "joint_accuracy": 0.400990099009901,
+            "role_macro_f1": 0.42789612348435874,
+            "function_macro_f1": 0.4939148539655276,
+            "sentence_exact": 0.2894736842105263,
+            "valid_output_rate": 0.9824561403508771
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 18,
+              "targets": 104,
+              "accuracy": 0.17307692307692307
+            },
+            "purchased_label_seen": {
+              "correct": 63,
+              "targets": 98,
+              "accuracy": 0.6428571428571429
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 73,
+            "adaptation_completed": 5,
+            "adaptation_asset_read_episodes": 0,
+            "adaptation_calls": 19
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2460276,
+            "evaluation_completion_tokens": 28881,
+            "adaptation_prompt_tokens": 839797,
+            "adaptation_completion_tokens": 9652
+          }
+        },
+        {
+          "condition": "moderation",
+          "seed": 47,
+          "budget": 64,
+          "model": "gpt-6-luna",
+          "supervision": {
+            "limit": 64,
+            "unique_labeled_sentences": 64,
+            "labeled_decisions": 126,
+            "reveal_calls": 64
+          },
+          "asset_sha256": "388845c9f60bb3c87d980943dec9a6df3416190fa4198008143c1316570777f5",
+          "prediction_sha256": "8432bcd259e4bc57dafe4d6d7645cfb9483b19c1bb45333a73c2db550ff62d91",
+          "metrics": {
+            "sentences": 114,
+            "targets": 202,
+            "documents": 64,
+            "role_accuracy": 0.5594059405940595,
+            "function_accuracy": 0.6287128712871287,
+            "joint_accuracy": 0.4603960396039604,
+            "role_macro_f1": 0.45477408802475905,
+            "function_macro_f1": 0.5527649587574528,
+            "sentence_exact": 0.34210526315789475,
+            "valid_output_rate": 1.0
+          },
+          "evaluation_batches": 16,
+          "completed_batches": 16,
+          "completed_instances": 114,
+          "failed_or_exhausted_batches": 0,
+          "failed_or_exhausted_instances": 0,
+          "label_support": {
+            "purchased_label_unseen": {
+              "correct": 3,
+              "targets": 48,
+              "accuracy": 0.0625
+            },
+            "purchased_label_seen": {
+              "correct": 90,
+              "targets": 154,
+              "accuracy": 0.5844155844155844
+            }
+          },
+          "trace_statistics": {
+            "evaluation_completed": 16,
+            "evaluation_asset_read_episodes": 16,
+            "evaluation_calls": 77,
+            "adaptation_completed": 5,
+            "adaptation_asset_read_episodes": 2,
+            "adaptation_calls": 16,
+            "adaptation_tool_budget_exhausted": 1
+          },
+          "usage": {
+            "evaluation_prompt_tokens": 2925527,
+            "evaluation_completion_tokens": 30129,
+            "adaptation_prompt_tokens": 1245566,
+            "adaptation_completion_tokens": 14082
           }
         }
       ]
@@ -4654,13 +6183,13 @@
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 4,
-      "seeds": 1,
-      "mean": 0.32558139534883723,
+      "seeds": 3,
+      "mean": 0.4589147286821706,
       "min": 0.32558139534883723,
-      "max": 0.32558139534883723,
+      "max": 0.586046511627907,
       "descriptive95_interval": [
-        0.2113263088740651,
-        0.43929465008462704
+        0.2993415454973639,
+        0.6038671228756202
       ],
       "valid_output_rate": 1.0
     },
@@ -4669,73 +6198,73 @@
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 16,
-      "seeds": 1,
-      "mean": 0.3581395348837209,
+      "seeds": 3,
+      "mean": 0.40155038759689926,
       "min": 0.3581395348837209,
-      "max": 0.3581395348837209,
+      "max": 0.4232558139534884,
       "descriptive95_interval": [
-        0.2521912326514822,
-        0.46734854530161535
+        0.29411764705882354,
+        0.5158380018674137
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.9968992248062015
     },
     {
       "task": "cap_pa",
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 64,
-      "seeds": 1,
-      "mean": 0.4186046511627907,
+      "seeds": 3,
+      "mean": 0.4341085271317829,
       "min": 0.4186046511627907,
+      "max": 0.4511627906976744,
+      "descriptive95_interval": [
+        0.32037864077669903,
+        0.5449313970064148
+      ],
+      "valid_output_rate": 0.9751937984496125
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition": "notes",
+      "budget": 4,
+      "seeds": 3,
+      "mean": 0.40310077519379844,
+      "min": 0.3395348837209302,
+      "max": 0.48372093023255813,
+      "descriptive95_interval": [
+        0.284985164897866,
+        0.5273671778721074
+      ],
+      "valid_output_rate": 0.9224806201550387
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition": "notes",
+      "budget": 16,
+      "seeds": 3,
+      "mean": 0.3333333333333333,
+      "min": 0.2930232558139535,
+      "max": 0.39069767441860465,
+      "descriptive95_interval": [
+        0.22704482778853488,
+        0.4368864085571445
+      ],
+      "valid_output_rate": 0.9844961240310077
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition": "notes",
+      "budget": 64,
+      "seeds": 3,
+      "mean": 0.3829457364341085,
+      "min": 0.3209302325581395,
       "max": 0.4186046511627907,
       "descriptive95_interval": [
-        0.26062234042553195,
-        0.5676957844120095
-      ],
-      "valid_output_rate": 0.9255813953488372
-    },
-    {
-      "task": "cap_pa",
-      "model": "gpt-6-luna",
-      "condition": "notes",
-      "budget": 4,
-      "seeds": 1,
-      "mean": 0.386046511627907,
-      "min": 0.386046511627907,
-      "max": 0.386046511627907,
-      "descriptive95_interval": [
-        0.24135444297082229,
-        0.5336226238068043
-      ],
-      "valid_output_rate": 0.8511627906976744
-    },
-    {
-      "task": "cap_pa",
-      "model": "gpt-6-luna",
-      "condition": "notes",
-      "budget": 16,
-      "seeds": 1,
-      "mean": 0.31627906976744186,
-      "min": 0.31627906976744186,
-      "max": 0.31627906976744186,
-      "descriptive95_interval": [
-        0.21794871794871795,
-        0.4163090052131684
-      ],
-      "valid_output_rate": 1.0
-    },
-    {
-      "task": "cap_pa",
-      "model": "gpt-6-luna",
-      "condition": "notes",
-      "budget": 64,
-      "seeds": 1,
-      "mean": 0.3209302325581395,
-      "min": 0.3209302325581395,
-      "max": 0.3209302325581395,
-      "descriptive95_interval": [
-        0.20491803278688525,
-        0.45641826923076917
+        0.28175472276299657,
+        0.4912390350877192
       ],
       "valid_output_rate": 1.0
     },
@@ -4744,43 +6273,43 @@
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 4,
-      "seeds": 1,
-      "mean": 0.40930232558139534,
+      "seeds": 3,
+      "mean": 0.4170542635658914,
       "min": 0.40930232558139534,
-      "max": 0.40930232558139534,
+      "max": 0.42790697674418604,
       "descriptive95_interval": [
-        0.28970412366567744,
-        0.5210163686327611
+        0.30406145384983263,
+        0.5348830241505022
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.9813953488372092
     },
     {
       "task": "cap_pa",
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 16,
-      "seeds": 1,
-      "mean": 0.3302325581395349,
+      "seeds": 3,
+      "mean": 0.3627906976744186,
       "min": 0.3302325581395349,
-      "max": 0.3302325581395349,
+      "max": 0.3813953488372093,
       "descriptive95_interval": [
-        0.21523132451055454,
-        0.4532725856697819
+        0.2609951518541827,
+        0.47580076342212224
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.9612403100775193
     },
     {
       "task": "cap_pa",
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 64,
-      "seeds": 1,
-      "mean": 0.30697674418604654,
+      "seeds": 3,
+      "mean": 0.3798449612403101,
       "min": 0.30697674418604654,
-      "max": 0.30697674418604654,
+      "max": 0.4372093023255814,
       "descriptive95_interval": [
-        0.2063474268631219,
-        0.40367413549753
+        0.27271337225465664,
+        0.4974849276362261
       ],
       "valid_output_rate": 1.0
     },
@@ -4954,135 +6483,135 @@
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 4,
-      "seeds": 2,
-      "mean": 0.40594059405940597,
-      "min": 0.37623762376237624,
+      "seeds": 3,
+      "mean": 0.3877887788778878,
+      "min": 0.35148514851485146,
       "max": 0.43564356435643564,
       "descriptive95_interval": [
-        0.32673018558137223,
-        0.49757462686567133
+        0.32495272755530225,
+        0.4679819971583416
       ],
-      "valid_output_rate": 0.9473684210526316
+      "valid_output_rate": 0.9327485380116959
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 16,
-      "seeds": 2,
-      "mean": 0.4504950495049505,
-      "min": 0.43564356435643564,
+      "seeds": 3,
+      "mean": 0.43564356435643564,
+      "min": 0.40594059405940597,
       "max": 0.46534653465346537,
       "descriptive95_interval": [
-        0.3793062591926785,
-        0.5306553964869528
+        0.3626494516361021,
+        0.5219535854088699
       ],
-      "valid_output_rate": 0.9956140350877193
+      "valid_output_rate": 0.9883040935672515
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "frozen",
       "budget": 64,
-      "seeds": 2,
-      "mean": 0.4504950495049505,
-      "min": 0.44554455445544555,
+      "seeds": 3,
+      "mean": 0.44224422442244227,
+      "min": 0.42574257425742573,
       "max": 0.45544554455445546,
       "descriptive95_interval": [
-        0.39400198134419734,
-        0.51010101010101
+        0.37722855406124156,
+        0.5098088235294117
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.97953216374269
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "notes",
       "budget": 4,
-      "seeds": 2,
-      "mean": 0.41336633663366334,
-      "min": 0.41089108910891087,
+      "seeds": 3,
+      "mean": 0.4059405940594059,
+      "min": 0.3910891089108911,
       "max": 0.4158415841584158,
       "descriptive95_interval": [
-        0.3549959677419355,
-        0.48049484052532826
+        0.34683904201230936,
+        0.47360834701560606
       ],
-      "valid_output_rate": 0.9780701754385965
+      "valid_output_rate": 0.97953216374269
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "notes",
       "budget": 16,
-      "seeds": 2,
-      "mean": 0.46287128712871284,
-      "min": 0.4306930693069307,
+      "seeds": 3,
+      "mean": 0.44719471947194717,
+      "min": 0.4158415841584158,
       "max": 0.49504950495049505,
       "descriptive95_interval": [
-        0.38647068511198945,
-        0.5544566186476468
+        0.37766830870279144,
+        0.5366129427625933
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.9883040935672515
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "notes",
       "budget": 64,
-      "seeds": 2,
+      "seeds": 3,
       "mean": 0.4801980198019802,
       "min": 0.47029702970297027,
       "max": 0.4900990099009901,
       "descriptive95_interval": [
-        0.39805825242718446,
-        0.5497574626865671
+        0.4028240582400938,
+        0.5578338584112269
       ],
-      "valid_output_rate": 0.9605263157894737
+      "valid_output_rate": 0.9736842105263158
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 4,
-      "seeds": 2,
-      "mean": 0.40594059405940597,
-      "min": 0.400990099009901,
+      "seeds": 3,
+      "mean": 0.38118811881188125,
+      "min": 0.3316831683168317,
       "max": 0.41089108910891087,
       "descriptive95_interval": [
-        0.33412601626016264,
-        0.48241643541088525
+        0.3067926698167454,
+        0.4640119346733667
       ],
-      "valid_output_rate": 0.986842105263158
+      "valid_output_rate": 0.9883040935672515
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 16,
-      "seeds": 2,
-      "mean": 0.4158415841584159,
-      "min": 0.40594059405940597,
+      "seeds": 3,
+      "mean": 0.410891089108911,
+      "min": 0.400990099009901,
       "max": 0.42574257425742573,
       "descriptive95_interval": [
-        0.3483391690834925,
-        0.4945419228142076
+        0.3495763999696072,
+        0.48350490818312597
       ],
-      "valid_output_rate": 1.0
+      "valid_output_rate": 0.9941520467836257
     },
     {
       "task": "snacs",
       "model": "gpt-6-luna",
       "condition": "moderation",
       "budget": 64,
-      "seeds": 1,
-      "mean": 0.45544554455445546,
-      "min": 0.45544554455445546,
-      "max": 0.45544554455445546,
+      "seeds": 3,
+      "mean": 0.45379537953795385,
+      "min": 0.44554455445544555,
+      "max": 0.4603960396039604,
       "descriptive95_interval": [
-        0.39485221674876847,
-        0.5150037878787879
+        0.38396669415429724,
+        0.5267883214927976
       ],
-      "valid_output_rate": 0.9912280701754386
+      "valid_output_rate": 0.9970760233918128
     },
     {
       "task": "snacs",
@@ -5238,6 +6767,72 @@
   "paired_effects": [
     {
       "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 4,
+      "difference": -0.05581395348837209,
+      "descriptive95_interval": [
+        -0.18625257290871666,
+        0.07221341049548091
+      ]
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 16,
+      "difference": -0.06821705426356589,
+      "descriptive95_interval": [
+        -0.23115032679738562,
+        0.0716530620292598
+      ]
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 64,
+      "difference": -0.05116279069767442,
+      "descriptive95_interval": [
+        -0.19469026548672566,
+        0.07590972827852732
+      ]
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 4,
+      "difference": -0.04186046511627907,
+      "descriptive95_interval": [
+        -0.1881393438883059,
+        0.09759836631385162
+      ]
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 16,
+      "difference": -0.03875968992248062,
+      "descriptive95_interval": [
+        -0.195837315298096,
+        0.11614597992306967
+      ]
+    },
+    {
+      "task": "cap_pa",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 64,
+      "difference": -0.05426356589147287,
+      "descriptive95_interval": [
+        -0.1873838745845513,
+        0.05130208333333322
+      ]
+    },
+    {
+      "task": "cap_pa",
       "model": "gpt-6-sol",
       "condition_minus_frozen": "notes",
       "budget": 4,
@@ -5300,6 +6895,72 @@
       "descriptive95_interval": [
         -0.18881153720091773,
         0.044463986599664884
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 4,
+      "difference": 0.018151815181518153,
+      "descriptive95_interval": [
+        -0.050764315611363436,
+        0.08843803146258503
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 16,
+      "difference": 0.01155115511551155,
+      "descriptive95_interval": [
+        -0.036303630363036306,
+        0.058047066256021455
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "notes",
+      "budget": 64,
+      "difference": 0.037953795379537955,
+      "descriptive95_interval": [
+        -0.021885521885521887,
+        0.10382582310459401
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 4,
+      "difference": -0.006600660066006601,
+      "descriptive95_interval": [
+        -0.06771315586419753,
+        0.06221358978003056
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 16,
+      "difference": -0.024752475247524754,
+      "descriptive95_interval": [
+        -0.07538080385507175,
+        0.020515873015872998
+      ]
+    },
+    {
+      "task": "snacs",
+      "model": "gpt-6-luna",
+      "condition_minus_frozen": "moderation",
+      "budget": 64,
+      "difference": 0.01155115511551155,
+      "descriptive95_interval": [
+        -0.03834118357487922,
+        0.07680052790346907
       ]
     },
     {
@@ -5371,18 +7032,18 @@
   ],
   "uncertainty": "Descriptive 95% percentile bootstrap over paired adaptation seeds and fixed evaluation batches; three seeds and sixteen batches limit calibration. No multiple-comparison correction or universal sufficiency claim.",
   "transport": {
-    "calls": 12978,
+    "calls": 15896,
     "states": {
-      "action_validated": 12925,
-      "timeout": 4,
-      "failed": 6,
-      "invalid_action": 41,
+      "action_validated": 15800,
+      "timeout": 5,
+      "failed": 11,
+      "invalid_action": 78,
       "started": 2
     },
     "usage": {
-      "prompt_tokens": 519928321,
-      "completion_tokens": 2900155
+      "prompt_tokens": 636469149,
+      "completion_tokens": 3880554
     },
-    "unknown_usage_calls": 12
+    "unknown_usage_calls": 18
   }
 }

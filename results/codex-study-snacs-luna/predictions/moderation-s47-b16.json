@@ -1,0 +1,1038 @@
+{
+  "reviews-193257-0002": {
+    "swes:7": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:11": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ],
+    "swes:12": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-193257-0003": {
+    "swes:13": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-088954-0001": {
+    "swes:14": [
+      "p.Topic",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-034320-0003": {
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:18": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-290238-0001": {
+    "smwes:1": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ]
+  },
+  "reviews-290238-0002": {
+    "smwes:1": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ]
+  },
+  "reviews-290238-0003": {
+    "swes:11": [
+      "p.Identity",
+      "p.Identity"
+    ]
+  },
+  "reviews-290238-0004": {
+    "swes:8": [
+      "p.Path",
+      "p.Path"
+    ],
+    "swes:10": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-145645-0002": {
+    "swes:12": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:15": [
+      "p.Goal",
+      "p.Locus"
+    ],
+    "swes:19": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ]
+  },
+  "reviews-145645-0003": {
+    "swes:15": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-296357-0001": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:3": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:14": [
+      "p.Goal",
+      "p.Locus"
+    ]
+  },
+  "reviews-206303-0002": {
+    "swes:5": [
+      "p.Ancillary",
+      "p.Ancillary"
+    ]
+  },
+  "reviews-206303-0004": {
+    "swes:4": [
+      "p.Stimulus",
+      "p.Stimulus"
+    ],
+    "swes:19": [
+      "p.Stimulus",
+      "p.Stimulus"
+    ],
+    "swes:20": [
+      "p.Experiencer",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-206303-0005": {
+    "swes:5": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-146820-0002": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-104703-0003": {
+    "swes:9": [
+      "p.Recipient",
+      "p.Recipient"
+    ]
+  },
+  "reviews-343813-0003": {
+    "swes:4": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-252791-0001": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-252791-0002": {
+    "swes:8": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-252791-0003": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:8": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-235190-0002": {
+    "swes:14": [
+      "p.Recipient",
+      "p.Recipient"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-346074-0001": {
+    "swes:5": [
+      "p.Content",
+      "p.Gestalt"
+    ],
+    "swes:7": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-389298-0002": {
+    "swes:12": [
+      "p.Direction",
+      "p.Direction"
+    ],
+    "swes:13": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-389298-0003": {
+    "swes:14": [
+      "p.SocialRel",
+      "p.SocialRel"
+    ]
+  },
+  "reviews-389298-0004": {
+    "swes:6": [
+      "p.Recipient",
+      "p.Recipient"
+    ],
+    "swes:7": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-223040-0001": {
+    "swes:6": [
+      "p.QuantityItem",
+      "p.Gestalt"
+    ],
+    "swes:8": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Recipient"
+    ],
+    "swes:14": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-199045-0002": {
+    "swes:4": [
+      "p.Theme",
+      "p.Theme"
+    ]
+  },
+  "reviews-207348-0001": {
+    "swes:2": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-217747-0002": {
+    "swes:6": [
+      "p.Stimulus",
+      "p.Explanation"
+    ]
+  },
+  "reviews-217747-0003": {
+    "swes:4": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-217747-0004": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:8": [
+      "p.Agent",
+      "p.Agent"
+    ],
+    "swes:10": [
+      "p.Recipient",
+      "p.Recipient"
+    ]
+  },
+  "reviews-336285-0002": {
+    "swes:6": [
+      "p.Beneficiary",
+      "p.Beneficiary"
+    ],
+    "swes:7": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ],
+    "swes:13": [
+      "p.Stimulus",
+      "p.Stimulus"
+    ]
+  },
+  "reviews-336285-0003": {
+    "swes:6": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-034858-0001": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Explanation"
+    ],
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-048644-0001": {
+    "swes:6": [
+      "p.Means",
+      "p.Means"
+    ],
+    "swes:7": [
+      "p.Whole",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-048644-0002": {
+    "swes:1": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:6": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-048644-0003": {
+    "swes:6": [
+      "p.ComparisonRef",
+      "p.Source"
+    ]
+  },
+  "reviews-060396-0001": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:18": [
+      "p.Identity",
+      "p.Identity"
+    ]
+  },
+  "reviews-060396-0002": {
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-302465-0004": {
+    "swes:8": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-302465-0005": {
+    "swes:3": [
+      "p.Content",
+      "p.Content"
+    ]
+  },
+  "reviews-037179-0002": {
+    "swes:6": [
+      "p.PartPortion",
+      "p.Whole"
+    ],
+    "swes:9": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:34": [
+      "p.Recipient",
+      "p.Goal"
+    ]
+  },
+  "reviews-229100-0003": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0004": {
+    "smwes:1": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0005": {
+    "swes:4": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-229100-0007": {
+    "swes:2": [
+      "p.Goal",
+      "p.Goal"
+    ]
+  },
+  "reviews-283903-0002": {
+    "swes:2": [
+      "p.Path",
+      "p.Path"
+    ],
+    "swes:4": [
+      "p.Path",
+      "p.Path"
+    ]
+  },
+  "reviews-192399-0001": {
+    "swes:2": [
+      "p.SocialRel",
+      "p.SocialRel"
+    ]
+  },
+  "reviews-192399-0003": {
+    "swes:2": [
+      "p.Topic",
+      "p.Topic"
+    ],
+    "swes:3": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-101864-0002": {
+    "swes:5": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-354474-0002": {
+    "swes:3": [
+      "p.Org",
+      "p.Locus"
+    ],
+    "swes:14": [
+      "p.Ancillary",
+      "p.Ancillary"
+    ]
+  },
+  "reviews-354474-0003": {
+    "swes:9": [
+      "p.PartPortion",
+      "p.PartPortion"
+    ]
+  },
+  "reviews-227515-0003": {
+    "swes:6": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:7": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ],
+    "swes:16": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "smwes:2": [
+      "p.Extent",
+      "p.Extent"
+    ]
+  },
+  "reviews-227515-0004": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:2": [
+      "p.Extent",
+      "p.Extent"
+    ]
+  },
+  "reviews-299169-0002": {
+    "swes:10": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-299169-0003": {
+    "swes:15": [
+      "p.Absence",
+      "p.Absence"
+    ]
+  },
+  "reviews-059655-0001": {
+    "swes:3": [
+      "p.Org",
+      "p.Locus"
+    ]
+  },
+  "reviews-059655-0003": {
+    "swes:5": [
+      "p.Ancillary",
+      "p.Ancillary"
+    ]
+  },
+  "reviews-030430-0002": {
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:10": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-210875-0001": {
+    "swes:4": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-210875-0002": {
+    "swes:10": [
+      "p.Time",
+      "p.Time"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:17": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-210875-0003": {
+    "swes:9": [
+      "p.Experiencer",
+      "p.Experiencer"
+    ],
+    "swes:22": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-122514-0001": {
+    "swes:3": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-122514-0002": {
+    "swes:6": [
+      "p.QuantityItem",
+      "p.Gestalt"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:16": [
+      "p.Whole",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-046500-0001": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-294978-0002": {
+    "swes:13": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-294978-0003": {
+    "swes:3": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:9": [
+      "p.Cost",
+      "p.Cost"
+    ]
+  },
+  "reviews-257735-0001": {
+    "swes:4": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-257735-0002": {
+    "swes:12": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:30": [
+      "p.Cost",
+      "p.Cost"
+    ]
+  },
+  "reviews-045972-0002": {
+    "swes:6": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:14": [
+      "p.Stimulus",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.SocialRel",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-038523-0002": {
+    "swes:2": [
+      "p.Topic",
+      "p.Topic"
+    ],
+    "swes:5": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-357217-0004": {
+    "swes:6": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-357217-0005": {
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-153921-0002": {
+    "swes:5": [
+      "p.Source",
+      "p.Source"
+    ]
+  },
+  "reviews-153921-0004": {
+    "smwes:2": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-120724-0001": {
+    "swes:8": [
+      "p.Experiencer",
+      "p.Cost"
+    ]
+  },
+  "reviews-042085-0002": {
+    "swes:5": [
+      "p.Duration",
+      "p.Purpose"
+    ],
+    "swes:7": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:11": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-042085-0003": {
+    "swes:4": [
+      "p.QuantityItem",
+      "p.QuantityItem"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-332068-0001": {
+    "swes:10": [
+      "p.QuantityItem",
+      "p.Gestalt"
+    ],
+    "swes:12": [
+      "p.Duration",
+      "p.Duration"
+    ],
+    "smwes:1": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ]
+  },
+  "reviews-332068-0002": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-309258-0002": {
+    "swes:5": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-275595-0002": {
+    "swes:17": [
+      "p.Beneficiary",
+      "p.Beneficiary"
+    ],
+    "swes:18": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-275595-0003": {
+    "swes:14": [
+      "p.Topic",
+      "p.Topic"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-131965-0002": {
+    "swes:2": [
+      "p.OrgMember",
+      "p.Org"
+    ],
+    "swes:8": [
+      "p.Stimulus",
+      "p.Stimulus"
+    ],
+    "swes:9": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:17": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:19": [
+      "p.Direction",
+      "p.Path"
+    ],
+    "swes:27": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:39": [
+      "p.Recipient",
+      "p.Recipient"
+    ],
+    "swes:42": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ]
+  },
+  "reviews-005760-0003": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:6": [
+      "p.Path",
+      "p.Path"
+    ],
+    "swes:7": [
+      "p.Manner",
+      "p.Manner"
+    ]
+  },
+  "reviews-005760-0004": {
+    "swes:2": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ],
+    "swes:5": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ],
+    "swes:10": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-184290-0002": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-169610-0002": {
+    "swes:5": [
+      "p.Theme",
+      "p.Theme"
+    ],
+    "swes:10": [
+      "p.Characteristic",
+      "p.Characteristic"
+    ],
+    "swes:14": [
+      "p.QuantityItem",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-169610-0003": {
+    "swes:1": [
+      "p.Characteristic",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-392826-0002": {
+    "swes:4": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-392826-0003": {
+    "swes:1": [
+      "p.Originator",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-392826-0004": {
+    "swes:3": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-232278-0001": {
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-250878-0001": {
+    "swes:3": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-263909-0002": {
+    "swes:3": [
+      "p.Cost",
+      "p.Cost"
+    ],
+    "swes:6": [
+      "p.Purpose",
+      "p.Purpose"
+    ],
+    "swes:8": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:15": [
+      "p.Cost",
+      "p.Cost"
+    ]
+  },
+  "reviews-263909-0004": {
+    "swes:4": [
+      "p.Interval",
+      "p.Interval"
+    ]
+  },
+  "reviews-012047-0002": {
+    "swes:3": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-012047-0003": {
+    "swes:11": [
+      "p.Manner",
+      "p.Manner"
+    ],
+    "swes:14": [
+      "p.Gestalt",
+      "p.Gestalt"
+    ],
+    "swes:15": [
+      "p.Possessor",
+      "p.Gestalt"
+    ]
+  },
+  "reviews-178726-0003": {
+    "swes:3": [
+      "p.Goal",
+      "p.Goal"
+    ],
+    "swes:12": [
+      "p.Stimulus",
+      "p.Stimulus"
+    ],
+    "swes:13": [
+      "p.Possessor",
+      "p.Possessor"
+    ]
+  },
+  "reviews-178726-0004": {
+    "swes:6": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-178726-0007": {
+    "swes:2": [
+      "p.Cause",
+      "p.Cause"
+    ]
+  },
+  "reviews-351950-0002": {
+    "swes:5": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-334928-0001": {
+    "swes:2": [
+      "p.PartPortion",
+      "p.PartPortion"
+    ],
+    "swes:10": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-334928-0002": {
+    "swes:2": [
+      "p.Source",
+      "p.Source"
+    ],
+    "swes:7": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-081116-0001": {
+    "swes:4": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-341750-0004": {
+    "swes:7": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "smwes:1": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-341750-0005": {
+    "swes:10": [
+      "p.Purpose",
+      "p.Purpose"
+    ]
+  },
+  "reviews-214912-0001": {
+    "swes:6": [
+      "p.Duration",
+      "p.Duration"
+    ]
+  },
+  "reviews-214912-0003": {
+    "swes:3": [
+      "p.ComparisonRef",
+      "p.ComparisonRef"
+    ]
+  },
+  "reviews-214912-0004": {
+    "swes:1": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "swes:10": [
+      "p.Agent",
+      "p.Agent"
+    ]
+  },
+  "reviews-122564-0001": {
+    "swes:2": [
+      "p.Locus",
+      "p.Locus"
+    ],
+    "swes:5": [
+      "p.Locus",
+      "p.Locus"
+    ]
+  },
+  "reviews-122564-0003": {
+    "swes:9": [
+      "p.Time",
+      "p.Time"
+    ]
+  },
+  "reviews-122564-0004": {
+    "swes:3": [
+      "p.Topic",
+      "p.Topic"
+    ]
+  },
+  "reviews-287360-0003": {
+    "swes:9": [
+      "p.Possessor",
+      "p.Gestalt"
+    ],
+    "smwes:1": [
+      "p.Circumstance",
+      "p.Circumstance"
+    ]
+  }
+}

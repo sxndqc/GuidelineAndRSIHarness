@@ -1,30 +1,30 @@
 {
-  "updated_utc": "2026-10-06T23:47:35.987315+00:00",
+  "updated_utc": "2026-10-07T03:24:38.691605+00:00",
   "states": {
     "snacs-sol": {
       "state": "completed",
       "completed_cells": 28
     },
     "snacs-luna": {
-      "state": "running",
-      "completed_cells": 18
+      "state": "completed",
+      "completed_cells": 28
     },
     "cap_pa-sol": {
       "state": "completed",
       "completed_cells": 28
     },
     "cap_pa-luna": {
-      "state": "running",
-      "completed_cells": 10
+      "state": "completed",
+      "completed_cells": 28
     }
   },
   "supervisor_continuations": {
     "snacs-sol": 1,
     "snacs-luna": 1,
     "cap_pa-sol": 1,
-    "cap_pa-luna": 1
+    "cap_pa-luna": 2
   },
-  "transport_calls": 12978,
+  "transport_calls": 15896,
   "deadline_hours": 8,
   "note": "Runs continue in the workspace while supervisor is alive. Blocked states are not completed experiments."
 }
